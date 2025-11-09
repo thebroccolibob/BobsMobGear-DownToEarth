@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "downtoearth",
+	"version": "${version}",
+	"name": "Bob's Mob Gear: Down to Earth",
+	"description": "A more challenging variation to my monster gear progression mod, Bob's Mob Gear.",
+	"authors": [
+		"TheBroccoliBob"
+	],
+	"contact": {
+		"homepage": "https://github.com/thebroccolibob",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/downtoearth/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth"
+		],
+		"fabric-datagen": [
+			"io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarthDataGenerator"
+		],
+        "client": [
+          "io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarthClient"
+        ]
+	},
+	"mixins": [
+		"downtoearth.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
