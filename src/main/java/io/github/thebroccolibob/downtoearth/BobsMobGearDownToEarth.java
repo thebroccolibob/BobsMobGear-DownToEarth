@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth;
 
+import io.github.thebroccolibob.downtoearth.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ public class BobsMobGearDownToEarth implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        LOGGER.info("Bob's Mob Gear running! This mod is very Down to Earth.");
+        ModItems.registerModItems();
 	}
 }
