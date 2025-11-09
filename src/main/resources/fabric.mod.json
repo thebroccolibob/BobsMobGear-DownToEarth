@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://github.com/thebroccolibob",
-		"sources": "https://github.com/thebroccolibob/BobsMobGear-DownToEarth"
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
 	"icon": "assets/downtoearth/icon.png",
