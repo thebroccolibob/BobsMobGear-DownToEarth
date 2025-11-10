@@ -16,7 +16,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        BobsMobGearDownToEarth.LOGGER.info("Registering items for " + BobsMobGearDownToEarth.MOD_ID);
+        BobsMobGearDownToEarth.LOGGER.info("These Items are " + BobsMobGearDownToEarth.MOD_ID + "!");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModItems.LEAF_FIBER);

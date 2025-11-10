@@ -1,4 +1,6 @@
 {
   "item.downtoearth.leaf_fiber": "Leaf Fiber",
-  "block.downtoearth.leaf_fiber_bale": "Leaf Fiber Bale"
+  "block.downtoearth.leaf_fiber_bale": "Leaf Fiber Bale",
+  "itemgroup.downtoearth.bobs_mob_gear_items": "Bob's Mob Gear Items",
+  "itemgroup.downtoearth.bobs_mob_gear_blocks": "Bob's Mob Gear Blocks"
 }

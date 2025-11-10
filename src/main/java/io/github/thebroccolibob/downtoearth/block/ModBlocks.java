@@ -35,7 +35,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        BobsMobGearDownToEarth.LOGGER.info("Registering blocks for " + BobsMobGearDownToEarth.MOD_ID);
+        BobsMobGearDownToEarth.LOGGER.info("These Blocks are " + BobsMobGearDownToEarth.MOD_ID + "!");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.LEAF_FIBER_BALE);

@@ -1,6 +1,7 @@
 package io.github.thebroccolibob.downtoearth;
 
 import io.github.thebroccolibob.downtoearth.block.ModBlocks;
+import io.github.thebroccolibob.downtoearth.item.ModItemGroups;
 import io.github.thebroccolibob.downtoearth.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,6 +16,7 @@ public class BobsMobGearDownToEarth implements ModInitializer {
 	public void onInitialize() {
         LOGGER.info("Bob's Mob Gear is running! This mod is very Down to Earth.");
 
+        ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 	}
