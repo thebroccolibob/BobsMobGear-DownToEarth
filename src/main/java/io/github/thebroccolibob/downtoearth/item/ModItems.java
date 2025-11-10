@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item LEAF_FIBERS = registerItem("leaf_fibers", new Item(new Item.Settings()));
+    public static final Item LEAF_FIBER = registerItem("leaf_fiber", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BobsMobGearDownToEarth.MOD_ID, name), item);
@@ -19,7 +19,7 @@ public class ModItems {
         BobsMobGearDownToEarth.LOGGER.info("Registering items for " + BobsMobGearDownToEarth.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(LEAF_FIBERS);
+            fabricItemGroupEntries.add(ModItems.LEAF_FIBER);
         });
     }
 }
