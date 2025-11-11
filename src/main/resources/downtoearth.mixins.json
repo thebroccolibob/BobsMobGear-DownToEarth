@@ -3,7 +3,8 @@
 	"package": "io.github.thebroccolibob.downtoearth.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"CampfireBlockMixin"
+		"CampfireBlockMixin",
+        "BlocksMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
