@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.downtoearth.bobs_mob_gear_items"))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.LEAF_FIBER);
+                        entries.add(ModItems.FLINT_TOOL);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

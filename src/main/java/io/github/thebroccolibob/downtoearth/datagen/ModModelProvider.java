@@ -22,5 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.LEAF_FIBER, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FLINT_TOOL, Models.HANDHELD);
     }
 }

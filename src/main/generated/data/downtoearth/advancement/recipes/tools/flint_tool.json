@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flint": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:flint"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_leaf_fiber": {
+      "conditions": {
+        "items": [
+          {
+            "items": "downtoearth:leaf_fiber"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "downtoearth:flint_tool"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_leaf_fiber",
+      "has_flint"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "downtoearth:flint_tool"
+    ]
+  }
+}
