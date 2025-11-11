@@ -19,9 +19,9 @@ public class ModBlocks {
     public static final Block LEAF_FIBER_BALE = registerBlock("leaf_fiber_bale",
             new PillarBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.OFF_WHITE)
-                    .instrument(NoteBlockInstrument.BANJO)
+                    .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.5f)
-                    .sounds(BlockSoundGroup.GRASS)
+                    .sounds(BlockSoundGroup.WOOL)
             ));
 
     private static Block registerBlock(String name, Block block) {
