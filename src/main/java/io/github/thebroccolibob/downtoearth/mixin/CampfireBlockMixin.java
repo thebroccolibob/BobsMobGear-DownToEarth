@@ -1,6 +1,6 @@
 package io.github.thebroccolibob.downtoearth.mixin;
 
-import io.github.thebroccolibob.downtoearth.block.ModBlocks;
+import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CampfireBlock;
 import org.spongepowered.asm.mixin.Mixin;

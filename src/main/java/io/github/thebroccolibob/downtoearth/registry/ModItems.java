@@ -1,4 +1,4 @@
-package io.github.thebroccolibob.downtoearth.item;
+package io.github.thebroccolibob.downtoearth.registry;
 
 import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

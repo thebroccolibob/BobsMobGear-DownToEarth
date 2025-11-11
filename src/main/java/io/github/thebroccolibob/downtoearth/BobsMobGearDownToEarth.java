@@ -1,8 +1,8 @@
 package io.github.thebroccolibob.downtoearth;
 
-import io.github.thebroccolibob.downtoearth.block.ModBlocks;
-import io.github.thebroccolibob.downtoearth.item.ModItemGroups;
-import io.github.thebroccolibob.downtoearth.item.ModItems;
+import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
+import io.github.thebroccolibob.downtoearth.registry.ModItemGroups;
+import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

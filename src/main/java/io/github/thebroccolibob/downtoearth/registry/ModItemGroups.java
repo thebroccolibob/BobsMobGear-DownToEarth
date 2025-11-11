@@ -1,7 +1,6 @@
-package io.github.thebroccolibob.downtoearth.item;
+package io.github.thebroccolibob.downtoearth.registry;
 
 import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
-import io.github.thebroccolibob.downtoearth.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
