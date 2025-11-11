@@ -23,9 +23,7 @@ public class FlintToolItem extends ToolItem {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if (!world.isClient() && state.getHardness(world, pos) > 0.0F) {
-            // 1 or 2—tune to taste
             stack.damage(1, miner, EquipmentSlot.MAINHAND);
-            // or: stack.damage(1, miner, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
         }
         return true;
     }
