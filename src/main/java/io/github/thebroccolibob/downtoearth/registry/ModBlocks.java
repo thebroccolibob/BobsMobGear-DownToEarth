@@ -1,10 +1,10 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
 import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
-import io.github.thebroccolibob.downtoearth.block.LeafFiberBaleBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.HayBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
@@ -17,7 +17,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block LEAF_FIBER_BALE = registerBlock("leaf_fiber_bale",
-            new LeafFiberBaleBlock(AbstractBlock.Settings.create()
+            new HayBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.TERRACOTTA_WHITE)
                     .instrument(NoteBlockInstrument.BANJO)
                     .strength(0.5f)
