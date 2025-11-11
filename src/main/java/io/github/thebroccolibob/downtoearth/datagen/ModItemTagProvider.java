@@ -15,7 +15,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ItemTags.SHARP_WEAPON_ENCHANTABLE)
-                .add(ModItems.FLINT_TOOL);
+
     }
 }
