@@ -36,8 +36,8 @@ public class FlintToolItem extends ToolItem {
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
         if (user instanceof PlayerEntity player) {
             int i = this.getMaxUseTime(stack, user) - remainingUseTicks;
-            if (i >= 10 && !isAboutToBreak(stack) && !world.isClient) {
-                stack.damage(12, player, LivingEntity.getSlotForHand(user.getActiveHand()));
+            if (i >= 5 && !isAboutToBreak(stack) && !world.isClient) {
+                stack.damage(1, player, LivingEntity.getSlotForHand(user.getActiveHand()));
 
                 FlintToolProjectileEntity flintToolEntity = new FlintToolProjectileEntity(world, player, stack);
                 flintToolEntity.setVelocity(player, player.getPitch(), player.getYaw(), 0.0F, 2.5F, 1.0F);

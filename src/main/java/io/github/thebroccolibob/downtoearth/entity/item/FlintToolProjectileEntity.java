@@ -37,9 +37,9 @@ public class FlintToolProjectileEntity extends PersistentProjectileEntity {
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
         Entity entity = entityHitResult.getEntity();
-        float f = 4.0f;
+        float f = 6.0f;
         Entity entity2 = this.getOwner();
-        DamageSource damageSource = this.getDamageSources().thrown(this, (Entity)(entity2 == null ? this : entity2));
+        DamageSource damageSource = this.getDamageSources().thrown(this, entity2 == null ? this : entity2);
 
         this.dealtDamage = true;
         if (entity.damage(damageSource, f)) {
