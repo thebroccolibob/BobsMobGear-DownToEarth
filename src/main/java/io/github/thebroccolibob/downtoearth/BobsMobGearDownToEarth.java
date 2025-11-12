@@ -1,9 +1,6 @@
 package io.github.thebroccolibob.downtoearth;
 
-import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
-import io.github.thebroccolibob.downtoearth.registry.ModDataComponentTypes;
-import io.github.thebroccolibob.downtoearth.registry.ModItemGroups;
-import io.github.thebroccolibob.downtoearth.registry.ModItems;
+import io.github.thebroccolibob.downtoearth.registry.*;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -23,6 +20,7 @@ public class BobsMobGearDownToEarth implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModDataComponentTypes.registerDataComponentTypes();
+        ModEntities.registerModEntities();
 
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAF_FIBER_BALE, 60, 20);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.LEAF_FIBER_BALE.asItem(), 0.65f);
