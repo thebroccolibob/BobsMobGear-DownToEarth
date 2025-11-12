@@ -96,13 +96,6 @@ public class FlintToolProjectileEntity extends PersistentProjectileEntity {
     }
 
     @Override
-    public void age() {
-        if (this.pickupType != PersistentProjectileEntity.PickupPermission.ALLOWED) {
-            super.age();
-        }
-    }
-
-    @Override
     protected float getDragInWater() {
         return 0.99F;
     }
