@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.LEAF_FIBER);
                         entries.add(ModItems.FLINT_TOOL);
+                        entries.add(ModItems.FLINT_AXE);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

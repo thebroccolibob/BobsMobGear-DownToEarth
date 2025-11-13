@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_leaf_fiber": {
+    "has_flint_tool": {
       "conditions": {
         "items": [
           {
-            "items": "downtoearth:leaf_fiber"
+            "items": "downtoearth:flint_tool"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "downtoearth:flint_tool"
+        "recipe": "downtoearth:flint_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_leaf_fiber"
+      "has_flint_tool"
     ]
   ],
   "rewards": {
     "recipes": [
-      "downtoearth:flint_tool"
+      "downtoearth:flint_axe"
     ]
   }
 }

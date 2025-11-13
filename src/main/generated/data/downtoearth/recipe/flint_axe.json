@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "^": {
+      "item": "downtoearth:flint_tool"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "^|",
+    " |"
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:flint_axe"
+  }
+}

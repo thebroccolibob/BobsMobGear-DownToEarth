@@ -1,6 +1,5 @@
 package io.github.thebroccolibob.downtoearth.datagen;
 
-import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
 import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
 import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -10,7 +9,6 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -29,7 +27,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('^', Items.FLINT)
                 .input('~', ModItems.LEAF_FIBER)
                 .criterion(hasItem(ModItems.LEAF_FIBER), conditionsFromItem(ModItems.LEAF_FIBER))
-                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_AXE)
+                .pattern("^|")
+                .pattern(" |")
+                .input('^', ModItems.FLINT_TOOL)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.FLINT_TOOL), conditionsFromItem(ModItems.FLINT_TOOL))
                 .offerTo(recipeExporter);
     }
 }
