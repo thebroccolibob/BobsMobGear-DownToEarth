@@ -96,11 +96,6 @@ public class FlintToolProjectileEntity extends PersistentProjectileEntity {
     }
 
     @Override
-    protected float getDragInWater() {
-        return 0.99F;
-    }
-
-    @Override
     public boolean shouldRender(double cameraX, double cameraY, double cameraZ) {
         return true;
     }
