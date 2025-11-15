@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "_": {
+      "item": "downtoearth:wooden_pickaxe_head"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  _",
+    " | ",
+    "|  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:wooden_pickaxe"
+  }
+}

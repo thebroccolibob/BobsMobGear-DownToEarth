@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "U": {
+      "item": "downtoearth:wooden_shovel_head"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  U",
+    " | ",
+    "|  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:wooden_shovel"
+  }
+}
