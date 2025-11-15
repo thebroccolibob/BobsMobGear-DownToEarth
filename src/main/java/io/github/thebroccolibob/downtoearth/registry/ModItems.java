@@ -34,11 +34,11 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModItems.LEAF_FIBER);
-            fabricItemGroupEntries.add(ModItems.WOODEN_SWORD_BLADE);
             fabricItemGroupEntries.add(ModItems.WOODEN_SHOVEL_HEAD);
             fabricItemGroupEntries.add(ModItems.WOODEN_PICKAXE_HEAD);
             fabricItemGroupEntries.add(ModItems.WOODEN_AXE_HEAD);
             fabricItemGroupEntries.add(ModItems.WOODEN_HOE_HEAD);
+            fabricItemGroupEntries.add(ModItems.WOODEN_SWORD_BLADE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
