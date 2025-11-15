@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:carving",
+  "ingredient": {
+    "tag": "minecraft:planks"
+  },
+  "result": {
+    "id": "downtoearth:wooden_sword_blade",
+    "count": 1
+  }
+}

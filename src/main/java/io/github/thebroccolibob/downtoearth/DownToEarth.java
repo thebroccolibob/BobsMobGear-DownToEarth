@@ -15,7 +15,7 @@ public class DownToEarth implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-        LOGGER.info("Bob's Mob Gear is running! This mod is very Down to Earth.");
+        LOGGER.info("Bob's Mob Gear: Down to Earth is running! This mod is very " + DownToEarth.MOD_ID + "!");
 
         ModItemGroups.registerItemGroups();
         ModItems.registerModItems();

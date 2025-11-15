@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:carving",
+  "ingredient": {
+    "tag": "minecraft:planks"
+  },
+  "result": {
+    "id": "downtoearth:wooden_axe_head",
+    "count": 1
+  }
+}

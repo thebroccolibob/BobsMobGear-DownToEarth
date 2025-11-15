@@ -1,6 +1,9 @@
 package io.github.thebroccolibob.downtoearth.item;
 
 import io.github.thebroccolibob.downtoearth.entity.item.FlintToolProjectileEntity;
+import io.github.thebroccolibob.downtoearth.screen.CarvingScreenData;
+import io.github.thebroccolibob.downtoearth.screen.CarvingScreenHandler;
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
@@ -8,13 +11,18 @@ import net.minecraft.component.type.ToolComponent;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
@@ -26,6 +34,47 @@ import java.util.List;
 public class FlintToolItem extends ToolItem {
     public FlintToolItem(ToolMaterial material, Settings settings) {
         super(material, settings.component(DataComponentTypes.TOOL, createToolComponent()));
+    }
+
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
+        World world = context.getWorld();
+        BlockPos pos = context.getBlockPos();
+        BlockState state = world.getBlockState(pos);
+
+        if (!state.isIn(BlockTags.PLANKS)) {
+            return ActionResult.PASS;
+        }
+
+        if (!world.isClient) {
+            ServerPlayerEntity player = (ServerPlayerEntity) context.getPlayer();
+
+            if (player != null) {
+                ItemStack plank = state.getBlock().asItem().getDefaultStack();
+
+                player.openHandledScreen(new ExtendedScreenHandlerFactory<CarvingScreenData>() {
+
+                    @Override
+                    public CarvingScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
+                        return new CarvingScreenHandler(syncId, inv, plank, pos);
+                    }
+
+                    @Override
+                    public Text getDisplayName() {
+                        return Text.translatable("screen.downtoearth.carving");
+                    }
+
+                    @Override
+                    public CarvingScreenData getScreenOpeningData(ServerPlayerEntity player) {
+                        return new CarvingScreenData(plank, pos);
+                    }
+                }); {
+
+                }
+            }
+        }
+
+        return ActionResult.SUCCESS;
     }
 
     private static ToolComponent createToolComponent() {
