@@ -1,6 +1,6 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
-import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
+import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.item.FlintToolItem;
 import io.github.thebroccolibob.downtoearth.item.ModToolMaterials;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -26,11 +26,11 @@ public class ModItems {
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.FLINT, 3.0F, -3.2F))));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(BobsMobGearDownToEarth.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(DownToEarth.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        BobsMobGearDownToEarth.LOGGER.info("These Items are " + BobsMobGearDownToEarth.MOD_ID + "!");
+        DownToEarth.LOGGER.info("These Items are " + DownToEarth.MOD_ID + "!");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModItems.LEAF_FIBER);

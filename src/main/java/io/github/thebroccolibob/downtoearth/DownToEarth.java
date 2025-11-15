@@ -9,7 +9,7 @@ import net.minecraft.block.ComposterBlock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BobsMobGearDownToEarth implements ModInitializer {
+public class DownToEarth implements ModInitializer {
 	public static final String MOD_ID = "downtoearth";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 

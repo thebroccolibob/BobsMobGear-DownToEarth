@@ -1,6 +1,6 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
-import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
+import io.github.thebroccolibob.downtoearth.DownToEarth;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -26,16 +26,16 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(BobsMobGearDownToEarth.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(DownToEarth.MOD_ID, name), block);
     }
 
     private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(BobsMobGearDownToEarth.MOD_ID, name),
+        Registry.register(Registries.ITEM, Identifier.of(DownToEarth.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
     public static void registerModBlocks() {
-        BobsMobGearDownToEarth.LOGGER.info("These Blocks are " + BobsMobGearDownToEarth.MOD_ID + "!");
+        DownToEarth.LOGGER.info("These Blocks are " + DownToEarth.MOD_ID + "!");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.LEAF_FIBER_BALE);

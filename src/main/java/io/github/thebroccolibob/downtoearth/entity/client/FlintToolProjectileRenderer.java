@@ -1,6 +1,6 @@
 package io.github.thebroccolibob.downtoearth.entity.client;
 
-import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
+import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.entity.item.FlintToolProjectileEntity;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -52,6 +52,6 @@ public class FlintToolProjectileRenderer extends EntityRenderer<FlintToolProject
 
     @Override
     public Identifier getTexture(FlintToolProjectileEntity entity) {
-        return Identifier.of(BobsMobGearDownToEarth.MOD_ID, "textures/entity/flint_tool/flint_tool.png");
+        return Identifier.of(DownToEarth.MOD_ID, "textures/entity/flint_tool/flint_tool.png");
     }
 }

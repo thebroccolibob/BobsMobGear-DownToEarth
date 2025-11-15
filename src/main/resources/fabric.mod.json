@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth"
+          "io.github.thebroccolibob.downtoearth.DownToEarth"
 		],
 		"fabric-datagen": [
-			"io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarthDataGenerator"
+          "io.github.thebroccolibob.downtoearth.DownToEarthDataGenerator"
 		],
         "client": [
-          "io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarthClient"
+          "io.github.thebroccolibob.downtoearth.DownToEarthClient"
         ]
 	},
 	"mixins": [

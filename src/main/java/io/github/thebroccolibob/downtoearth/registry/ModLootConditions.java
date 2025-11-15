@@ -1,6 +1,6 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
-import io.github.thebroccolibob.downtoearth.BobsMobGearDownToEarth;
+import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.condition.NoSilkOrShearsCondition;
 import net.minecraft.loot.condition.LootConditionType;
 import net.minecraft.registry.Registries;
@@ -11,11 +11,11 @@ public class ModLootConditions {
     public static LootConditionType NO_SILK_OR_SHEARS;
 
     public static void registerModLootConditions() {
-        BobsMobGearDownToEarth.LOGGER.info("These Loot Conditions are " + BobsMobGearDownToEarth.MOD_ID + "!");
+        DownToEarth.LOGGER.info("These Loot Conditions are " + DownToEarth.MOD_ID + "!");
 
         NO_SILK_OR_SHEARS = Registry.register(
                 Registries.LOOT_CONDITION_TYPE,
-                Identifier.of(BobsMobGearDownToEarth.MOD_ID, "no_silk_or_shears"),
+                Identifier.of(DownToEarth.MOD_ID, "no_silk_or_shears"),
                 new LootConditionType(NoSilkOrShearsCondition.CODEC)
         );
     }

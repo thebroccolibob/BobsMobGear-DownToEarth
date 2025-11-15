@@ -5,7 +5,7 @@ import io.github.thebroccolibob.downtoearth.registry.ModEntities;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 
-public class BobsMobGearDownToEarthClient implements ClientModInitializer {
+public class DownToEarthClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         EntityRendererRegistry.register(ModEntities.FLINT_TOOL, FlintToolProjectileRenderer::new);
