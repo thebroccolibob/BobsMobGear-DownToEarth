@@ -28,6 +28,8 @@ import net.minecraft.util.math.Direction.Axis;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
+import net.minecraft.world.WorldView;
 
 import static java.util.Objects.requireNonNull;
 
@@ -48,11 +50,21 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
     }
 
     @Override
+    protected boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return world.getBlockState(pos.down()).isIn(BlockTags.ANVIL);
+    }
+
+    @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         var down = ctx.getWorld().getBlockState(ctx.getBlockPos().down());
         if (down.isIn(BlockTags.ANVIL) && down.contains(FACING))
             return getDefaultState().with(FACING, down.get(FACING));
         return getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
+    }
+
+    @Override
+    protected BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+        return canPlaceAt(state, world, pos) ? super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos) : Blocks.AIR.getDefaultState();
     }
 
     @Override
@@ -89,8 +101,6 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
         }
 
         if (stack.isIn(BobsMobGearItemTags.SMITHING_HAMMERS)) {
-            if (!world.getBlockState(pos.down()).isIn(BobsMobGearBlocks.SMITHING_SURFACE))
-                return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
             if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity))
                 return ItemActionResult.FAIL;
 
@@ -115,22 +125,21 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
 
     public static void registerTongEvent() {
         UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
-            var placePos = hitResult.getBlockPos();
-            if (!world.getBlockState(placePos).isReplaceable()) {
-                placePos = placePos.offset(hitResult.getSide());
-                if (!world.getBlockState(placePos).isReplaceable()) return ActionResult.PASS;
-            }
-            if (!world.getBlockState(placePos.down()).isIn(BobsMobGearBlocks.SMITHING_SURFACE)) return ActionResult.PASS;
-
             var stack = player.getStackInHand(hand);
             if (!stack.isOf(BobsMobGearItems.SMITHING_TONGS)) return ActionResult.PASS;
             if (stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY()).isEmpty()) return ActionResult.PASS;
 
-            var state = ModBlocks.HAMMERABLE_ITEM.getPlacementState(new ItemPlacementContext(world, player, hand, stack, hitResult));
-            if (state == null) return ActionResult.PASS;
+            var context = new ItemPlacementContext(world, player, hand, stack, hitResult);
+            if (!context.canPlace()) return ActionResult.PASS;
 
-            world.setBlockState(placePos, state);
-            if (!(world.getBlockEntity(placePos) instanceof HammerableItemBlockEntity blockEntity)) return ActionResult.FAIL;
+            var pos = context.getBlockPos();
+            var state = ModBlocks.HAMMERABLE_ITEM.getPlacementState(context);
+            if (state == null) return ActionResult.PASS;
+            if (!state.canPlaceAt(world, pos)) return ActionResult.PASS;
+            if (!context.getWorld().canPlace(state, pos, ShapeContext.of(player))) return ActionResult.PASS;
+
+            world.setBlockState(pos, state);
+            if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity)) return ActionResult.FAIL;
 
             blockEntity.setItem(requireNonNull(stack.set(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY())).getStack());
             world.playSound(player, hitResult.getBlockPos(), BobsMobGearSounds.TONGS_PICKUP, SoundCategory.PLAYERS, 1f, 1f);
