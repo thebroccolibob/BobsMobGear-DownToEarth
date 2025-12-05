@@ -1,6 +1,8 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
 import io.github.thebroccolibob.downtoearth.DownToEarth;
+import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
+
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -16,7 +18,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block LEAF_FIBER_BALE = registerBlock("leaf_fiber_bale",
+    public static final Block LEAF_FIBER_BALE = registerBlockWithItem("leaf_fiber_bale",
             new HayBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.TERRACOTTA_WHITE)
                     .instrument(NoteBlockInstrument.BANJO)
@@ -24,8 +26,19 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOL)
             ));
 
-    private static Block registerBlock(String name, Block block) {
+    public static final Block HAMMERABLE_ITEM = registerBlock("hammerable_item",
+            new HammerableItemBlock(AbstractBlock.Settings.create()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .noCollision()
+            ));
+
+    private static Block registerBlockWithItem(String name, Block block) {
         registerBlockItem(name, block);
+        return registerBlock(name, block);
+    }
+
+    private static Block registerBlock(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(DownToEarth.MOD_ID, name), block);
     }
 

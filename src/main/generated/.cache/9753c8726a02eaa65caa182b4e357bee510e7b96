@@ -1,12 +1,14 @@
-// 1.21.1	2025-11-13T15:16:23.8873848	Bob's Mob Gear: Down to Earth/Model Definitions
-858d8fe3a053d72f4a283869fe1c5732e7b8973f assets\downtoearth\models\item\leaf_fiber.json
-68c96a8df1a70b3f38b3787c470f4a23016ed324 assets\downtoearth\models\item\wooden_shovel_head.json
-a9261f62dac912b7218387f147bf913d70fb2f3b assets\downtoearth\models\item\leaf_fiber_bale.json
-36458d32e8310abcd774780411eb875291f1af8a assets\downtoearth\models\item\wooden_hoe_head.json
-748b51fb5c3be2b675c6fff992820aa1df3fbaf0 assets\downtoearth\models\item\flint_tool.json
-703204daced55fbf4f15d3625e9fe4b320d9600f assets\downtoearth\models\item\flint_axe.json
-dd6fc3f14d4dc54a9522871b8185efb1423dc5b0 assets\downtoearth\models\item\wooden_pickaxe_head.json
-84701c56b7874ac5ed9bf7d3637fdefb17ef8cdd assets\downtoearth\models\block\leaf_fiber_bale.json
-1188c30a13e159caf99fae7fada2d6ea0c762b84 assets\downtoearth\blockstates\leaf_fiber_bale.json
-9fb3ff61d2b55df7dd5b4fc42469b87c29d1c42b assets\downtoearth\models\item\wooden_sword_blade.json
-abcee696cab7fa6e0d6c3890c72e9ab13284cbf9 assets\downtoearth\models\item\wooden_axe_head.json
+// 1.21.1	2025-12-04T21:53:48.035740789	Bob's Mob Gear: Down to Earth/Model Definitions
+84701c56b7874ac5ed9bf7d3637fdefb17ef8cdd assets/downtoearth/models/block/leaf_fiber_bale.json
+9fb3ff61d2b55df7dd5b4fc42469b87c29d1c42b assets/downtoearth/models/item/wooden_sword_blade.json
+1188c30a13e159caf99fae7fada2d6ea0c762b84 assets/downtoearth/blockstates/leaf_fiber_bale.json
+dd6fc3f14d4dc54a9522871b8185efb1423dc5b0 assets/downtoearth/models/item/wooden_pickaxe_head.json
+748b51fb5c3be2b675c6fff992820aa1df3fbaf0 assets/downtoearth/models/item/flint_tool.json
+e2b8a59635f01479e9fe04f09cad8c517664bff3 assets/downtoearth/models/block/hammerable_item.json
+abcee696cab7fa6e0d6c3890c72e9ab13284cbf9 assets/downtoearth/models/item/wooden_axe_head.json
+a9261f62dac912b7218387f147bf913d70fb2f3b assets/downtoearth/models/item/leaf_fiber_bale.json
+703204daced55fbf4f15d3625e9fe4b320d9600f assets/downtoearth/models/item/flint_axe.json
+36458d32e8310abcd774780411eb875291f1af8a assets/downtoearth/models/item/wooden_hoe_head.json
+68c96a8df1a70b3f38b3787c470f4a23016ed324 assets/downtoearth/models/item/wooden_shovel_head.json
+858d8fe3a053d72f4a283869fe1c5732e7b8973f assets/downtoearth/models/item/leaf_fiber.json
+68103ea739fc87d45335679575ab95b7e3c8edaa assets/downtoearth/blockstates/hammerable_item.json

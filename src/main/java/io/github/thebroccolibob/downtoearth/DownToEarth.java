@@ -20,6 +20,7 @@ public class DownToEarth implements ModInitializer {
         ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        ModBlockEntities.registerModBlockEntities();
         ModDataComponentTypes.registerDataComponentTypes();
         ModEntities.registerModEntities();
         ModLootConditions.registerModLootConditions();
