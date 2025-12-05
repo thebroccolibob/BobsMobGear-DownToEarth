@@ -23,7 +23,7 @@ public class ModRecipes {
     public static final RecipeSerializer<HammeringRecipe> HAMMERING_SERIALIZER =
             registerRecipeSerializer("hammering", new HammeringRecipe.Serializer());
 
-    public static final RecipeType<GrindingRecipe> GRINDING_TYPE = registerRecipeType("hammering");
+    public static final RecipeType<GrindingRecipe> GRINDING_TYPE = registerRecipeType("grinding");
 
     public static final RecipeSerializer<GrindingRecipe> GRINDING_SERIALIZER =
             registerRecipeSerializer("grinding", GrindingRecipe.SERIALIZER);

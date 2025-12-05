@@ -45,7 +45,7 @@ public record GrindingRecipe(Ingredient ingredient, Ingredient reference, ItemSt
 
     @Override
     public boolean matches(Input input, World world) {
-        return ingredient.test(input.ingredient) && reference.test(input.ingredient);
+        return ingredient.test(input.ingredient) && reference.test(input.reference);
     }
 
     @Override
