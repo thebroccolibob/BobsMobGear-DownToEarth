@@ -17,13 +17,15 @@ import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Direction.Axis;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class HammerableItemBlock extends HorizontalFacingBlock implements BlockEntityProvider {
 
-    public static final VoxelShape SHAPE = createCuboidShape(0, 0, 0, 16, 1, 16);
+    public static final VoxelShape SHAPE_X = createCuboidShape(0, 0, 3, 16, 1, 13);
+    public static final VoxelShape SHAPE_Z = createCuboidShape(3, 0, 0, 13, 1, 16);
 
     public HammerableItemBlock(Settings settings) {
         super(settings);
@@ -43,7 +45,7 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
 
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+        return state.get(FACING).getAxis() == Axis.Z ? SHAPE_Z : SHAPE_X;
     }
 
     @Override

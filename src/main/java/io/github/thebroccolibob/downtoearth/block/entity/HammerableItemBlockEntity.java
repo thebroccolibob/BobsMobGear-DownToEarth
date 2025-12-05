@@ -59,13 +59,13 @@ public class HammerableItemBlockEntity extends BlockEntity {
         tool.damage(1, user, LivingEntity.getSlotForHand(hand));
         world.playSound(user, getPos(), SoundEvents.BLOCK_ANVIL_USE, user.getSoundCategory()); // TODO hammer sound
         if (world.isClient) {
-            var origin = getPos().toBottomCenterPos();
+            var shape = getCachedState().getOutlineShape(world, getPos()).getBoundingBox();
             for (var i = 0; i < 8; i++) {
                 world.addParticle(
                         ParticleTypes.SMALL_FLAME,
-                        origin.x + world.random.nextDouble() - 0.5,
-                        origin.y + 1.0 / 16,
-                        origin.z + world.random.nextDouble() - 0.5,
+                        getPos().getX() + shape.minX + world.random.nextFloat() * shape.getLengthX(),
+                        getPos().getY() + shape.minY + world.random.nextFloat() * shape.getLengthY(),
+                        getPos().getZ() + shape.minZ + world.random.nextFloat() * shape.getLengthZ(),
                         0.1 * world.random.nextDouble() - 0.05,
                         0.05 * world.random.nextDouble(),
                         0.1 * world.random.nextDouble() - 0.05
