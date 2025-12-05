@@ -1,6 +1,11 @@
 package io.github.thebroccolibob.downtoearth.block;
 
+import io.github.thebroccolibob.bobsmobgear.registry.*;
+import io.github.thebroccolibob.bobsmobgear.util.ComparableItemStack;
 import io.github.thebroccolibob.downtoearth.block.entity.HammerableItemBlockEntity;
+import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
+
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
@@ -10,8 +15,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager.Builder;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
@@ -22,6 +28,8 @@ import net.minecraft.util.math.Direction.Axis;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+
+import static java.util.Objects.requireNonNull;
 
 public class HammerableItemBlock extends HorizontalFacingBlock implements BlockEntityProvider {
 
@@ -41,7 +49,10 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+        var down = ctx.getWorld().getBlockState(ctx.getBlockPos().down());
+        if (down.isIn(BlockTags.ANVIL) && down.contains(FACING))
+            return getDefaultState().with(FACING, down.get(FACING));
+        return getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
     }
 
     @Override
@@ -64,14 +75,32 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
 
     @Override
     protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (!stack.isIn(ItemTags.AXES)) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION; // TODO hammers
-        if (!world.getBlockState(pos.down()).isIn(BlockTags.ANVIL)) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
-        if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity)) return ItemActionResult.FAIL;
+        if (stack.isOf(BobsMobGearItems.SMITHING_TONGS)) {
+            if (!stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY()).isEmpty()) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+            if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity))
+                return ItemActionResult.FAIL;
 
-        if (!blockEntity.onHammered(player)) return ItemActionResult.FAIL;
+            stack.set(BobsMobGearComponents.TONGS_HELD_ITEM, new ComparableItemStack(blockEntity.getItem()));
+            blockEntity.setItem(null);
+            world.setBlockState(pos, Blocks.AIR.getDefaultState());
+            world.playSound(player, pos, BobsMobGearSounds.TONGS_PICKUP, SoundCategory.PLAYERS, 1f, 1f);
 
-        stack.damage(1, player, LivingEntity.getSlotForHand(hand));
-        return ItemActionResult.SUCCESS;
+            return ItemActionResult.SUCCESS;
+        }
+
+        if (stack.isIn(BobsMobGearItemTags.SMITHING_HAMMERS)) {
+            if (!world.getBlockState(pos.down()).isIn(BobsMobGearBlocks.SMITHING_SURFACE))
+                return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+            if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity))
+                return ItemActionResult.FAIL;
+
+            if (!blockEntity.onHammered(player)) return ItemActionResult.FAIL;
+
+            stack.damage(1, player, LivingEntity.getSlotForHand(hand));
+            return ItemActionResult.SUCCESS;
+        }
+
+        return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
     @Override
@@ -82,5 +111,31 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
     @Override
     protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
         return null;
+    }
+
+    public static void registerTongEvent() {
+        UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
+            var placePos = hitResult.getBlockPos();
+            if (!world.getBlockState(placePos).isReplaceable()) {
+                placePos = placePos.offset(hitResult.getSide());
+                if (!world.getBlockState(placePos).isReplaceable()) return ActionResult.PASS;
+            }
+            if (!world.getBlockState(placePos.down()).isIn(BobsMobGearBlocks.SMITHING_SURFACE)) return ActionResult.PASS;
+
+            var stack = player.getStackInHand(hand);
+            if (!stack.isOf(BobsMobGearItems.SMITHING_TONGS)) return ActionResult.PASS;
+            if (stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY()).isEmpty()) return ActionResult.PASS;
+
+            var state = ModBlocks.HAMMERABLE_ITEM.getPlacementState(new ItemPlacementContext(world, player, hand, stack, hitResult));
+            if (state == null) return ActionResult.PASS;
+
+            world.setBlockState(placePos, state);
+            if (!(world.getBlockEntity(placePos) instanceof HammerableItemBlockEntity blockEntity)) return ActionResult.FAIL;
+
+            blockEntity.setItem(requireNonNull(stack.set(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY())).getStack());
+            world.playSound(player, hitResult.getBlockPos(), BobsMobGearSounds.TONGS_PICKUP, SoundCategory.PLAYERS, 1f, 1f);
+
+            return ActionResult.SUCCESS;
+        });
     }
 }
