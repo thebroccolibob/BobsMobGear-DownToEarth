@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth.block;
 
+import io.github.thebroccolibob.bobsmobgear.item.TongsItem;
 import io.github.thebroccolibob.bobsmobgear.registry.*;
 import io.github.thebroccolibob.bobsmobgear.util.ComparableItemStack;
 import io.github.thebroccolibob.downtoearth.block.entity.HammerableItemBlockEntity;
@@ -87,7 +88,7 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
 
     @Override
     protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (stack.isOf(BobsMobGearItems.SMITHING_TONGS)) {
+        if (stack.getItem() instanceof TongsItem) {
             if (!stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY()).isEmpty()) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
             if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity))
                 return ItemActionResult.FAIL;
@@ -126,7 +127,7 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
     public static void registerTongEvent() {
         UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
             var stack = player.getStackInHand(hand);
-            if (!stack.isOf(BobsMobGearItems.SMITHING_TONGS)) return ActionResult.PASS;
+            if (!(stack.getItem() instanceof TongsItem)) return ActionResult.PASS;
             if (stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY()).isEmpty()) return ActionResult.PASS;
 
             var context = new ItemPlacementContext(world, player, hand, stack, hitResult);
