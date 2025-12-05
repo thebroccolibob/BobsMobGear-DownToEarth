@@ -29,7 +29,7 @@ public class ModBlocks {
     public static final Block HAMMERABLE_ITEM = registerBlock("hammerable_item",
             new HammerableItemBlock(AbstractBlock.Settings.create()
                     .breakInstantly()
-                    .sounds(BlockSoundGroup.WOOD)
+                    .sounds(BlockSoundGroup.METAL)
                     .noCollision()
             ));
 

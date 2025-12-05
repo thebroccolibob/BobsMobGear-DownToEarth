@@ -5,9 +5,16 @@ import io.github.thebroccolibob.downtoearth.block.entity.HammerableItemBlockEnti
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.state.StateManager.Builder;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -50,6 +57,16 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
 
             super.onStateReplaced(state, world, pos, newState, moved);
         }
+    }
+
+    @Override
+    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        if (!stack.isIn(ItemTags.AXES)) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION; // TODO hammers
+        if (!world.getBlockState(pos.down()).isIn(BlockTags.ANVIL)) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+
+        return world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity
+                && blockEntity.onHammered(stack, player, hand)
+                ? ItemActionResult.SUCCESS : ItemActionResult.FAIL;
     }
 
     @Override
