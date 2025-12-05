@@ -35,9 +35,6 @@ public abstract class GrindstoneScreenHandlerMixin extends ScreenHandler impleme
     @Shadow
     protected abstract void updateResult();
 
-    @Shadow
-    @Final
-    private ScreenHandlerContext context;
     @Unique
     private World world;
     @Unique
@@ -65,11 +62,6 @@ public abstract class GrindstoneScreenHandlerMixin extends ScreenHandler impleme
     @Override
     public void downtoearth$updateResult() {
         updateResult();
-    }
-
-    @Override
-    public ScreenHandlerContext downtoearth$getContext() {
-        return context;
     }
 
     @Inject(
