@@ -5,6 +5,7 @@ import io.github.thebroccolibob.downtoearth.block.entity.HammerableItemBlockEnti
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -65,10 +66,12 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
     protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!stack.isIn(ItemTags.AXES)) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION; // TODO hammers
         if (!world.getBlockState(pos.down()).isIn(BlockTags.ANVIL)) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity)) return ItemActionResult.FAIL;
 
-        return world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity
-                && blockEntity.onHammered(stack, player, hand)
-                ? ItemActionResult.SUCCESS : ItemActionResult.FAIL;
+        if (!blockEntity.onHammered(player)) return ItemActionResult.FAIL;
+
+        stack.damage(1, player, LivingEntity.getSlotForHand(hand));
+        return ItemActionResult.SUCCESS;
     }
 
     @Override

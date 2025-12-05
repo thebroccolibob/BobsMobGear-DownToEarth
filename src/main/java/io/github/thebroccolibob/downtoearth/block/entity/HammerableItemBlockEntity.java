@@ -6,7 +6,6 @@ import io.github.thebroccolibob.downtoearth.registry.ModRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -17,7 +16,6 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 
 import org.jetbrains.annotations.Nullable;
@@ -47,7 +45,7 @@ public class HammerableItemBlockEntity extends BlockEntity {
         updateListeners();
     }
 
-    public boolean onHammered(ItemStack tool, PlayerEntity user, Hand hand) {
+    public boolean onHammered(PlayerEntity user) {
         // TODO require heated
         var world = getWorld();
         if (world == null) return false;
@@ -56,7 +54,6 @@ public class HammerableItemBlockEntity extends BlockEntity {
         var recipe = world.getRecipeManager().getFirstMatch(ModRecipes.HAMMERING_TYPE, input, world);
         if (recipe.isEmpty()) return false;
 
-        tool.damage(1, user, LivingEntity.getSlotForHand(hand));
         world.playSound(user, getPos(), SoundEvents.BLOCK_ANVIL_USE, user.getSoundCategory()); // TODO hammer sound
         if (world.isClient) {
             var shape = getCachedState().getOutlineShape(world, getPos()).getBoundingBox();
