@@ -1,4 +1,4 @@
-package io.github.thebroccolibob.downtoearth.client.render;
+package io.github.thebroccolibob.downtoearth.block.entity.client;
 
 import io.github.thebroccolibob.downtoearth.block.entity.HammerableItemBlockEntity;
 
