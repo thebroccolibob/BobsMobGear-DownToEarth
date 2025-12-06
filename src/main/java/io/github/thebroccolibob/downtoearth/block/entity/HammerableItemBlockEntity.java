@@ -17,6 +17,7 @@ import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Unit;
 import net.minecraft.util.math.BlockPos;
 
@@ -57,20 +58,22 @@ public class HammerableItemBlockEntity extends BlockEntity {
         var recipe = world.getRecipeManager().getFirstMatch(ModRecipes.HAMMERING_TYPE, input, world);
         if (recipe.isEmpty()) return false;
 
-        world.playSound(user, getPos(), BobsMobGearSounds.TEMPLATE_HAMMER, user.getSoundCategory());
-        if (world.isClient) {
-            var shape = getCachedState().getOutlineShape(world, getPos()).getBoundingBox();
-            for (var i = 0; i < 8; i++) {
-                world.addParticle(
-                        ParticleTypes.SMALL_FLAME,
-                        getPos().getX() + shape.minX + world.random.nextFloat() * shape.getLengthX(),
-                        getPos().getY() + shape.minY + world.random.nextFloat() * shape.getLengthY(),
-                        getPos().getZ() + shape.minZ + world.random.nextFloat() * shape.getLengthZ(),
-                        0.1 * world.random.nextDouble() - 0.05,
-                        0.05 * world.random.nextDouble(),
-                        0.1 * world.random.nextDouble() - 0.05
-                );
-            }
+        var pos = getPos();
+        world.playSound(user, pos, BobsMobGearSounds.TEMPLATE_HAMMER, user.getSoundCategory());
+        if (world instanceof ServerWorld serverWorld) {
+            var shape = getCachedState().getOutlineShape(world, pos).getBoundingBox();
+            var center = shape.getCenter();
+            serverWorld.spawnParticles(
+                    ParticleTypes.SMALL_FLAME,
+                    pos.getX() + center.x,
+                    pos.getY() + center.y,
+                    pos.getZ() + center.z,
+                    16,
+                    shape.getLengthX() / 4,
+                    shape.getLengthY() / 4,
+                    shape.getLengthZ() / 4,
+                    0.025
+            );
         }
 
         if (++hammerHits >= REQUIRED_HAMMER_HITS) {
