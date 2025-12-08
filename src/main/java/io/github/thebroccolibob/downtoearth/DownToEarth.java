@@ -5,7 +5,11 @@ import io.github.thebroccolibob.downtoearth.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.ComposterBlock;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,5 +36,6 @@ public class DownToEarth implements ModInitializer {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.LEAF_FIBER_BALE.asItem(), 0.65f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.LEAF_FIBER, 0.3f);
 
+        ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "bmgoverride"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(), ResourcePackActivationType.ALWAYS_ENABLED);
 	}
 }
