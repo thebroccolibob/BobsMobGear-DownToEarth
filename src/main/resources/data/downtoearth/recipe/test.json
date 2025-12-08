@@ -1,10 +1,13 @@
 {
-  "type": "downtoearth:hammering",
+  "type": "downtoearth:grinding",
   "ingredient": {
-    "item": "minecraft:iron_sword"
+    "item": "minecraft:stone"
+  },
+  "reference": {
+    "item": "minecraft:stone_pickaxe"
   },
   "result": {
-    "id": "minecraft:diamond_sword",
+    "id": "minecraft:iron_pickaxe",
     "count": 1
   }
 }

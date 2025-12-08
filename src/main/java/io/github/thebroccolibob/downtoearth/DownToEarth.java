@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth;
 
+import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
 import io.github.thebroccolibob.downtoearth.registry.*;
 import io.github.thebroccolibob.downtoearth.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
@@ -37,5 +38,6 @@ public class DownToEarth implements ModInitializer {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.LEAF_FIBER, 0.3f);
 
         ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "bmgoverride"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(), ResourcePackActivationType.ALWAYS_ENABLED);
+        HammerableItemBlock.registerTongEvent();
 	}
 }

@@ -1,17 +1,21 @@
 {
-	"required": true,
-	"package": "io.github.thebroccolibob.downtoearth.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "CampfireBlockMixin",
-      "BlocksMixin",
-      "BambooBlockMixin",
-      "BambooShootBlockMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
+  "required": true,
+  "package": "io.github.thebroccolibob.downtoearth.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BambooBlockMixin",
+    "BambooShootBlockMixin",
+    "BlocksMixin",
+    "CampfireBlockMixin",
+    "GrindstoneScreenHandlerMixin",
+    "GrindstoneScreenHandlerSlot1Mixin",
+    "GrindstoneScreenHandlerSlot2Mixin",
+    "GrindstoneScreenHandlerSlot3Mixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
 	}
 }

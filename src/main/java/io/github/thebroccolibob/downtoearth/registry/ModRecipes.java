@@ -2,6 +2,7 @@ package io.github.thebroccolibob.downtoearth.registry;
 
 import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.recipe.CarvingRecipe;
+import io.github.thebroccolibob.downtoearth.recipe.GrindingRecipe;
 import io.github.thebroccolibob.downtoearth.recipe.HammeringRecipe;
 
 import net.minecraft.recipe.Recipe;
@@ -21,6 +22,11 @@ public class ModRecipes {
 
     public static final RecipeSerializer<HammeringRecipe> HAMMERING_SERIALIZER =
             registerRecipeSerializer("hammering", new HammeringRecipe.Serializer());
+
+    public static final RecipeType<GrindingRecipe> GRINDING_TYPE = registerRecipeType("grinding");
+
+    public static final RecipeSerializer<GrindingRecipe> GRINDING_SERIALIZER =
+            registerRecipeSerializer("grinding", GrindingRecipe.SERIALIZER);
 
     private static <T extends Recipe<?>> RecipeType<T> registerRecipeType(String name) {
         return Registry.register(Registries.RECIPE_TYPE,

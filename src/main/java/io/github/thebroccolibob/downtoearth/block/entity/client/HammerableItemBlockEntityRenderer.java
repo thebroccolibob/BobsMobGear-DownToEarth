@@ -1,4 +1,4 @@
-package io.github.thebroccolibob.downtoearth.client.render;
+package io.github.thebroccolibob.downtoearth.block.entity.client;
 
 import io.github.thebroccolibob.downtoearth.block.entity.HammerableItemBlockEntity;
 
@@ -23,7 +23,9 @@ public class HammerableItemBlockEntityRenderer implements BlockEntityRenderer<Ha
     public void render(HammerableItemBlockEntity entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         matrices.push();
 
-        matrices.translate(1.0 / 2, 1.0 / 32, 1.0 / 2);
+        matrices.translate(1.0 / 2, 0, 1.0 / 2);
+        matrices.scale(2f / 3, 2f / 3, 2f / 3);
+        matrices.translate(0, 1.0 / 32, 0);
         matrices.multiply(entity.getCachedState().get(HorizontalFacingBlock.FACING).getRotationQuaternion());
         matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(-45));
 

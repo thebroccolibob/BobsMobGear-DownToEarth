@@ -1,12 +1,13 @@
 package io.github.thebroccolibob.downtoearth.block.entity;
 
+import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearComponents;
+import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearSounds;
 import io.github.thebroccolibob.downtoearth.registry.ModBlockEntities;
 import io.github.thebroccolibob.downtoearth.registry.ModRecipes;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -16,8 +17,8 @@ import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Hand;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Unit;
 import net.minecraft.util.math.BlockPos;
 
 import org.jetbrains.annotations.Nullable;
@@ -47,8 +48,9 @@ public class HammerableItemBlockEntity extends BlockEntity {
         updateListeners();
     }
 
-    public boolean onHammered(ItemStack tool, PlayerEntity user, Hand hand) {
-        // TODO require heated
+    public boolean onHammered(PlayerEntity user) {
+        if (!getItem().contains(BobsMobGearComponents.HEATED)) return false;
+
         var world = getWorld();
         if (world == null) return false;
 
@@ -56,25 +58,28 @@ public class HammerableItemBlockEntity extends BlockEntity {
         var recipe = world.getRecipeManager().getFirstMatch(ModRecipes.HAMMERING_TYPE, input, world);
         if (recipe.isEmpty()) return false;
 
-        tool.damage(1, user, LivingEntity.getSlotForHand(hand));
-        world.playSound(user, getPos(), SoundEvents.BLOCK_ANVIL_USE, user.getSoundCategory()); // TODO hammer sound
-        if (world.isClient) {
-            var shape = getCachedState().getOutlineShape(world, getPos()).getBoundingBox();
-            for (var i = 0; i < 8; i++) {
-                world.addParticle(
-                        ParticleTypes.SMALL_FLAME,
-                        getPos().getX() + shape.minX + world.random.nextFloat() * shape.getLengthX(),
-                        getPos().getY() + shape.minY + world.random.nextFloat() * shape.getLengthY(),
-                        getPos().getZ() + shape.minZ + world.random.nextFloat() * shape.getLengthZ(),
-                        0.1 * world.random.nextDouble() - 0.05,
-                        0.05 * world.random.nextDouble(),
-                        0.1 * world.random.nextDouble() - 0.05
-                );
-            }
+        var pos = getPos();
+        world.playSound(user, pos, BobsMobGearSounds.TEMPLATE_HAMMER, user.getSoundCategory());
+        if (world instanceof ServerWorld serverWorld) {
+            var shape = getCachedState().getOutlineShape(world, pos).getBoundingBox();
+            var center = shape.getCenter();
+            serverWorld.spawnParticles(
+                    ParticleTypes.SMALL_FLAME,
+                    pos.getX() + center.x,
+                    pos.getY() + center.y,
+                    pos.getZ() + center.z,
+                    16,
+                    shape.getLengthX() / 4,
+                    shape.getLengthY() / 4,
+                    shape.getLengthZ() / 4,
+                    0.025
+            );
         }
 
-        if (++hammerHits > REQUIRED_HAMMER_HITS) {
-            setItem(recipe.get().value().craft(input, world.getRegistryManager()));
+        if (++hammerHits >= REQUIRED_HAMMER_HITS) {
+            var result = recipe.get().value().craft(input, world.getRegistryManager());
+            result.set(BobsMobGearComponents.HEATED, Unit.INSTANCE);
+            setItem(result);
             updateListeners();
             return true;
         }
