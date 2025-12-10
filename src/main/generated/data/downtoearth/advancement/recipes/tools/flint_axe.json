@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flint_tool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "downtoearth:flint_tool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "downtoearth:flint_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_flint_tool"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "downtoearth:flint_axe"
+    ]
+  }
+}
