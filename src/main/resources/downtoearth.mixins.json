@@ -6,10 +6,7 @@
     "BambooBlockMixin",
     "BlocksMixin",
     "CampfireBlockMixin",
-    "GrindstoneScreenHandlerMixin",
-    "GrindstoneScreenHandlerSlot1Mixin",
-    "GrindstoneScreenHandlerSlot2Mixin",
-    "GrindstoneScreenHandlerSlot3Mixin"
+    "GrindstoneScreenHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
