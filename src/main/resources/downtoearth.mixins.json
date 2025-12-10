@@ -3,6 +3,7 @@
   "package": "io.github.thebroccolibob.downtoearth.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BambooBlockMixin",
     "BlocksMixin",
     "CampfireBlockMixin",
     "GrindstoneScreenHandlerMixin",
