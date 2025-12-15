@@ -1,7 +1,9 @@
 package io.github.thebroccolibob.downtoearth.block.entity;
 
+import archives.tater.rpgskills.data.LockGroup;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearComponents;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearSounds;
+import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.registry.ModBlockEntities;
 import io.github.thebroccolibob.downtoearth.registry.ModRecipes;
 
@@ -57,6 +59,13 @@ public class HammerableItemBlockEntity extends BlockEntity {
         var input = new SingleStackRecipeInput(getItem());
         var recipe = world.getRecipeManager().getFirstMatch(ModRecipes.HAMMERING_TYPE, input, world);
         if (recipe.isEmpty()) return false;
+        if (DownToEarth.RPGSKILLS_INSTALLED) {
+            var lockGroup = LockGroup.findLocked(user, recipe.get());
+            if (lockGroup != null) {
+                user.sendMessage(lockGroup.recipeMessage(), true);
+                return false;
+            }
+        }
 
         var pos = getPos();
         world.playSound(user, pos, BobsMobGearSounds.TEMPLATE_HAMMER, user.getSoundCategory());
@@ -79,6 +88,8 @@ public class HammerableItemBlockEntity extends BlockEntity {
         if (++hammerHits >= REQUIRED_HAMMER_HITS) {
             var result = recipe.get().value().craft(input, world.getRegistryManager());
             result.set(BobsMobGearComponents.HEATED, Unit.INSTANCE);
+
+            result.onCraftByPlayer(world, user, result.getCount());
             setItem(result);
             updateListeners();
             return true;

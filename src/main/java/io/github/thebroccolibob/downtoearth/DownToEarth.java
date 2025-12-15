@@ -18,6 +18,8 @@ public class DownToEarth implements ModInitializer {
 	public static final String MOD_ID = "downtoearth";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+    public static final boolean RPGSKILLS_INSTALLED = FabricLoader.getInstance().isModLoaded("rpgskills");
+
 	@Override
 	public void onInitialize() {
         LOGGER.info("Bob's Mob Gear: Down to Earth is running! This mod is very " + DownToEarth.MOD_ID + "!");
