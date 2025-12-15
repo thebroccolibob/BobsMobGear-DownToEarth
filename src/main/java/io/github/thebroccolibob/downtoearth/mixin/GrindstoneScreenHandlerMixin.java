@@ -1,8 +1,12 @@
 package io.github.thebroccolibob.downtoearth.mixin;
 
+import archives.tater.rpgskills.data.LockGroup;
+import archives.tater.rpgskills.networking.UiActionBlockedPayload;
+import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.recipe.GrindingRecipe.Input;
 import io.github.thebroccolibob.downtoearth.registry.ModRecipes;
 
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -22,6 +26,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 
@@ -43,6 +48,8 @@ public abstract class GrindstoneScreenHandlerMixin extends ScreenHandler {
     @Unique
     private World world;
     @Unique
+    private PlayerEntity player;
+    @Unique
     private boolean customRecipe = false;
 
     protected GrindstoneScreenHandlerMixin(@Nullable ScreenHandlerType<?> type, int syncId) {
@@ -54,6 +61,7 @@ public abstract class GrindstoneScreenHandlerMixin extends ScreenHandler {
             at = @At("TAIL")
     )
     private void saveWorld(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context, CallbackInfo ci) {
+        player = playerInventory.player;
         world = playerInventory.player.getWorld();
     }
 
@@ -68,6 +76,15 @@ public abstract class GrindstoneScreenHandlerMixin extends ScreenHandler {
         if (result.isEmpty()) {
             customRecipe = false;
             return;
+        }
+        if (DownToEarth.RPGSKILLS_INSTALLED) {
+            var lockGroup = LockGroup.findLocked(player, result.get());
+            if (lockGroup != null) {
+                if (player instanceof ServerPlayerEntity serverPlayer)
+                    ServerPlayNetworking.send(serverPlayer, new UiActionBlockedPayload(lockGroup));
+                cir.setReturnValue(ItemStack.EMPTY);
+                return;
+            }
         }
         customRecipe = true;
         cir.setReturnValue(result.get().value().craft(input, world.getRegistryManager()));

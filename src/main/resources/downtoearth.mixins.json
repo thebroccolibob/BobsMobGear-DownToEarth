@@ -6,7 +6,8 @@
     "BambooBlockMixin",
     "BlocksMixin",
     "CampfireBlockMixin",
-    "GrindstoneScreenHandlerMixin"
+    "GrindstoneScreenHandlerMixin",
+    "client.GrindstoneScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
