@@ -1,12 +1,9 @@
 package io.github.thebroccolibob.downtoearth.mixin;
 
-import archives.tater.rpgskills.data.LockGroup;
-import archives.tater.rpgskills.networking.UiActionBlockedPayload;
-import io.github.thebroccolibob.downtoearth.DownToEarth;
+import io.github.thebroccolibob.downtoearth.DownToEarthCompat;
 import io.github.thebroccolibob.downtoearth.recipe.GrindingRecipe.Input;
 import io.github.thebroccolibob.downtoearth.registry.ModRecipes;
 
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -26,7 +23,6 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 
@@ -71,20 +67,13 @@ public abstract class GrindstoneScreenHandlerMixin extends ScreenHandler {
             cancellable = true
     )
     private void applyRecipe(ItemStack firstInput, ItemStack secondInput, CallbackInfoReturnable<ItemStack> cir) {
+        customRecipe = false;
         var input = new Input(firstInput, secondInput);
         var result = world.getRecipeManager().getFirstMatch(ModRecipes.GRINDING_TYPE, input, world);
-        if (result.isEmpty()) {
-            customRecipe = false;
+        if (result.isEmpty()) return;
+        if (DownToEarthCompat.checkLocked(player, result.get())) {
+            cir.setReturnValue(ItemStack.EMPTY);
             return;
-        }
-        if (DownToEarth.RPGSKILLS_INSTALLED) {
-            var lockGroup = LockGroup.findLocked(player, result.get());
-            if (lockGroup != null) {
-                if (player instanceof ServerPlayerEntity serverPlayer)
-                    ServerPlayNetworking.send(serverPlayer, new UiActionBlockedPayload(lockGroup));
-                cir.setReturnValue(ItemStack.EMPTY);
-                return;
-            }
         }
         customRecipe = true;
         cir.setReturnValue(result.get().value().craft(input, world.getRegistryManager()));

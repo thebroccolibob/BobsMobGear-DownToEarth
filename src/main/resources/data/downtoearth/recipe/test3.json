@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "minecraft:diamond_sword"
+  },
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "count": 1
+  }
+}

@@ -3,8 +3,9 @@ package io.github.thebroccolibob.downtoearth.block.entity;
 import archives.tater.rpgskills.data.LockGroup;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearComponents;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearSounds;
-import io.github.thebroccolibob.downtoearth.DownToEarth;
+import io.github.thebroccolibob.downtoearth.DownToEarthCompat;
 import io.github.thebroccolibob.downtoearth.registry.ModBlockEntities;
+import io.github.thebroccolibob.downtoearth.registry.ModItemTags;
 import io.github.thebroccolibob.downtoearth.registry.ModRecipes;
 
 import net.minecraft.block.Block;
@@ -59,7 +60,7 @@ public class HammerableItemBlockEntity extends BlockEntity {
         var input = new SingleStackRecipeInput(getItem());
         var recipe = world.getRecipeManager().getFirstMatch(ModRecipes.HAMMERING_TYPE, input, world);
         if (recipe.isEmpty()) return false;
-        if (DownToEarth.RPGSKILLS_INSTALLED) {
+        if (DownToEarthCompat.RPGSKILLS_INSTALLED) {
             var lockGroup = LockGroup.findLocked(user, recipe.get());
             if (lockGroup != null) {
                 user.sendMessage(lockGroup.recipeMessage(), true);
@@ -73,7 +74,9 @@ public class HammerableItemBlockEntity extends BlockEntity {
             var shape = getCachedState().getOutlineShape(world, pos).getBoundingBox();
             var center = shape.getCenter();
             serverWorld.spawnParticles(
-                    ParticleTypes.SMALL_FLAME,
+                    getItem().isIn(ModItemTags.SOUL_FLAME_HAMMERED)
+                        ? ParticleTypes.SOUL_FIRE_FLAME
+                        : ParticleTypes.SMALL_FLAME,
                     pos.getX() + center.x,
                     pos.getY() + center.y,
                     pos.getZ() + center.z,
