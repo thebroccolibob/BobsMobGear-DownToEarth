@@ -89,7 +89,7 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
     @Override
     protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (stack.getItem() instanceof TongsItem) {
-            if (!stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY()).isEmpty()) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+            if (!stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.EMPTY).isEmpty()) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
             if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity))
                 return ItemActionResult.FAIL;
 
@@ -101,7 +101,7 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
             return ItemActionResult.SUCCESS;
         }
 
-        if (stack.isIn(BobsMobGearItemTags.SMITHING_HAMMERS)) {
+        if (stack.isIn(BobsMobGearItemTags.HAMMERS)) {
             if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity))
                 return ItemActionResult.FAIL;
 
@@ -128,7 +128,7 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
         UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
             var stack = player.getStackInHand(hand);
             if (!(stack.getItem() instanceof TongsItem)) return ActionResult.PASS;
-            if (stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY()).isEmpty()) return ActionResult.PASS;
+            if (stack.getOrDefault(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.EMPTY).isEmpty()) return ActionResult.PASS;
 
             var context = new ItemPlacementContext(world, player, hand, stack, hitResult);
             if (!context.canPlace()) return ActionResult.PASS;
@@ -142,7 +142,7 @@ public class HammerableItemBlock extends HorizontalFacingBlock implements BlockE
             world.setBlockState(pos, state);
             if (!(world.getBlockEntity(pos) instanceof HammerableItemBlockEntity blockEntity)) return ActionResult.FAIL;
 
-            blockEntity.setItem(requireNonNull(stack.set(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.Companion.getEMPTY())).getStack());
+            blockEntity.setItem(requireNonNull(stack.set(BobsMobGearComponents.TONGS_HELD_ITEM, ComparableItemStack.EMPTY)).getStack());
             world.playSound(player, hitResult.getBlockPos(), BobsMobGearSounds.TONGS_PICKUP, SoundCategory.PLAYERS, 1f, 1f);
 
             return ActionResult.SUCCESS;
