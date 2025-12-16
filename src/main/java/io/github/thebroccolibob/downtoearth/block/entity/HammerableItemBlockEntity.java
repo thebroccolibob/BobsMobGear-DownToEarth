@@ -21,7 +21,6 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.recipe.input.SingleStackRecipeInput;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Unit;
 import net.minecraft.util.math.BlockPos;
 
 import org.jetbrains.annotations.Nullable;
@@ -90,8 +89,6 @@ public class HammerableItemBlockEntity extends BlockEntity {
 
         if (++hammerHits >= REQUIRED_HAMMER_HITS) {
             var result = recipe.get().value().craft(input, world.getRegistryManager());
-            result.set(BobsMobGearComponents.HEATED, Unit.INSTANCE);
-
             result.onCraftByPlayer(world, user, result.getCount());
             setItem(result);
             updateListeners();

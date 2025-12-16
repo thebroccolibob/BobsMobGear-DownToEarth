@@ -50,7 +50,9 @@ public record GrindingRecipe(Ingredient ingredient, Ingredient reference, ItemSt
 
     @Override
     public ItemStack craft(Input input, WrapperLookup lookup) {
-        return result.copy();
+        var stack = input.ingredient.copyComponentsToNewStack(result.getItem(), result.getCount());
+        stack.applyUnvalidatedChanges(result.getComponentChanges());
+        return stack;
     }
 
     @Override
