@@ -28,7 +28,7 @@ public class DownToEarthCompat {
         return true;
     }
 
-    public static void renderCross(DrawContext context, HandledScreen<?> screen, int x, int y, int mouseX, int mouseY) {
+    public static void renderCross(DrawContext context, HandledScreen<?> screen, int x, int y, int mouseX, int mouseY, PlayerEntity player) {
         if (DownToEarthCompat.RPGSKILLS_INSTALLED)
             CrossedArrowRenderer.renderTooltip(context,
                     screen,
@@ -38,7 +38,8 @@ public class DownToEarthCompat {
                     21,
                     mouseX,
                     mouseY,
-                    LockGroup::recipeMessage
+                    LockGroup::recipeMessage,
+                    player
             );
     }
 }
