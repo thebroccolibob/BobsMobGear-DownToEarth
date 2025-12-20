@@ -1,8 +1,10 @@
 package io.github.thebroccolibob.downtoearth.util;
 
+import io.github.thebroccolibob.downtoearth.condition.IsFlintToolCondition;
 import io.github.thebroccolibob.downtoearth.condition.NoSilkOrShearsCondition;
 import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -41,6 +43,19 @@ public class ModLootTableModifiers {
                         .conditionally(NoSilkOrShearsCondition.builder())
                         .conditionally(RandomChanceLootCondition.builder(0.07f))
                         .with(ItemEntry.builder(ModItems.LEAF_FIBER))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+        });
+
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registry) -> {
+            if(id.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(IsFlintToolCondition.builder())
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(Items.STICK))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
