@@ -31,8 +31,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.WOODEN_AXE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.WOODEN_HOE_HEAD, Models.GENERATED);
 
-
-        itemModelGenerator.register(ModItems.FLINT_TOOL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
     }
 }
