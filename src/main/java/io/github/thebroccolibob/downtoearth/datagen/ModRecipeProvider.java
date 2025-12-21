@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth.datagen;
 
+import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearItems;
 import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
 import io.github.thebroccolibob.downtoearth.registry.ModItems;
 
@@ -8,10 +9,12 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -38,5 +41,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('|', Items.STICK)
                 .criterion(hasItem(ModItems.FLINT_TOOL), conditionsFromItem(ModItems.FLINT_TOOL))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLAY_INGOT_MOLD)
+                .pattern(" o ")
+                .pattern("ono")
+                .pattern(" o ")
+                .input('o', Items.CLAY_BALL)
+                .input('n', Items.BRICK)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(recipeExporter);
+
+        List<ItemConvertible> INGOT_MOLD_SMELT = List.of(ModItems.CLAY_INGOT_MOLD);
+        offerSmelting(recipeExporter, INGOT_MOLD_SMELT, RecipeCategory.MISC, BobsMobGearItems.EMPTY_TEMPLATE, 0f, 200, "empty_template");
     }
 }

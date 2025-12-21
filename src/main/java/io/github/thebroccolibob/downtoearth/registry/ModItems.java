@@ -11,11 +11,14 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item LEAF_FIBER = registerItem("leaf_fiber", new Item(new Item.Settings()));
+
     public static final Item WOODEN_SWORD_BLADE = registerItem("wooden_sword_blade", new Item(new Item.Settings()));
     public static final Item WOODEN_SHOVEL_HEAD = registerItem("wooden_shovel_head", new Item(new Item.Settings()));
     public static final Item WOODEN_PICKAXE_HEAD = registerItem("wooden_pickaxe_head", new Item(new Item.Settings()));
     public static final Item WOODEN_AXE_HEAD = registerItem("wooden_axe_head", new Item(new Item.Settings()));
     public static final Item WOODEN_HOE_HEAD = registerItem("wooden_hoe_head", new Item(new Item.Settings()));
+
+    public static final Item CLAY_INGOT_MOLD = registerItem("clay_ingot_mold", new Item(new Item.Settings()));
 
     public static final Item FLINT_TOOL = registerItem("flint_tool",
             new FlintToolItem(ModToolMaterials.FLINT, new Item.Settings()
@@ -34,11 +37,14 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModItems.LEAF_FIBER);
+
             fabricItemGroupEntries.add(ModItems.WOODEN_SHOVEL_HEAD);
             fabricItemGroupEntries.add(ModItems.WOODEN_PICKAXE_HEAD);
             fabricItemGroupEntries.add(ModItems.WOODEN_AXE_HEAD);
             fabricItemGroupEntries.add(ModItems.WOODEN_HOE_HEAD);
             fabricItemGroupEntries.add(ModItems.WOODEN_SWORD_BLADE);
+
+            fabricItemGroupEntries.add(ModItems.CLAY_INGOT_MOLD);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {

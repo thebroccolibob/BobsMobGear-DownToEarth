@@ -25,11 +25,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.LEAF_FIBER, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.WOODEN_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.WOODEN_SHOVEL_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.WOODEN_PICKAXE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.WOODEN_AXE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.WOODEN_HOE_HEAD, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
     }

@@ -16,13 +16,17 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.downtoearth.bobs_mob_gear_items"))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.LEAF_FIBER);
+
                         entries.add(ModItems.FLINT_TOOL);
                         entries.add(ModItems.FLINT_AXE);
+
                         entries.add(ModItems.WOODEN_SHOVEL_HEAD);
                         entries.add(ModItems.WOODEN_PICKAXE_HEAD);
                         entries.add(ModItems.WOODEN_AXE_HEAD);
                         entries.add(ModItems.WOODEN_HOE_HEAD);
                         entries.add(ModItems.WOODEN_SWORD_BLADE);
+
+                        entries.add(ModItems.CLAY_INGOT_MOLD);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
