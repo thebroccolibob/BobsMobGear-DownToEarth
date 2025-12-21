@@ -3,7 +3,6 @@ package io.github.thebroccolibob.downtoearth.registry;
 import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.condition.IsFlintToolCondition;
 import io.github.thebroccolibob.downtoearth.condition.NoSilkOrShearsCondition;
-import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.condition.LootConditionType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

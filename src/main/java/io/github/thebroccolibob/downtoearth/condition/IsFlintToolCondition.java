@@ -1,11 +1,9 @@
 package io.github.thebroccolibob.downtoearth.condition;
 
 import com.mojang.serialization.MapCodec;
-import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import io.github.thebroccolibob.downtoearth.registry.ModLootConditions;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.condition.LootConditionType;
 import net.minecraft.loot.context.LootContext;
