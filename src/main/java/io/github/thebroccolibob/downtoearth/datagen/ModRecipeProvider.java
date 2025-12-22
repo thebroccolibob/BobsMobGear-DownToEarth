@@ -50,8 +50,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('n', Items.BRICK)
                 .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
                 .offerTo(recipeExporter);
-
-        List<ItemConvertible> INGOT_MOLD_SMELT = List.of(ModItems.CLAY_INGOT_MOLD);
-        offerSmelting(recipeExporter, INGOT_MOLD_SMELT, RecipeCategory.MISC, BobsMobGearItems.EMPTY_TEMPLATE, 0f, 200, "empty_template");
     }
 }
