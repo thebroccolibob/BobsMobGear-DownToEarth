@@ -17,5 +17,7 @@
   "itemgroup.downtoearth.bobs_mob_gear_items": "BMG: Down to Earth Items",
   "itemgroup.downtoearth.bobs_mob_gear_blocks": "BMG: Down to Earth Blocks",
 
-  "screen.downtoearth.carving": "Carving"
+  "screen.downtoearth.carving": "Carving",
+
+  "resourcepack.downtoearth.bmgoverride": "Down to Earth Resources"
 }
