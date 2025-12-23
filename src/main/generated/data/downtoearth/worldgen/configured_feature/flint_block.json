@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "small",
+              "facing": "east"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "small",
+              "facing": "west"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "small",
+              "facing": "north"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "small",
+              "facing": "south"
+            }
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "medium",
+              "facing": "east"
+            }
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "medium",
+              "facing": "west"
+            }
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "medium",
+              "facing": "north"
+            }
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "downtoearth:flint",
+            "Properties": {
+              "type": "medium",
+              "facing": "south"
+            }
+          },
+          "weight": 2
+        }
+      ]
+    }
+  }
+}

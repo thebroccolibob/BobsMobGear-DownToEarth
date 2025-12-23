@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": {
+      "feature": "downtoearth:flint_block",
+      "placement": []
+    }
+  }
+}
