@@ -2,5 +2,97 @@
   "pack": {
     "description": "Bob's Mob Gear: Down to Earth resources",
     "pack_format": 34
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "recipe/coal_from_smelting_coal_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/coal_from_smelting_deepslate_coal_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/copper_ingot_from_smelting_raw_copper.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/copper_ingot_from_smelting_copper_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/copper_ingot_from_smelting_deepslate_copper_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/gold_ingot_from_smelting_gold_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/gold_ingot_from_smelting_deepslate_gold_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/gold_ingot_from_smelting_nether_gold_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/gold_ingot_from_smelting_raw_gold.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/iron_ingot_from_smelting_iron_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/iron_ingot_from_smelting_deepslate_iron_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/iron_ingot_from_smelting_raw_iron.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/diamond_from_smelting_diamond_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/diamond_from_smelting_deepslate_diamond_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/netherite_scrap.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/redstone_from_smelting_redstone_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/redstone_from_smelting_deepslate_redstone_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/lapis_lazuli_from_smelting_lapis_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/lapis_lazuli_from_smelting_deepslate_lapis_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/emerald_from_smelting_emerald_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/emerald_from_smelting_deepslate_emerald_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/quartz.json"
+      }
+    ]
   }
 }

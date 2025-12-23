@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "sword_template",
+  "ingredient": {
+    "item": "downtoearth:clay_sword_blade_mold"
+  },
+  "result": {
+    "id": "bobsmobgear:sword_template"
+  }
+}

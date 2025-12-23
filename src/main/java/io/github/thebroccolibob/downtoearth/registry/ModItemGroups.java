@@ -20,14 +20,19 @@ public class ModItemGroups {
                         entries.add(ModItems.FLINT_TOOL);
                         entries.add(ModItems.FLINT_AXE);
 
+                        entries.add(ModItems.CLAY_INGOT_MOLD);
+                        entries.add(ModItems.CLAY_SWORD_BLADE_MOLD);
+                        entries.add(ModItems.CLAY_SHOVEL_HEAD_MOLD);
+                        entries.add(ModItems.CLAY_PICKAXE_HEAD_MOLD);
+                        entries.add(ModItems.CLAY_AXE_HEAD_MOLD);
+                        entries.add(ModItems.CLAY_HOE_HEAD_MOLD);
+
                         entries.add(ModItems.WOODEN_SHOVEL_HEAD);
                         entries.add(ModItems.WOODEN_PICKAXE_HEAD);
                         entries.add(ModItems.WOODEN_AXE_HEAD);
                         entries.add(ModItems.WOODEN_HOE_HEAD);
                         entries.add(ModItems.WOODEN_SWORD_BLADE);
                         entries.add(ModItems.STONE_SMITHING_HAMMER_HEAD);
-
-                        entries.add(ModItems.CLAY_INGOT_MOLD);
 
                         entries.add(ModItems.STONE_SMITHING_HAMMER);
                     })).build());

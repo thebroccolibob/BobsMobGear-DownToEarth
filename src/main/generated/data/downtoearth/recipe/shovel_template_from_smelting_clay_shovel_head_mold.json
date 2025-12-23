@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "shovel_template",
+  "ingredient": {
+    "item": "downtoearth:clay_shovel_head_mold"
+  },
+  "result": {
+    "id": "bobsmobgear:shovel_template"
+  }
+}

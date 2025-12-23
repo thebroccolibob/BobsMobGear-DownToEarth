@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "hoe_template",
+  "ingredient": {
+    "item": "downtoearth:clay_hoe_head_mold"
+  },
+  "result": {
+    "id": "bobsmobgear:hoe_template"
+  }
+}

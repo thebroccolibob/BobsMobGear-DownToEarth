@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "downtoearth:wooden_sword_blade"
+    },
+    "o": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    " o ",
+    "ono",
+    " o "
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:clay_sword_blade_mold"
+  }
+}

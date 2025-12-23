@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "downtoearth:wooden_shovel_head"
+    },
+    "o": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    " o ",
+    "ono",
+    " o "
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:clay_shovel_head_mold"
+  }
+}

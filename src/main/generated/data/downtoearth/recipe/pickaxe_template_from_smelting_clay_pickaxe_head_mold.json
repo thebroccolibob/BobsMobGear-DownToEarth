@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "pickaxe_template",
+  "ingredient": {
+    "item": "downtoearth:clay_pickaxe_head_mold"
+  },
+  "result": {
+    "id": "bobsmobgear:pickaxe_template"
+  }
+}

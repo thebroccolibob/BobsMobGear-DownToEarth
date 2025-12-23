@@ -1,3 +1,9 @@
 {
-  "block.bobsmobgear.empty_template": "Ceramic Ingot Mold"
+  "block.bobsmobgear.empty_template": "Ceramic Ingot Mold",
+  "block.bobsmobgear.sword_template": "Ceramic Sword Blade Mold",
+  "block.bobsmobgear.shovel_template": "Ceramic Shovel Head Mold",
+  "block.bobsmobgear.pickaxe_template": "Ceramic Pickaxe Head Mold",
+  "block.bobsmobgear.axe_template": "Ceramic Axe Head Mold",
+  "block.bobsmobgear.hoe_template": "Ceramic Hoe Head Mold"
+
 }

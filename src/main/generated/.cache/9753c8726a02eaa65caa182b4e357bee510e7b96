@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-22T18:20:54.0475374	Bob's Mob Gear: Down to Earth/Model Definitions
+// 1.21.1	2025-12-22T21:09:27.7101449	Bob's Mob Gear: Down to Earth/Model Definitions
 dd6fc3f14d4dc54a9522871b8185efb1423dc5b0 assets\downtoearth\models\item\wooden_pickaxe_head.json
 84701c56b7874ac5ed9bf7d3637fdefb17ef8cdd assets\downtoearth\models\block\leaf_fiber_bale.json
 1188c30a13e159caf99fae7fada2d6ea0c762b84 assets\downtoearth\blockstates\leaf_fiber_bale.json
@@ -10,7 +10,12 @@ a9261f62dac912b7218387f147bf913d70fb2f3b assets\downtoearth\models\item\leaf_fib
 703204daced55fbf4f15d3625e9fe4b320d9600f assets\downtoearth\models\item\flint_axe.json
 abcee696cab7fa6e0d6c3890c72e9ab13284cbf9 assets\downtoearth\models\item\wooden_axe_head.json
 68c96a8df1a70b3f38b3787c470f4a23016ed324 assets\downtoearth\models\item\wooden_shovel_head.json
+a92a440424fe8eccd34c428a4413252995542f24 assets\downtoearth\models\item\clay_axe_head_mold.json
 16433aa57861b06557b483435ab095a980d149d3 assets\downtoearth\models\item\clay_ingot_mold.json
+bc182ae1c49dbbce48ac788ad431d1bb7868c01b assets\downtoearth\models\item\clay_pickaxe_head_mold.json
 e2b8a59635f01479e9fe04f09cad8c517664bff3 assets\downtoearth\models\block\hammerable_item.json
 858d8fe3a053d72f4a283869fe1c5732e7b8973f assets\downtoearth\models\item\leaf_fiber.json
+531fec0424f288e820f3967a3e0534b7e5b6f567 assets\downtoearth\models\item\clay_hoe_head_mold.json
+7b339a84fd07080933b9c2a1ed85edd142b97795 assets\downtoearth\models\item\clay_shovel_head_mold.json
+6a318a75236a66de3f6c1cfeaba9c1ef51a5f335 assets\downtoearth\models\item\clay_sword_blade_mold.json
 68103ea739fc87d45335679575ab95b7e3c8edaa assets\downtoearth\blockstates\hammerable_item.json

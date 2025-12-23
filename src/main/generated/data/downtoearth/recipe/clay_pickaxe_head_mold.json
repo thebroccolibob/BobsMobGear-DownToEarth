@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "downtoearth:wooden_pickaxe_head"
+    },
+    "o": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    " o ",
+    "ono",
+    " o "
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:clay_pickaxe_head_mold"
+  }
+}
