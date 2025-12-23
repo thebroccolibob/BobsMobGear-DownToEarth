@@ -1,6 +1,7 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
 import io.github.thebroccolibob.downtoearth.DownToEarth;
+import io.github.thebroccolibob.downtoearth.block.FlintBlock;
 import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
 
 import io.github.thebroccolibob.downtoearth.block.StoneAnvilBlock;
@@ -29,9 +30,15 @@ public class ModBlocks {
 
     public static final Block STONE_ANVIL = registerBlockWithItem("stone_anvil",
             new StoneAnvilBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.STONE_GRAY)
                     .strength(2.0F)
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block FLINT = registerBlockWithItem("flint",
+            new FlintBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.STONE_GRAY)
+                    .breakInstantly()));
 
     public static final Block HAMMERABLE_ITEM = registerBlock("hammerable_item",
             new HammerableItemBlock(AbstractBlock.Settings.create()
