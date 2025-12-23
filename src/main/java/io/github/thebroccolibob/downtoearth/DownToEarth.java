@@ -3,6 +3,7 @@ package io.github.thebroccolibob.downtoearth;
 import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
 import io.github.thebroccolibob.downtoearth.registry.*;
 import io.github.thebroccolibob.downtoearth.util.ModLootTableModifiers;
+import io.github.thebroccolibob.downtoearth.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -33,6 +34,7 @@ public class DownToEarth implements ModInitializer {
         ModLootTableModifiers.modifyLootTables();
         ModRecipes.registerModRecipes();
         ModScreens.registerModScreens();
+        ModWorldGeneration.generateModWorldGen();
 
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAF_FIBER_BALE, 60, 20);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.LEAF_FIBER_BALE.asItem(), 0.65f);
