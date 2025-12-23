@@ -1,0 +1,13 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "reference": {
+    "item": "bobsmobgear:hoe_template"
+  },
+  "result": {
+    "id": "downtoearth:stone_hoe_head",
+    "count": 1
+  }
+}

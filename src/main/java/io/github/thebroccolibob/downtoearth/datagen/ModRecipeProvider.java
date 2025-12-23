@@ -104,6 +104,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STONE_SMITHING_HAMMER_HEAD), conditionsFromItem(ModItems.STONE_SMITHING_HAMMER_HEAD))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_SHOVEL)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STONE_SHOVEL_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_SHOVEL_HEAD), conditionsFromItem(ModItems.STONE_SHOVEL_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_PICKAXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STONE_PICKAXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_PICKAXE_HEAD), conditionsFromItem(ModItems.STONE_PICKAXE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_AXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STONE_AXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_AXE_HEAD), conditionsFromItem(ModItems.STONE_AXE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_HOE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STONE_HOE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_HOE_HEAD), conditionsFromItem(ModItems.STONE_HOE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_SWORD)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STONE_SWORD_BLADE)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_SWORD_BLADE), conditionsFromItem(ModItems.STONE_SWORD_BLADE))
+                .offerTo(recipeExporter);
+
         List<ItemConvertible> SWORD_BLADE_SMELT = List.of(ModItems.CLAY_SWORD_BLADE_MOLD);
         offerSmelting(recipeExporter, SWORD_BLADE_SMELT, RecipeCategory.MISC, BobsMobGearItems.SWORD_TEMPLATE, 0f, 200, "sword_template");
 

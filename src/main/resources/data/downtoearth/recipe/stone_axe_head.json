@@ -1,0 +1,13 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "reference": {
+    "item": "bobsmobgear:axe_template"
+  },
+  "result": {
+    "id": "downtoearth:stone_axe_head",
+    "count": 1
+  }
+}

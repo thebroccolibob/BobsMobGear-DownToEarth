@@ -23,6 +23,11 @@ public class ModItems {
     public static final Item WOODEN_AXE_HEAD = registerItem("wooden_axe_head", new Item(new Item.Settings()));
     public static final Item WOODEN_HOE_HEAD = registerItem("wooden_hoe_head", new Item(new Item.Settings()));
     public static final Item STONE_SMITHING_HAMMER_HEAD = registerItem("stone_smithing_hammer_head", new Item(new Item.Settings()));
+    public static final Item STONE_SWORD_BLADE = registerItem("stone_sword_blade", new Item(new Item.Settings()));
+    public static final Item STONE_SHOVEL_HEAD = registerItem("stone_shovel_head", new Item(new Item.Settings()));
+    public static final Item STONE_PICKAXE_HEAD = registerItem("stone_pickaxe_head", new Item(new Item.Settings()));
+    public static final Item STONE_AXE_HEAD = registerItem("stone_axe_head", new Item(new Item.Settings()));
+    public static final Item STONE_HOE_HEAD = registerItem("stone_hoe_head", new Item(new Item.Settings()));
 
     public static final Item CLAY_INGOT_MOLD = registerItem("clay_ingot_mold", new Item(new Item.Settings()));
     public static final Item CLAY_SWORD_BLADE_MOLD = registerItem("clay_sword_blade_mold", new Item(new Item.Settings()));

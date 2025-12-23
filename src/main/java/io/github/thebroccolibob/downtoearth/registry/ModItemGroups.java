@@ -33,6 +33,11 @@ public class ModItemGroups {
                         entries.add(ModItems.WOODEN_HOE_HEAD);
                         entries.add(ModItems.WOODEN_SWORD_BLADE);
                         entries.add(ModItems.STONE_SMITHING_HAMMER_HEAD);
+                        entries.add(ModItems.STONE_SHOVEL_HEAD);
+                        entries.add(ModItems.STONE_PICKAXE_HEAD);
+                        entries.add(ModItems.STONE_AXE_HEAD);
+                        entries.add(ModItems.STONE_HOE_HEAD);
+                        entries.add(ModItems.STONE_SWORD_BLADE);
 
                         entries.add(ModItems.STONE_SMITHING_HAMMER);
                     })).build());

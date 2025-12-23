@@ -1,0 +1,13 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "reference": {
+    "item": "bobsmobgear:sword_template"
+  },
+  "result": {
+    "id": "downtoearth:stone_sword_blade",
+    "count": 1
+  }
+}
