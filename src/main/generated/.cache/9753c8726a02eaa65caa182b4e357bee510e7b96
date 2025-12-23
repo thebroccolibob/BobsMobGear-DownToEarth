@@ -1,8 +1,10 @@
-// 1.21.1	2025-12-22T00:12:50.7516064	Bob's Mob Gear: Down to Earth/Model Definitions
+// 1.21.1	2025-12-22T18:20:54.0475374	Bob's Mob Gear: Down to Earth/Model Definitions
 dd6fc3f14d4dc54a9522871b8185efb1423dc5b0 assets\downtoearth\models\item\wooden_pickaxe_head.json
 84701c56b7874ac5ed9bf7d3637fdefb17ef8cdd assets\downtoearth\models\block\leaf_fiber_bale.json
 1188c30a13e159caf99fae7fada2d6ea0c762b84 assets\downtoearth\blockstates\leaf_fiber_bale.json
+722eb4cbf49a291b03dfd9c46f95aa5f0b011138 assets\downtoearth\models\item\stone_smithing_hammer.json
 9fb3ff61d2b55df7dd5b4fc42469b87c29d1c42b assets\downtoearth\models\item\wooden_sword_blade.json
+eca96ab11307eef06cfe8d40b2c2b43653c80517 assets\downtoearth\models\item\stone_smithing_hammer_head.json
 36458d32e8310abcd774780411eb875291f1af8a assets\downtoearth\models\item\wooden_hoe_head.json
 a9261f62dac912b7218387f147bf913d70fb2f3b assets\downtoearth\models\item\leaf_fiber_bale.json
 703204daced55fbf4f15d3625e9fe4b320d9600f assets\downtoearth\models\item\flint_axe.json

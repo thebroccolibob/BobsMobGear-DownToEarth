@@ -25,8 +25,11 @@ public class ModItemGroups {
                         entries.add(ModItems.WOODEN_AXE_HEAD);
                         entries.add(ModItems.WOODEN_HOE_HEAD);
                         entries.add(ModItems.WOODEN_SWORD_BLADE);
+                        entries.add(ModItems.STONE_SMITHING_HAMMER_HEAD);
 
                         entries.add(ModItems.CLAY_INGOT_MOLD);
+
+                        entries.add(ModItems.STONE_SMITHING_HAMMER);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

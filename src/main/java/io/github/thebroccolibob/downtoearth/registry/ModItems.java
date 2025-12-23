@@ -1,13 +1,18 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
+import io.github.thebroccolibob.bobsmobgear.item.SmithingHammerItem;
 import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.item.FlintToolItem;
 import io.github.thebroccolibob.downtoearth.item.ModToolMaterials;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ToolComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
+import java.util.List;
 
 public class ModItems {
     public static final Item LEAF_FIBER = registerItem("leaf_fiber", new Item(new Item.Settings()));
@@ -17,8 +22,15 @@ public class ModItems {
     public static final Item WOODEN_PICKAXE_HEAD = registerItem("wooden_pickaxe_head", new Item(new Item.Settings()));
     public static final Item WOODEN_AXE_HEAD = registerItem("wooden_axe_head", new Item(new Item.Settings()));
     public static final Item WOODEN_HOE_HEAD = registerItem("wooden_hoe_head", new Item(new Item.Settings()));
+    public static final Item STONE_SMITHING_HAMMER_HEAD = registerItem("stone_smithing_hammer_head", new Item(new Item.Settings()));
 
     public static final Item CLAY_INGOT_MOLD = registerItem("clay_ingot_mold", new Item(new Item.Settings()));
+
+    public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
+            new SmithingHammerItem(new Item.Settings()
+                    .maxDamage(128)
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.STONE, 1, -3.2F))
+                    .component(DataComponentTypes.TOOL, new ToolComponent(List.of(), 1f, 2))));
 
     public static final Item FLINT_TOOL = registerItem("flint_tool",
             new FlintToolItem(ModToolMaterials.FLINT, new Item.Settings()

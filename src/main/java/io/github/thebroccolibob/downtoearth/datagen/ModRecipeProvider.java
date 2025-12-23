@@ -1,6 +1,5 @@
 package io.github.thebroccolibob.downtoearth.datagen;
 
-import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearItems;
 import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
 import io.github.thebroccolibob.downtoearth.registry.ModItems;
 
@@ -9,12 +8,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -49,6 +46,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('o', Items.CLAY_BALL)
                 .input('n', Items.BRICK)
                 .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STONE_SMITHING_HAMMER)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STONE_SMITHING_HAMMER_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_SMITHING_HAMMER_HEAD), conditionsFromItem(ModItems.STONE_SMITHING_HAMMER_HEAD))
                 .offerTo(recipeExporter);
     }
 }

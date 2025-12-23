@@ -4,10 +4,10 @@
     "item": "minecraft:stone"
   },
   "reference": {
-    "item": "minecraft:stone_pickaxe"
+    "item": "bobsmobgear:empty_template"
   },
   "result": {
-    "id": "minecraft:iron_pickaxe",
+    "id": "downtoearth:stone_smithing_hammer_head",
     "count": 1
   }
 }

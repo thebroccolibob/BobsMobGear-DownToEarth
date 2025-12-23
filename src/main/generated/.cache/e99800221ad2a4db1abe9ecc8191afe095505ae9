@@ -1,11 +1,13 @@
-// 1.21.1	2025-12-22T00:12:50.7496063	Bob's Mob Gear: Down to Earth/Recipes
+// 1.21.1	2025-12-22T18:20:54.0455383	Bob's Mob Gear: Down to Earth/Recipes
 0ddc12ccdb80075195731bc2c0bbdcf5ddf6e955 data\downtoearth\recipe\leaf_fiber.json
-fc1051403142506e01b5b68ad61ba28730446c2e data\downtoearth\recipe\flint_tool.json
-4092587114f17a3aada526875c475227dc8254d9 data\downtoearth\advancement\recipes\tools\flint_axe.json
 e99ac6d6b19c5f1e8be23281bae910021853fc98 data\downtoearth\advancement\recipes\misc\clay_ingot_mold.json
-6421a4225f4776a958cd2f52af44f0337b3d6aa6 data\downtoearth\advancement\recipes\misc\leaf_fiber_bale.json
-2f062f287de160dbf81d71255338056634896063 data\downtoearth\advancement\recipes\tools\flint_tool.json
+41017e71a97c0be46cc88b78e4b0af2deb9a46e4 data\downtoearth\recipe\stone_smithing_hammer.json
 a7bfffd5e7cdf2dcc33a8bb5abf37b6deff382f6 data\downtoearth\advancement\recipes\building_blocks\leaf_fiber.json
 868f116ecfc0dbdb8483a05f986a869cbd0345e9 data\downtoearth\recipe\leaf_fiber_bale.json
 244481121a267b5e61e29dfc4e8436923721fda9 data\downtoearth\recipe\flint_axe.json
+fc1051403142506e01b5b68ad61ba28730446c2e data\downtoearth\recipe\flint_tool.json
+4092587114f17a3aada526875c475227dc8254d9 data\downtoearth\advancement\recipes\tools\flint_axe.json
+2f062f287de160dbf81d71255338056634896063 data\downtoearth\advancement\recipes\tools\flint_tool.json
+6421a4225f4776a958cd2f52af44f0337b3d6aa6 data\downtoearth\advancement\recipes\misc\leaf_fiber_bale.json
 2c94f1d9daf59d4d586a4dcdf33a5e5a913aa14c data\downtoearth\recipe\clay_ingot_mold.json
+0c49ef4df39d1c12d752c1d5b5c6aa6fb6f4480d data\downtoearth\advancement\recipes\tools\stone_smithing_hammer.json

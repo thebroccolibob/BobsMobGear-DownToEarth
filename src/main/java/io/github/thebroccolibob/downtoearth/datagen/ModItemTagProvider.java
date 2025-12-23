@@ -1,8 +1,10 @@
 package io.github.thebroccolibob.downtoearth.datagen;
 
+import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearItemTags;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearItems;
 import io.github.thebroccolibob.downtoearth.registry.ModItemTags;
 
+import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
@@ -27,7 +29,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(BobsMobGearItems.DIAMOND_POT)
                 .add(BobsMobGearItems.DOUBLE_AXE_TEMPLATE)
                 .add(BobsMobGearItems.EMPTY_POT)
-                .add(BobsMobGearItems.EMPTY_TEMPLATE)
                 .add(BobsMobGearItems.FLESH_GLOVE)
                 .add(BobsMobGearItems.FORGE)
                 .add(BobsMobGearItems.FORGE_HEATER)
@@ -75,5 +76,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 Items.NETHERITE_SCRAP,
                 Items.NETHERITE_BLOCK
         );
+        getOrCreateTagBuilder(BobsMobGearItemTags.SMITHING_HAMMERS).add(ModItems.STONE_SMITHING_HAMMER);
     }
 }

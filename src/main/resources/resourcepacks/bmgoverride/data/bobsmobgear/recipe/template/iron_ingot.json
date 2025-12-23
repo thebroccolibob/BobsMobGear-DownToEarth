@@ -1,0 +1,16 @@
+{
+  "type": "bobsmobgear:template",
+  "fluid": {
+    "fluid": "bobsmobgear:iron"
+  },
+  "fluid_amount": 9000,
+  "requires_hammer": false,
+  "delay": 100,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "minecraft:iron_ingot"
+  },
+  "template": "bobsmobgear:empty_template"
+}
