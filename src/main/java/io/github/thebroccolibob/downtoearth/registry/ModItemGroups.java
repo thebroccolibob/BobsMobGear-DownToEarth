@@ -49,6 +49,7 @@ public class ModItemGroups {
                     .entries(((displayContext, entries) -> {
                         entries.add(ModBlocks.LEAF_FIBER_BALE);
                         entries.add(ModBlocks.STONE_ANVIL);
+                        entries.add(ModBlocks.FLINT);
                     })).build());
 
     public static void registerItemGroups() {
