@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -26,6 +27,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.LEAF_FIBER_BALE);
+        addDrop(ModBlocks.FLINT, Items.FLINT);
     }
 
     public LootTable.Builder multiOreDrop(Block drop, Item item, float minDrops, float maxDrops) {
