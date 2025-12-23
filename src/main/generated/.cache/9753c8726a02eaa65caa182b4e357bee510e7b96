@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-22T21:53:08.107078	Bob's Mob Gear: Down to Earth/Model Definitions
+// 1.21.1	2025-12-22T23:25:41.090554	Bob's Mob Gear: Down to Earth/Model Definitions
 1188c30a13e159caf99fae7fada2d6ea0c762b84 assets\downtoearth\blockstates\leaf_fiber_bale.json
 722eb4cbf49a291b03dfd9c46f95aa5f0b011138 assets\downtoearth\models\item\stone_smithing_hammer.json
 9fb3ff61d2b55df7dd5b4fc42469b87c29d1c42b assets\downtoearth\models\item\wooden_sword_blade.json
@@ -11,11 +11,11 @@ e2b8a59635f01479e9fe04f09cad8c517664bff3 assets\downtoearth\models\block\hammera
 3c4f7a61468ee7baea2180e6c9dc9479e229c0d1 assets\downtoearth\models\item\stone_pickaxe_head.json
 dd6fc3f14d4dc54a9522871b8185efb1423dc5b0 assets\downtoearth\models\item\wooden_pickaxe_head.json
 84701c56b7874ac5ed9bf7d3637fdefb17ef8cdd assets\downtoearth\models\block\leaf_fiber_bale.json
-eca96ab11307eef06cfe8d40b2c2b43653c80517 assets\downtoearth\models\item\stone_smithing_hammer_head.json
 dbbe041b53d352e078590b529656c315c9e049a3 assets\downtoearth\models\item\stone_axe_head.json
+eca96ab11307eef06cfe8d40b2c2b43653c80517 assets\downtoearth\models\item\stone_smithing_hammer_head.json
 a9261f62dac912b7218387f147bf913d70fb2f3b assets\downtoearth\models\item\leaf_fiber_bale.json
-703204daced55fbf4f15d3625e9fe4b320d9600f assets\downtoearth\models\item\flint_axe.json
 abcee696cab7fa6e0d6c3890c72e9ab13284cbf9 assets\downtoearth\models\item\wooden_axe_head.json
+703204daced55fbf4f15d3625e9fe4b320d9600f assets\downtoearth\models\item\flint_axe.json
 68c96a8df1a70b3f38b3787c470f4a23016ed324 assets\downtoearth\models\item\wooden_shovel_head.json
 a92a440424fe8eccd34c428a4413252995542f24 assets\downtoearth\models\item\clay_axe_head_mold.json
 16433aa57861b06557b483435ab095a980d149d3 assets\downtoearth\models\item\clay_ingot_mold.json

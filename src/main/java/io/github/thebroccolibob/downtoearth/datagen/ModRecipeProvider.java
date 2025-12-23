@@ -144,6 +144,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STONE_SWORD_BLADE), conditionsFromItem(ModItems.STONE_SWORD_BLADE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STONE_ANVIL)
+                .pattern("nnn")
+                .pattern(" - ")
+                .pattern("---")
+                .input('n', Items.STONE)
+                .input('-', Items.STONE_SLAB)
+                .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
+                .offerTo(recipeExporter);
+
         List<ItemConvertible> SWORD_BLADE_SMELT = List.of(ModItems.CLAY_SWORD_BLADE_MOLD);
         offerSmelting(recipeExporter, SWORD_BLADE_SMELT, RecipeCategory.MISC, BobsMobGearItems.SWORD_TEMPLATE, 0f, 200, "sword_template");
 

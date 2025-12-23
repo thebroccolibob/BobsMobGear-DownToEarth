@@ -15,8 +15,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.STONE_ANVIL);
+
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.LEAF_FIBER_BALE);
+
+        getOrCreateTagBuilder(BlockTags.ANVIL)
+                .add(ModBlocks.STONE_ANVIL);
 
         getOrCreateTagBuilder(BlockTags.DAMPENS_VIBRATIONS)
                 .add(ModBlocks.LEAF_FIBER_BALE);

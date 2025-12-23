@@ -1,4 +1,6 @@
-// 1.21.1	2025-12-22T21:53:08.1050731	Bob's Mob Gear: Down to Earth/Tags for minecraft:block
+// 1.21.1	2025-12-22T23:25:41.0883991	Bob's Mob Gear: Down to Earth/Tags for minecraft:block
 7a707676e5f5a24198cc37cef62f2f81e5b8f2a9 data\minecraft\tags\block\mineable\hoe.json
+83df287cfa130ddc616686327a7f9a004e19d8d9 data\minecraft\tags\block\anvil.json
+83df287cfa130ddc616686327a7f9a004e19d8d9 data\minecraft\tags\block\mineable\pickaxe.json
 7a707676e5f5a24198cc37cef62f2f81e5b8f2a9 data\minecraft\tags\block\occludes_vibration_signals.json
 7a707676e5f5a24198cc37cef62f2f81e5b8f2a9 data\minecraft\tags\block\dampens_vibrations.json

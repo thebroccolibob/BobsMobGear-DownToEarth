@@ -48,6 +48,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.downtoearth.bobs_mob_gear_blocks"))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModBlocks.LEAF_FIBER_BALE);
+                        entries.add(ModBlocks.STONE_ANVIL);
                     })).build());
 
     public static void registerItemGroups() {

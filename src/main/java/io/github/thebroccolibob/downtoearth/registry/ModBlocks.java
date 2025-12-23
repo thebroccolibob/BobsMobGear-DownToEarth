@@ -3,6 +3,7 @@ package io.github.thebroccolibob.downtoearth.registry;
 import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
 
+import io.github.thebroccolibob.downtoearth.block.StoneAnvilBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -25,6 +26,12 @@ public class ModBlocks {
                     .strength(0.5f)
                     .sounds(BlockSoundGroup.WOOL)
             ));
+
+    public static final Block STONE_ANVIL = registerBlockWithItem("stone_anvil",
+            new StoneAnvilBlock(AbstractBlock.Settings.create()
+                    .strength(2.0F)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
 
     public static final Block HAMMERABLE_ITEM = registerBlock("hammerable_item",
             new HammerableItemBlock(AbstractBlock.Settings.create()

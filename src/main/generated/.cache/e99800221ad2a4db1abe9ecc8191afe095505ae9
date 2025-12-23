@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-22T21:53:08.103559	Bob's Mob Gear: Down to Earth/Recipes
+// 1.21.1	2025-12-22T23:25:41.0873989	Bob's Mob Gear: Down to Earth/Recipes
 e99ac6d6b19c5f1e8be23281bae910021853fc98 data\downtoearth\advancement\recipes\misc\clay_ingot_mold.json
 661d89b2d2b1072e1169a41d79f031b37409f082 data\downtoearth\recipe\shovel_template_from_smelting_clay_shovel_head_mold.json
 0a3a5cf92dad55038699816ee14c5b42c9eb5eea data\downtoearth\advancement\recipes\misc\clay_hoe_head_mold.json
@@ -15,6 +15,7 @@ a7bfffd5e7cdf2dcc33a8bb5abf37b6deff382f6 data\downtoearth\advancement\recipes\bu
 e033907163f77239b2e475085db7cd26fb72a332 data\downtoearth\recipe\stone_hoe.json
 4092587114f17a3aada526875c475227dc8254d9 data\downtoearth\advancement\recipes\tools\flint_axe.json
 fc1051403142506e01b5b68ad61ba28730446c2e data\downtoearth\recipe\flint_tool.json
+26dc4b042f381c5922191d5d48c13ca7162ba2fe data\downtoearth\recipe\stone_anvil.json
 2c94f1d9daf59d4d586a4dcdf33a5e5a913aa14c data\downtoearth\recipe\clay_ingot_mold.json
 0c49ef4df39d1c12d752c1d5b5c6aa6fb6f4480d data\downtoearth\advancement\recipes\tools\stone_smithing_hammer.json
 8e49a79a7a399bcb309d1f8f8fed562b090b696e data\downtoearth\advancement\recipes\misc\clay_pickaxe_head_mold.json
@@ -26,6 +27,7 @@ a032dfa96e056b463ef636735c5fca8514de8d7e data\downtoearth\advancement\recipes\to
 56496d198d0e9a818fab6765f2988aea07eeb58e data\downtoearth\advancement\recipes\tools\stone_hoe.json
 ea4f24a65683c3e8002719c88d386a4bd13d2dd6 data\downtoearth\recipe\hoe_template_from_smelting_clay_hoe_head_mold.json
 5412e4106e8f2f7ab134e8a031ea1ebb85e9638b data\downtoearth\advancement\recipes\misc\shovel_template_from_smelting_clay_shovel_head_mold.json
+b84c07064be49d8b196aeb684a3cde645e77f19d data\downtoearth\advancement\recipes\misc\stone_anvil.json
 868f116ecfc0dbdb8483a05f986a869cbd0345e9 data\downtoearth\recipe\leaf_fiber_bale.json
 03307270241281a94453729a556a4711b2808044 data\downtoearth\recipe\clay_hoe_head_mold.json
 13a3912eda7a65aa96c4e651bea2ef2cbc54fcbc data\downtoearth\recipe\stone_pickaxe.json

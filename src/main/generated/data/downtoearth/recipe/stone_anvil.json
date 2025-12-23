@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "-": {
+      "item": "minecraft:stone_slab"
+    },
+    "n": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "nnn",
+    " - ",
+    "---"
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:stone_anvil"
+  }
+}
