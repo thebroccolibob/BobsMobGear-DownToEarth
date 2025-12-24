@@ -24,7 +24,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.LEAF_FIBER, RecipeCategory.MISC, ModBlocks.LEAF_FIBER_BALE);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.LEAF_FIBER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAF_FIBER_BALE);
+        offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.COAL, ModItems.COAL_PIECE);
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_COPPER, ModItems.RAW_COPPER_NUGGET);
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, ModItems.RAW_TIN, ModItems.RAW_TIN_NUGGET);
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_IRON, ModItems.RAW_IRON_NUGGET);
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_GOLD, ModItems.RAW_GOLD_NUGGET);
+        offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.LAPIS_LAZULI, ModItems.LAPIS_LAZULI_PIECE);
+        offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.EMERALD, ModItems.EMERALD_SHARD);
+        offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.DIAMOND, ModItems.DIAMOND_SHARD);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHERITE_SCRAP)
+                .pattern("-o-")
+                .input('-', ModItems.ANCIENT_DEBRIS_FRAGMENT)
+                .input('o', Items.FIRE_CHARGE)
+                .criterion(hasItem(ModItems.ANCIENT_DEBRIS_FRAGMENT), conditionsFromItem(ModItems.ANCIENT_DEBRIS_FRAGMENT))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_TOOL)
                 .pattern("^")

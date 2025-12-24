@@ -45,6 +45,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CLAY_AXE_HEAD_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_HOE_HEAD_MOLD, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.COAL_PIECE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_COPPER_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_TIN_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_TIN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_IRON_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_GOLD_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAPIS_LAZULI_PIECE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERALD_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENT_DEBRIS_FRAGMENT, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_SMITHING_HAMMER, Models.HANDHELD);
     }

@@ -40,6 +40,17 @@ public class ModItemGroups {
                         entries.add(ModItems.STONE_SWORD_BLADE);
 
                         entries.add(ModItems.STONE_SMITHING_HAMMER);
+
+                        entries.add(ModItems.COAL_PIECE);
+                        entries.add(ModItems.RAW_COPPER_NUGGET);
+                        entries.add(ModItems.RAW_TIN_NUGGET);
+                        entries.add(ModItems.RAW_TIN);
+                        entries.add(ModItems.RAW_IRON_NUGGET);
+                        entries.add(ModItems.RAW_GOLD_NUGGET);
+                        entries.add(ModItems.LAPIS_LAZULI_PIECE);
+                        entries.add(ModItems.EMERALD_SHARD);
+                        entries.add(ModItems.DIAMOND_SHARD);
+                        entries.add(ModItems.ANCIENT_DEBRIS_FRAGMENT);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

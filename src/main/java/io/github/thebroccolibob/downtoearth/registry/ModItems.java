@@ -36,6 +36,17 @@ public class ModItems {
     public static final Item CLAY_AXE_HEAD_MOLD = registerItem("clay_axe_head_mold", new Item(new Item.Settings()));
     public static final Item CLAY_HOE_HEAD_MOLD = registerItem("clay_hoe_head_mold", new Item(new Item.Settings()));
 
+    public static final Item COAL_PIECE = registerItem("coal_piece", new Item(new Item.Settings()));
+    public static final Item RAW_COPPER_NUGGET = registerItem("raw_copper_nugget", new Item(new Item.Settings()));
+    public static final Item RAW_TIN_NUGGET = registerItem("raw_tin_nugget", new Item(new Item.Settings()));
+    public static final Item RAW_TIN = registerItem("raw_tin", new Item(new Item.Settings()));
+    public static final Item RAW_IRON_NUGGET = registerItem("raw_iron_nugget", new Item(new Item.Settings()));
+    public static final Item RAW_GOLD_NUGGET = registerItem("raw_gold_nugget", new Item(new Item.Settings()));
+    public static final Item LAPIS_LAZULI_PIECE = registerItem("lapis_lazuli_piece", new Item(new Item.Settings()));
+    public static final Item EMERALD_SHARD = registerItem("emerald_shard", new Item(new Item.Settings()));
+    public static final Item DIAMOND_SHARD = registerItem("diamond_shard", new Item(new Item.Settings()));
+    public static final Item ANCIENT_DEBRIS_FRAGMENT = registerItem("ancient_debris_fragment", new Item(new Item.Settings()));
+
     public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
             new SmithingHammerItem(new Item.Settings()
                     .maxDamage(128)

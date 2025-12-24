@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lapis_lazuli_piece": {
+      "conditions": {
+        "items": [
+          {
+            "items": "downtoearth:lapis_lazuli_piece"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "downtoearth:lapis_lazuli"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lapis_lazuli_piece"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "downtoearth:lapis_lazuli"
+    ]
+  }
+}

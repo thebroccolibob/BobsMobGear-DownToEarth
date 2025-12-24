@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    },
+    {
+      "item": "downtoearth:raw_tin_nugget"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:raw_tin"
+  }
+}
