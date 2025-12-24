@@ -68,8 +68,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.EMERALD_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANCIENT_DEBRIS_FRAGMENT, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.TIN_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_MIX, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_SMITHING_HAMMER, Models.HANDHELD);

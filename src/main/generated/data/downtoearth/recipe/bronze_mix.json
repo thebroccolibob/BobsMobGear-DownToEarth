@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "downtoearth:raw_tin"
+    },
+    {
+      "item": "downtoearth:raw_tin"
+    },
+    {
+      "item": "downtoearth:raw_tin"
+    },
+    {
+      "item": "downtoearth:raw_tin"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:bronze_mix"
+  }
+}

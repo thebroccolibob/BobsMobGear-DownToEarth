@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-24T03:13:40.4197721	Bob's Mob Gear: Down to Earth/Recipes
+// 1.21.1	2025-12-24T03:46:02.4955159	Bob's Mob Gear: Down to Earth/Recipes
 3a68a302151d4438d1c738cad992e093507e7ed6 data\downtoearth\recipe\chiseled_tin.json
 fa5435e7c6c28ed2ff55fc32b5ca998438c7ce5b data\downtoearth\advancement\recipes\misc\diamond.json
 07d7e5ae368b4e17d20949fdf42c4f53393c8f68 data\downtoearth\advancement\recipes\building_blocks\cut_tin.json
@@ -39,6 +39,7 @@ a5c8dcaa1750f433d74ddcba844424ca44f2419f data\downtoearth\recipe\leaf_fiber.json
 ea4f24a65683c3e8002719c88d386a4bd13d2dd6 data\downtoearth\recipe\hoe_template_from_smelting_clay_hoe_head_mold.json
 f992cecd75f8f2d29001d6a9157f61a4f73222c8 data\downtoearth\advancement\recipes\redstone\tin_bulb.json
 5412e4106e8f2f7ab134e8a031ea1ebb85e9638b data\downtoearth\advancement\recipes\misc\shovel_template_from_smelting_clay_shovel_head_mold.json
+e564d5afb18d0e41963320430cee5a23752d528b data\downtoearth\advancement\recipes\misc\bronze_mix.json
 41b6f7ce4773089d1ee0d769b7fbb79bb6ffbb67 data\downtoearth\recipe\leaf_fiber_bale.json
 6421a4225f4776a958cd2f52af44f0337b3d6aa6 data\downtoearth\advancement\recipes\building_blocks\leaf_fiber_bale.json
 8d23e38fa43f5914151a96c40cf7cbc6c074bd49 data\downtoearth\recipe\stone_axe.json
@@ -47,6 +48,7 @@ f992cecd75f8f2d29001d6a9157f61a4f73222c8 data\downtoearth\advancement\recipes\re
 4121a692feaf542dd29004b4b2b11b3f899793da data\downtoearth\recipe\tin_grate.json
 55171a97d13977a13f632299471f2fa0900d8419 data\downtoearth\advancement\recipes\building_blocks\cut_tin_slab.json
 3f7632b733d0575babfcb97458b0bf3b38594476 data\downtoearth\advancement\recipes\building_blocks\tin_grate_stonecutting.json
+4121a72b4ca3f60797b9613d7dca9bc335634612 data\downtoearth\recipe\bronze_mix.json
 9148a0d1e2a37c6249b89bd527c5c24d5ce477f5 data\downtoearth\recipe\tin_bulb.json
 587cce2562e5a173e4ee820ff1dbec7c46e8f91a data\downtoearth\recipe\stone_shovel.json
 661d89b2d2b1072e1169a41d79f031b37409f082 data\downtoearth\recipe\shovel_template_from_smelting_clay_shovel_head_mold.json

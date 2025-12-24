@@ -53,6 +53,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ANCIENT_DEBRIS_FRAGMENT);
 
                         entries.add(ModItems.TIN_INGOT);
+                        entries.add(ModItems.BRONZE_MIX);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

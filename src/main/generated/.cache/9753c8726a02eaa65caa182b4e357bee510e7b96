@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-24T03:13:40.4227869	Bob's Mob Gear: Down to Earth/Model Definitions
+// 1.21.1	2025-12-24T03:46:02.4985173	Bob's Mob Gear: Down to Earth/Model Definitions
 67a2c612c9e12319325f2eb8d6f703c887551d7a assets\downtoearth\models\item\diamond_shard.json
 7daef6bbb02875234fd58146649dba4bc7ef53fb assets\downtoearth\blockstates\tin_grate.json
 ad7113f5cd7789976973bd83936cb2b96cefc2f1 assets\downtoearth\models\block\tin_door_bottom_left.json
@@ -9,11 +9,11 @@ af7052fc95aa77770da4636e199c282e3de35391 assets\downtoearth\models\block\tin_bul
 db7f55ecc3cf80f99012776167c4d73d31c82b65 assets\downtoearth\models\item\cut_tin_slab.json
 f22aeed2af9924cf1d69750d4bb6e4868bb4c5d2 assets\downtoearth\blockstates\tin_bulb.json
 425da292689a89732f7922ce6493ce4db2bacb80 assets\downtoearth\models\block\tin_door_top_right_open.json
-36657f6042a715b4be6bd07c483490edec4a2f0b assets\downtoearth\models\block\cut_tin_stairs.json
 e14f176f51f54693538ed02a4eea346d1143baef assets\downtoearth\models\block\tin_door_bottom_right.json
+36657f6042a715b4be6bd07c483490edec4a2f0b assets\downtoearth\models\block\cut_tin_stairs.json
 a13ce1a58274467419d17de3c1243484c0449fd8 assets\downtoearth\models\item\tin_ore.json
-d1224439539f1b6020961c248374f50553e5f72f assets\downtoearth\models\item\emerald_shard.json
 9d8c9185ce1f8b10882f805b559126395dedef27 assets\downtoearth\models\block\tin_door_top_left.json
+d1224439539f1b6020961c248374f50553e5f72f assets\downtoearth\models\item\emerald_shard.json
 7481b7cc11d4896a15da5872b6d4bcaf22f2bac7 assets\downtoearth\models\item\tin_ingot.json
 06b5318b6a3b19294c7f97f704928e6cbd1dbbf9 assets\downtoearth\models\item\tin_door.json
 a06732867c88b3d4243c5691389fce4792a5f482 assets\downtoearth\blockstates\raw_tin_block.json
@@ -25,8 +25,8 @@ e2b8a59635f01479e9fe04f09cad8c517664bff3 assets\downtoearth\models\block\hammera
 3834609af24b6a13c0ea9fc76b6f2c9d10bee174 assets\downtoearth\models\block\chiseled_tin.json
 531fec0424f288e820f3967a3e0534b7e5b6f567 assets\downtoearth\models\item\clay_hoe_head_mold.json
 7b339a84fd07080933b9c2a1ed85edd142b97795 assets\downtoearth\models\item\clay_shovel_head_mold.json
-3c4f7a61468ee7baea2180e6c9dc9479e229c0d1 assets\downtoearth\models\item\stone_pickaxe_head.json
 a303a5ffc9ecda80d756096f740af194ad9fc098 assets\downtoearth\models\block\tin_ore.json
+3c4f7a61468ee7baea2180e6c9dc9479e229c0d1 assets\downtoearth\models\item\stone_pickaxe_head.json
 9ec6078f5528747c0905819a3f48c8f5dabee68a assets\downtoearth\blockstates\tin_trapdoor.json
 c4ea4964942644d3fe5a33273208d7b154b75f67 assets\downtoearth\models\block\tin_door_bottom_left_open.json
 81b460f27887098e5728bc92af56661585d12428 assets\downtoearth\models\block\cut_tin_stairs_inner.json
@@ -69,10 +69,11 @@ dc451e9fbe76b94adf190c5da602c1776190e455 assets\downtoearth\models\item\tin_bulb
 9f2c38874619acfbc5167ec4d49c782c13167ff9 assets\downtoearth\models\item\raw_iron_nugget.json
 9c9e54213a3ec69f5062790e01b9efb4b397d5d0 assets\downtoearth\models\block\tin_trapdoor_bottom.json
 a48134fd13646469bc0efde913551ef30f45a40c assets\downtoearth\models\block\tin_block.json
+d6bd85dafdc44dc8fe32c542c09074f8b015ccb1 assets\downtoearth\models\item\bronze_mix.json
 ebf60279a5f37b5672668c57275e2c24dfc410b2 assets\downtoearth\models\block\tin_door_top_right.json
 3fc41102ee09a6234ae96e4a72d8249135e73c0a assets\downtoearth\models\block\raw_tin_block.json
-4f0bfbb19d9102b150200c2ce48ff1b2581d6c24 assets\downtoearth\models\item\ancient_debris_fragment.json
 182f3ae02d1f8f157e318fd52f0e6ff9d6fe8bad assets\downtoearth\models\item\raw_tin_nugget.json
+4f0bfbb19d9102b150200c2ce48ff1b2581d6c24 assets\downtoearth\models\item\ancient_debris_fragment.json
 efd090889c7a656bb7a67b92722d881334f87869 assets\downtoearth\models\item\tin_trapdoor.json
 0b6109746e6cfbc9e7f647c15f1420c13b3cd646 assets\downtoearth\models\item\tin_grate.json
 398b5a9d00028d9c70222ed63d9d92230048c16b assets\downtoearth\models\block\cut_tin_stairs_outer.json

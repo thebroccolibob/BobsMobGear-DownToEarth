@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.StonecuttingRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -71,6 +72,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.TIN_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.TIN_GRATE)
                 .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
                 .offerTo(recipeExporter, "downtoearth:tin_grate_stonecutting");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BRONZE_MIX)
+                .input(ModItems.RAW_TIN)
+                .input(ModItems.RAW_TIN)
+                .input(ModItems.RAW_TIN)
+                .input(ModItems.RAW_TIN)
+                .input(Items.RAW_COPPER)
+                .input(Items.RAW_COPPER)
+                .input(Items.RAW_COPPER)
+                .input(Items.RAW_COPPER)
+                .criterion(hasItem(ModItems.RAW_TIN), conditionsFromItem(ModItems.RAW_TIN))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN, 4)
                 .pattern("nn")

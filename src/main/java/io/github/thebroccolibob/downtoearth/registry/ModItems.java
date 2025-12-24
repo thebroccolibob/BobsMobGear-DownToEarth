@@ -47,6 +47,8 @@ public class ModItems {
     public static final Item DIAMOND_SHARD = registerItem("diamond_shard", new Item(new Item.Settings()));
     public static final Item ANCIENT_DEBRIS_FRAGMENT = registerItem("ancient_debris_fragment", new Item(new Item.Settings()));
 
+    public static final Item BRONZE_MIX = registerItem("bronze_mix", new Item(new Item.Settings()));
+
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
 
     public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
