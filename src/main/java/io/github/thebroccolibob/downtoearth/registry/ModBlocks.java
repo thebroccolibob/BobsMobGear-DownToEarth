@@ -9,9 +9,12 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -44,7 +47,14 @@ public class ModBlocks {
                     .strength(3.0F, 3.0F)
                     .sounds(BlockSoundGroup.STONE)
                     .pistonBehavior(PistonBehavior.BLOCK)));
-
+    public static final Block RAW_TIN_BLOCK = registerBlockWithItem("raw_tin_block",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.GOLD)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(3.0F, 3.0F)
+                    .sounds(BlockSoundGroup.STONE)
+                    .pistonBehavior(PistonBehavior.BLOCK)));
     public static final Block DEEPSLATE_TIN_ORE = registerBlockWithItem("deepslate_tin_ore",
             new ExperienceDroppingBlock(ConstantIntProvider.create(0), AbstractBlock.Settings.create()
                     .mapColor(MapColor.DEEPSLATE_GRAY)
@@ -54,13 +64,31 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE)
                     .pistonBehavior(PistonBehavior.BLOCK)));
 
+    public static final Block TIN_BLOCK = registerBlockWithItem("tin_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.COPPER_BLOCK).mapColor(MapColor.GOLD)));
+    public static final Block CUT_TIN = registerBlockWithItem("cut_tin",
+            new Block(AbstractBlock.Settings.copy(Blocks.COPPER_BLOCK).mapColor(MapColor.GOLD)));
+    public static final Block CUT_TIN_STAIRS = registerBlockWithItem("cut_tin_stairs",
+            new StairsBlock(ModBlocks.CUT_TIN.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.COPPER_BLOCK).mapColor(MapColor.GOLD)));
+    public static final Block CUT_TIN_SLAB = registerBlockWithItem("cut_tin_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.COPPER_BLOCK).mapColor(MapColor.GOLD)));
+    public static final Block CHISELED_TIN = registerBlockWithItem("chiseled_tin",
+            new Block(AbstractBlock.Settings.copy(Blocks.COPPER_BLOCK).mapColor(MapColor.GOLD)));
+    public static final Block TIN_GRATE = registerBlockWithItem("tin_grate",
+            new GrateBlock(AbstractBlock.Settings.copy(Blocks.COPPER_GRATE).mapColor(MapColor.GOLD)));
+    public static final Block TIN_DOOR = registerBlockWithItem("tin_door",
+            new DoorBlock(BlockSetType.COPPER, AbstractBlock.Settings.copy(Blocks.COPPER_DOOR).mapColor(MapColor.GOLD)));
+    public static final Block TIN_TRAPDOOR = registerBlockWithItem("tin_trapdoor",
+            new TrapdoorBlock(BlockSetType.COPPER, AbstractBlock.Settings.copy(Blocks.COPPER_TRAPDOOR).mapColor(MapColor.GOLD)));
+    public static final Block TIN_BULB = registerBlockWithItem("tin_bulb",
+            new BulbBlock(AbstractBlock.Settings.copy(Blocks.COPPER_BULB).mapColor(MapColor.GOLD)));
+
     public static final Block FLINT = registerBlockWithItem("flint",
             new FlintBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.STONE_GRAY)
                     .pistonBehavior(PistonBehavior.DESTROY)
                     .breakInstantly()));
-
-
 
     public static final Block HAMMERABLE_ITEM = registerBlock("hammerable_item",
             new HammerableItemBlock(AbstractBlock.Settings.create()

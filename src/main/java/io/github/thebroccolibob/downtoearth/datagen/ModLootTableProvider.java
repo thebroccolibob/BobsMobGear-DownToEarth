@@ -29,6 +29,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.LEAF_FIBER_BALE);
         addDrop(ModBlocks.FLINT, Items.FLINT);
+        addDrop(ModBlocks.TIN_BLOCK);
+        addDrop(ModBlocks.CUT_TIN);
+        addDrop(ModBlocks.CUT_TIN_SLAB, slabDrops(ModBlocks.CUT_TIN_SLAB));
+        addDrop(ModBlocks.TIN_DOOR, doorDrops(ModBlocks.TIN_DOOR));
+        addDrop(ModBlocks.TIN_TRAPDOOR);
+        addDrop(ModBlocks.TIN_BLOCK);
+        addDrop(ModBlocks.CHISELED_TIN);
+        addDrop(ModBlocks.CUT_TIN_STAIRS);
+        addDrop(ModBlocks.TIN_BULB);
+        addDrop(ModBlocks.RAW_TIN_BLOCK);
 
         addDrop(ModBlocks.TIN_ORE, multiOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_TIN_NUGGET,1f, 8f));
         addDrop(ModBlocks.DEEPSLATE_TIN_ORE, multiOreDrop(ModBlocks.DEEPSLATE_TIN_ORE, ModItems.RAW_TIN,2f, 3f));

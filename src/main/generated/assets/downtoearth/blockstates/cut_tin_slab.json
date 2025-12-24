@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "downtoearth:block/cut_tin_slab"
+    },
+    "type=double": {
+      "model": "downtoearth:block/cut_tin"
+    },
+    "type=top": {
+      "model": "downtoearth:block/cut_tin_slab_top"
+    }
+  }
+}

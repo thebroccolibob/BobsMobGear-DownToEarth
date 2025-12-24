@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "downtoearth:raw_tin_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "downtoearth:raw_tin"
+  }
+}

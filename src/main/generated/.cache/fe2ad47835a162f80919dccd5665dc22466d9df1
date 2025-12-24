@@ -1,5 +1,14 @@
-// 1.21.1	2025-12-23T22:18:32.7886024	Bob's Mob Gear: Down to Earth/Block Loot Tables
+// 1.21.1	2025-12-24T02:06:56.3696644	Bob's Mob Gear: Down to Earth/Block Loot Tables
+a6d86ea04a65c12d31b41bf00a3724daab0c041d data\downtoearth\loot_table\blocks\raw_tin_block.json
+53b24c807f81ab498684435ead233bcb0392061c data\downtoearth\loot_table\blocks\tin_door.json
+2a3520b54a3192771cd3b7de54d5dde552a28a2b data\downtoearth\loot_table\blocks\tin_trapdoor.json
 db3517f33f4a986c338bfd80cba560ed2b6f96b8 data\downtoearth\loot_table\blocks\flint.json
+a8192935283d8459ef20d7b96a7225358e501b54 data\downtoearth\loot_table\blocks\cut_tin_stairs.json
 06f64a963563fee9a3148b76cd03f60873409d39 data\downtoearth\loot_table\blocks\deepslate_tin_ore.json
+47d1b659dbeafb4ff1f0ed4978563bd2772c7e6e data\downtoearth\loot_table\blocks\tin_block.json
 71c37a73e138b6326b493ac90459e88b047c1c87 data\downtoearth\loot_table\blocks\tin_ore.json
+90d62285463e4b9d7eb3a34eea4ba5868db8b088 data\downtoearth\loot_table\blocks\chiseled_tin.json
+ae0700a11f0405ee739882bcc038ae4228dbda33 data\downtoearth\loot_table\blocks\cut_tin.json
 28a12ebaa941bdbf5208e8bbea18d7a85a2288eb data\downtoearth\loot_table\blocks\leaf_fiber_bale.json
+221374cf36e5709f0e6170ae217e16ecc184b8ca data\downtoearth\loot_table\blocks\cut_tin_slab.json
+1464c61c81cc4563fe2775ebd65813b5f9dd73e3 data\downtoearth\loot_table\blocks\tin_bulb.json

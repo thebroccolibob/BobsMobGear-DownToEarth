@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "downtoearth:tin_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "downtoearth:tin_grate"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "n": {
+      "item": "downtoearth:tin_block"
+    }
+  },
+  "pattern": [
+    "nn",
+    "nn"
+  ],
+  "result": {
+    "count": 4,
+    "id": "downtoearth:cut_tin"
+  }
+}

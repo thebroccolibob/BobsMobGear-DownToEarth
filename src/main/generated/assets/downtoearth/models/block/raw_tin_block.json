@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "downtoearth:block/raw_tin_block"
+  }
+}

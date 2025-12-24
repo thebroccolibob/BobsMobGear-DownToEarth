@@ -9,8 +9,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.StonecuttingRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -25,14 +27,57 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter recipeExporter) {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.LEAF_FIBER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAF_FIBER_BALE);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.TIN_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TIN_BLOCK);
+
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.COAL, ModItems.COAL_PIECE);
-        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_COPPER, ModItems.RAW_COPPER_NUGGET);
-        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, ModItems.RAW_TIN, ModItems.RAW_TIN_NUGGET);
-        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_IRON, ModItems.RAW_IRON_NUGGET);
-        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_GOLD, ModItems.RAW_GOLD_NUGGET);
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.LAPIS_LAZULI, ModItems.LAPIS_LAZULI_PIECE);
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.EMERALD, ModItems.EMERALD_SHARD);
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.DIAMOND, ModItems.DIAMOND_SHARD);
+
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_COPPER, ModItems.RAW_COPPER_NUGGET);
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.RAW_IRON, ModItems.RAW_IRON_NUGGET);
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, ModItems.RAW_TIN, ModItems.RAW_TIN_NUGGET);
+        offerCompactingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.RAW_TIN_BLOCK, ModItems.RAW_TIN);
+
+        offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN_SLAB, ModBlocks.CUT_TIN);
+        offerGrateRecipe(recipeExporter, ModBlocks.TIN_GRATE, ModBlocks.TIN_BLOCK);
+        offerChiseledBlockRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_TIN, ModBlocks.CUT_TIN_SLAB);
+        offerBulbRecipe(recipeExporter, ModBlocks.TIN_BULB, ModBlocks.TIN_BLOCK);
+
+        createDoorRecipe(ModBlocks.TIN_DOOR, Ingredient.ofItems(ModItems.TIN_INGOT))
+                .criterion(hasItem(ModItems.TIN_INGOT), conditionsFromItem(ModItems.TIN_INGOT))
+                .offerTo(recipeExporter);
+
+        createTrapdoorRecipe(ModBlocks.TIN_TRAPDOOR, Ingredient.ofItems(ModItems.TIN_INGOT))
+                .criterion(hasItem(ModItems.TIN_INGOT), conditionsFromItem(ModItems.TIN_INGOT))
+                .offerTo(recipeExporter);
+
+        createStairsRecipe(ModBlocks.CUT_TIN_STAIRS, Ingredient.ofItems(ModBlocks.CUT_TIN))
+                .criterion(hasItem(ModBlocks.CUT_TIN), conditionsFromItem(ModBlocks.CUT_TIN))
+                .offerTo(recipeExporter);
+
+        StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.TIN_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN)
+                .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
+                .offerTo(recipeExporter);
+        StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.TIN_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN_STAIRS)
+                .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
+                .offerTo(recipeExporter, "downtoearth:cut_tin_stairs_stonecutting");
+        StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.TIN_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN_SLAB)
+                .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
+                .offerTo(recipeExporter, "downtoearth:cut_tin_slab_stonecutting");
+        StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.TIN_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_TIN)
+                .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
+                .offerTo(recipeExporter, "downtoearth:chiseled_tin_stonecutting");
+        StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.TIN_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.TIN_GRATE)
+                .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
+                .offerTo(recipeExporter, "downtoearth:tin_grate_stonecutting");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN, 4)
+                .pattern("nn")
+                .pattern("nn")
+                .input('n', ModBlocks.TIN_BLOCK)
+                .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
+                .offerTo(recipeExporter, "downtoearth:cut_tin_compact");
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHERITE_SCRAP)
                 .pattern("-o-")
@@ -186,4 +231,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         List<ItemConvertible> TIN_SMELT = List.of(ModItems.RAW_TIN, ModBlocks.TIN_ORE, ModBlocks.DEEPSLATE_TIN_ORE);
         offerBlasting(recipeExporter, TIN_SMELT, RecipeCategory.MISC, ModItems.TIN_INGOT, 0.7f, 100, "tin_ingot");
     }
+
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "downtoearth:block/tin_door_bottom",
+    "top": "downtoearth:block/tin_door_top"
+  }
+}

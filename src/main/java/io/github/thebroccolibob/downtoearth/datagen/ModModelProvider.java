@@ -21,7 +21,18 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(ModBlocks.LEAF_FIBER_BALE, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TIN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TIN_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TIN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_TIN);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TIN_GRATE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TIN_BLOCK);
+        blockStateModelGenerator.registerDoor(ModBlocks.TIN_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.TIN_TRAPDOOR);
+        blockStateModelGenerator.registerCopperBulb(ModBlocks.TIN_BULB);
         blockStateModelGenerator.registerBuiltin(ModBlocks.HAMMERABLE_ITEM, Blocks.ANVIL).includeWithoutItem(ModBlocks.HAMMERABLE_ITEM);
+
+        BlockStateModelGenerator.BlockTexturePool cutTinPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CUT_TIN);
+        cutTinPool.slab(ModBlocks.CUT_TIN_SLAB);
+        cutTinPool.stairs(ModBlocks.CUT_TIN_STAIRS);
     }
 
     @Override

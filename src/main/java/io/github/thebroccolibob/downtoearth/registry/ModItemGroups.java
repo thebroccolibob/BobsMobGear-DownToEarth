@@ -65,6 +65,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FLINT);
                         entries.add(ModBlocks.TIN_ORE);
                         entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
+                        entries.add(ModBlocks.RAW_TIN_BLOCK);
+                        entries.add(ModBlocks.TIN_BLOCK);
+                        entries.add(ModBlocks.CHISELED_TIN);
+                        entries.add(ModBlocks.TIN_GRATE);
+                        entries.add(ModBlocks.CUT_TIN);
+                        entries.add(ModBlocks.CUT_TIN_STAIRS);
+                        entries.add(ModBlocks.CUT_TIN_SLAB);
+                        entries.add(ModBlocks.TIN_DOOR);
+                        entries.add(ModBlocks.TIN_TRAPDOOR);
+                        entries.add(ModBlocks.TIN_BULB);
                     })).build());
 
     public static void registerItemGroups() {

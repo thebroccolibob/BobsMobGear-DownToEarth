@@ -2,6 +2,16 @@
   "values": [
     "downtoearth:stone_anvil",
     "downtoearth:tin_ore",
-    "downtoearth:deepslate_tin_ore"
+    "downtoearth:deepslate_tin_ore",
+    "downtoearth:tin_block",
+    "downtoearth:tin_grate",
+    "downtoearth:cut_tin",
+    "downtoearth:cut_tin_slab",
+    "downtoearth:chiseled_tin",
+    "downtoearth:cut_tin_stairs",
+    "downtoearth:tin_door",
+    "downtoearth:tin_trapdoor",
+    "downtoearth:tin_bulb",
+    "downtoearth:raw_tin_block"
   ]
 }
