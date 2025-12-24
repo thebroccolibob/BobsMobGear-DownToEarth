@@ -6,11 +6,9 @@ import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
 
 import io.github.thebroccolibob.downtoearth.block.StoneAnvilBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.HayBlock;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -18,6 +16,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 
 public class ModBlocks {
     public static final Block LEAF_FIBER_BALE = registerBlockWithItem("leaf_fiber_bale",
@@ -25,20 +24,43 @@ public class ModBlocks {
                     .mapColor(MapColor.TERRACOTTA_WHITE)
                     .instrument(NoteBlockInstrument.BANJO)
                     .strength(0.5f)
-                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.BLOCK)
+                    .sounds(BlockSoundGroup.GRASS)
             ));
 
     public static final Block STONE_ANVIL = registerBlockWithItem("stone_anvil",
             new StoneAnvilBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.STONE_GRAY)
-                    .strength(2.0F)
+                    .strength(5.0F, 1200.0F)
+                    .pistonBehavior(PistonBehavior.BLOCK)
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block TIN_ORE = registerBlockWithItem("tin_ore",
+            new ExperienceDroppingBlock(ConstantIntProvider.create(0), AbstractBlock.Settings.create()
+                    .mapColor(MapColor.STONE_GRAY)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(3.0F, 3.0F)
+                    .sounds(BlockSoundGroup.STONE)
+                    .pistonBehavior(PistonBehavior.BLOCK)));
+
+    public static final Block DEEPSLATE_TIN_ORE = registerBlockWithItem("deepslate_tin_ore",
+            new ExperienceDroppingBlock(ConstantIntProvider.create(0), AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DEEPSLATE_GRAY)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(4.5F, 3.0F)
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .pistonBehavior(PistonBehavior.BLOCK)));
 
     public static final Block FLINT = registerBlockWithItem("flint",
             new FlintBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.STONE_GRAY)
+                    .pistonBehavior(PistonBehavior.DESTROY)
                     .breakInstantly()));
+
+
 
     public static final Block HAMMERABLE_ITEM = registerBlock("hammerable_item",
             new HammerableItemBlock(AbstractBlock.Settings.create()

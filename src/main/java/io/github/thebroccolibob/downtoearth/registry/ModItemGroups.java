@@ -51,6 +51,8 @@ public class ModItemGroups {
                         entries.add(ModItems.EMERALD_SHARD);
                         entries.add(ModItems.DIAMOND_SHARD);
                         entries.add(ModItems.ANCIENT_DEBRIS_FRAGMENT);
+
+                        entries.add(ModItems.TIN_INGOT);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -61,6 +63,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LEAF_FIBER_BALE);
                         entries.add(ModBlocks.STONE_ANVIL);
                         entries.add(ModBlocks.FLINT);
+                        entries.add(ModBlocks.TIN_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
                     })).build());
 
     public static void registerItemGroups() {

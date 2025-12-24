@@ -182,5 +182,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         List<ItemConvertible> HOE_HEAD_SMELT = List.of(ModItems.CLAY_HOE_HEAD_MOLD);
         offerSmelting(recipeExporter, HOE_HEAD_SMELT, RecipeCategory.MISC, BobsMobGearItems.HOE_TEMPLATE, 0f, 200, "hoe_template");
+
+        List<ItemConvertible> TIN_SMELT = List.of(ModItems.RAW_TIN, ModBlocks.TIN_ORE, ModBlocks.DEEPSLATE_TIN_ORE);
+        offerBlasting(recipeExporter, TIN_SMELT, RecipeCategory.MISC, ModItems.TIN_INGOT, 0.7f, 100, "tin_ingot");
     }
 }

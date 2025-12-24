@@ -12,6 +12,7 @@
   "item.downtoearth.diamond_shard": "Diamond Shard",
   "item.downtoearth.ancient_debris_fragment": "Ancient Debris Fragment",
 
+  "item.downtoearth.tin_ingot": "Tin Ingot",
 
   "item.downtoearth.clay_ingot_mold": "Clay Ingot Mold",
   "item.downtoearth.clay_sword_blade_mold": "Clay Sword Blade Mold",
@@ -40,6 +41,8 @@
   "block.downtoearth.leaf_fiber_bale": "Leaf Fiber Bale",
   "block.downtoearth.stone_anvil": "Stone Anvil",
   "block.downtoearth.flint": "Flint Rock",
+  "block.downtoearth.tin_ore": "Tin Ore",
+  "block.downtoearth.deepslate_tin_ore": "Deepslate Tin Ore",
 
   "itemgroup.downtoearth.bobs_mob_gear_items": "BMG: Down to Earth Items",
   "itemgroup.downtoearth.bobs_mob_gear_blocks": "BMG: Down to Earth Blocks",

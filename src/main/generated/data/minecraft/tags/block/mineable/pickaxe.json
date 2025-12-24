@@ -1,5 +1,7 @@
 {
   "values": [
-    "downtoearth:stone_anvil"
+    "downtoearth:stone_anvil",
+    "downtoearth:tin_ore",
+    "downtoearth:deepslate_tin_ore"
   ]
 }

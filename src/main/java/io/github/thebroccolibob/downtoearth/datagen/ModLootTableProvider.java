@@ -1,6 +1,7 @@
 package io.github.thebroccolibob.downtoearth.datagen;
 
 import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
+import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -28,6 +29,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.LEAF_FIBER_BALE);
         addDrop(ModBlocks.FLINT, Items.FLINT);
+
+        addDrop(ModBlocks.TIN_ORE, multiOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_TIN_NUGGET,1f, 8f));
+        addDrop(ModBlocks.DEEPSLATE_TIN_ORE, multiOreDrop(ModBlocks.DEEPSLATE_TIN_ORE, ModItems.RAW_TIN,2f, 3f));
     }
 
     public LootTable.Builder multiOreDrop(Block drop, Item item, float minDrops, float maxDrops) {
