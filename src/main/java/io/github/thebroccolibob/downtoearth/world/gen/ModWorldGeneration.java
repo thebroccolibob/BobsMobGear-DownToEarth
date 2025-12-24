@@ -7,5 +7,6 @@ public class ModWorldGeneration {
         DownToEarth.LOGGER.info("This Generation is " + DownToEarth.MOD_ID + "!");
 
         ModFlintRockGeneration.generateFlintRocks();
+        ModOreGeneration.generateOres();
     }
 }
