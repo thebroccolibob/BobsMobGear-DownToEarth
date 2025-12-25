@@ -24,6 +24,13 @@ public class DownToEarthEmiPlugin implements EmiPlugin {
     public void register(EmiRegistry registry) {
         registry.addCategory(CARVING);
         registry.addWorkstation(CARVING, EmiStack.of(ModItems.FLINT_TOOL));
+        for (var recipe : registry.getRecipeManager().listAllOfType(ModRecipes.CARVING_TYPE))
+            //noinspection DataFlowIssue
+            registry.addRecipe(new CarvingEmiRecipe(
+                    recipe.id(),
+                    EmiIngredient.of(recipe.value().getIngredients().getFirst()),
+                    EmiStack.of(recipe.value().getResult(MinecraftClient.getInstance().world.getRegistryManager()))
+            ));
 
         registry.addCategory(GRINDING);
         registry.addWorkstation(GRINDING, EmiStack.of(Items.GRINDSTONE));
