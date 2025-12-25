@@ -83,5 +83,9 @@
 
   "screen.downtoearth.carving": "Carving",
 
-  "resourcepack.downtoearth.bmgoverride": "Down to Earth Resources"
+  "resourcepack.downtoearth.bmgoverride": "Down to Earth Resources",
+
+  "emi.category.downtoearth.carving": "Carving",
+  "emi.category.downtoearth.grinding": "Grinding",
+  "emi.category.downtoearth.hammering": "Hammering"
 }
