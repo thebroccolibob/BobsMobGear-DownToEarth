@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "minecraft:brick"
+    }
+  },
+  "pattern": [
+    "n n",
+    "n n",
+    " n "
+  ],
+  "result": {
+    "count": 1,
+    "id": "bobsmobgear:empty_pot"
+  }
+}

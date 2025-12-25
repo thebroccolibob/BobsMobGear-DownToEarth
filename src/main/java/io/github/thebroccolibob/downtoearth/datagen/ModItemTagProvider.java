@@ -11,6 +11,7 @@ import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -21,20 +22,34 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.BRONZE_PICKAXE);
+
+        getOrCreateTagBuilder(BobsMobGearItemTags.TONG_HOLDABLE)
+                .add(Items.COPPER_INGOT)
+                .add(ModItems.TIN_INGOT)
+                .add(ModItems.BRONZE_INGOT);
+
+        getOrCreateTagBuilder(BobsMobGearItemTags.TONG_HOLDABLE_WEAPONS)
+                .add(ModItems.UNFORGED_BRONZE_SWORD_BLADE)
+                .add(ModItems.UNSHARPENED_BRONZE_SWORD_BLADE)
+                .add(ModItems.BRONZE_SWORD_BLADE)
+                .add(ModItems.BRONZE_SWORD)
+                .add(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD)
+                .add(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD)
+                .add(ModItems.BRONZE_PICKAXE_HEAD)
+                .add(ModItems.BRONZE_PICKAXE);
+
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
-                .add(BobsMobGearItems.AXE_TEMPLATE)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)
                 .add(BobsMobGearItems.CLAYMORE_TEMPLATE)
                 .add(BobsMobGearItems.DAGGER_TEMPLATE)
                 .add(BobsMobGearItems.DIAMOND_POT)
                 .add(BobsMobGearItems.DOUBLE_AXE_TEMPLATE)
-                .add(BobsMobGearItems.EMPTY_POT)
                 .add(BobsMobGearItems.FLESH_GLOVE)
-                .add(BobsMobGearItems.FORGE)
                 .add(BobsMobGearItems.FORGE_HEATER)
                 .add(BobsMobGearItems.GLAIVE_TEMPLATE)
                 .add(BobsMobGearItems.GREATHAMMER_TEMPLATE)
-                .add(BobsMobGearItems.HOE_TEMPLATE)
                 .add(BobsMobGearItems.IRON_BONE_HAMMER)
                 .add(BobsMobGearItems.IRON_BOOM_BATON)
                 .add(BobsMobGearItems.IRON_ENDER_EYE_SPEAR)
@@ -46,15 +61,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(BobsMobGearItems.KNIFE_TEMPLATE)
                 .add(BobsMobGearItems.MACE_TEMPLATE)
                 .add(BobsMobGearItems.NETHERITE_POT)
-                .add(BobsMobGearItems.PICKAXE_TEMPLATE)
                 .add(BobsMobGearItems.SCULK_SYMBIOTE)
-                .add(BobsMobGearItems.SHOVEL_TEMPLATE)
                 .add(BobsMobGearItems.SICKLE_TEMPLATE)
-                .add(BobsMobGearItems.SMITHING_HAMMER)
-                .add(BobsMobGearItems.SMITHING_TONGS)
                 .add(BobsMobGearItems.SPEAR_TEMPLATE)
-                .add(BobsMobGearItems.SWORD_TEMPLATE)
-                .add(BobsMobGearItems.UNLIMITED_BACON)
                 .add(BobsMobGearItems.WARDEN_FIST)
                 .add(BobsMobGearItems.WORN_CREEPER_CORE)
                 .add(BobsMobGearItems.WORN_HARDENED_FLESH)
@@ -62,6 +71,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(BobsMobGearItems.WORN_SEETHING_PEARL)
                 .add(BobsMobGearItems.WORN_SPIDER_FANG)
                 .add(BobsMobGearItems.WORN_STURDY_BONE);
+
         getOrCreateTagBuilder(ModItemTags.SOUL_FLAME_HAMMERED).add(
                 Items.NETHERITE_SWORD,
                 Items.NETHERITE_SHOVEL,

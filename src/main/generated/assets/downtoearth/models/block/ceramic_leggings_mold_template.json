@@ -1,0 +1,6 @@
+{
+  "parent": "bobsmobgear:block/cutout_template",
+  "textures": {
+    "top": "downtoearth:block/ceramic_leggings_mold_template"
+  }
+}

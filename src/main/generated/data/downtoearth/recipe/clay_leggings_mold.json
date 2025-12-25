@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "n": {
+      "item": "minecraft:leather_leggings"
+    },
+    "o": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    " o ",
+    "ono",
+    " o "
+  ],
+  "result": {
+    "count": 1,
+    "id": "downtoearth:clay_leggings_mold"
+  }
+}

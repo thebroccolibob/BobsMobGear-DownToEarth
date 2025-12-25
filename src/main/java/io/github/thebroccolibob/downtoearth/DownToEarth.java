@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth;
 
+import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearBlocks;
 import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
 import io.github.thebroccolibob.downtoearth.registry.*;
 import io.github.thebroccolibob.downtoearth.util.ModLootTableModifiers;
@@ -35,6 +36,7 @@ public class DownToEarth implements ModInitializer {
         ModLootTableModifiers.modifyLootTables();
         ModRecipes.registerModRecipes();
         ModScreens.registerModScreens();
+        ModFluids.registerModFluids();
         ModWorldGeneration.generateModWorldGen();
 
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAF_FIBER_BALE, 60, 20);
@@ -49,5 +51,10 @@ public class DownToEarth implements ModInitializer {
                 ResourcePackActivationType.ALWAYS_ENABLED);
 
         HammerableItemBlock.registerTongEvent();
+
+        BobsMobGearBlocks.TEMPLATE_BLOCK_ENTITY.addSupportedBlock(ModBlocks.CERAMIC_HELMET_MOLD);
+        BobsMobGearBlocks.TEMPLATE_BLOCK_ENTITY.addSupportedBlock(ModBlocks.CERAMIC_CHESTPLATE_MOLD);
+        BobsMobGearBlocks.TEMPLATE_BLOCK_ENTITY.addSupportedBlock(ModBlocks.CERAMIC_LEGGINGS_MOLD);
+        BobsMobGearBlocks.TEMPLATE_BLOCK_ENTITY.addSupportedBlock(ModBlocks.CERAMIC_BOOTS_MOLD);
 	}
 }

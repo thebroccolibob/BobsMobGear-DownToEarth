@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unsharpened_bronze_pickaxe_head"
+  },
+  "result": {
+    "id": "downtoearth:bronze_pickaxe_head",
+    "count": 1
+  }
+}

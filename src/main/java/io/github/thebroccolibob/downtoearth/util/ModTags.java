@@ -18,6 +18,7 @@ public class ModTags {
 
         public static final TagKey<Block> INCORRECT_FOR_BRONZE_TOOL = createTag("incorrect_for_bronze_tool");
         public static final TagKey<Block> NEEDS_BRONZE_TOOL = createTag("needs_bronze_tool");
+
         public static final TagKey<Block> INCORRECT_FOR_STEEL_TOOL = createTag("incorrect_for_steel_tool");
         public static final TagKey<Block> NEEDS_STEEL_TOOL = createTag("needs_steel_tool");
     }

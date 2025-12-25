@@ -26,6 +26,10 @@ public class ModItemGroups {
                         entries.add(ModItems.CLAY_PICKAXE_HEAD_MOLD);
                         entries.add(ModItems.CLAY_AXE_HEAD_MOLD);
                         entries.add(ModItems.CLAY_HOE_HEAD_MOLD);
+                        entries.add(ModItems.CLAY_HELMET_MOLD);
+                        entries.add(ModItems.CLAY_CHESTPLATE_MOLD);
+                        entries.add(ModItems.CLAY_LEGGINGS_MOLD);
+                        entries.add(ModItems.CLAY_BOOTS_MOLD);
 
                         entries.add(ModItems.WOODEN_SHOVEL_HEAD);
                         entries.add(ModItems.WOODEN_PICKAXE_HEAD);
@@ -52,8 +56,23 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_SHARD);
                         entries.add(ModItems.ANCIENT_DEBRIS_FRAGMENT);
 
-                        entries.add(ModItems.TIN_INGOT);
                         entries.add(ModItems.BRONZE_MIX);
+                        entries.add(ModItems.COPPER_POT);
+                        entries.add(ModItems.TIN_POT);
+                        entries.add(ModItems.BRONZE_POT);
+
+                        entries.add(ModItems.TIN_INGOT);
+                        entries.add(ModItems.BRONZE_INGOT);
+
+                        entries.add(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD);
+                        entries.add(ModItems.BRONZE_PICKAXE_HEAD);
+                        entries.add(ModItems.UNFORGED_BRONZE_SWORD_BLADE);
+                        entries.add(ModItems.UNSHARPENED_BRONZE_SWORD_BLADE);
+                        entries.add(ModItems.BRONZE_SWORD_BLADE);
+
+                        entries.add(ModItems.BRONZE_PICKAXE);
+                        entries.add(ModItems.BRONZE_SWORD);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -64,6 +83,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LEAF_FIBER_BALE);
                         entries.add(ModBlocks.STONE_ANVIL);
                         entries.add(ModBlocks.FLINT);
+                        entries.add(ModBlocks.CERAMIC_HELMET_MOLD);
+                        entries.add(ModBlocks.CERAMIC_CHESTPLATE_MOLD);
+                        entries.add(ModBlocks.CERAMIC_LEGGINGS_MOLD);
+                        entries.add(ModBlocks.CERAMIC_BOOTS_MOLD);
                         entries.add(ModBlocks.TIN_ORE);
                         entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
                         entries.add(ModBlocks.RAW_TIN_BLOCK);

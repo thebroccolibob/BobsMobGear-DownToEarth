@@ -1,7 +1,7 @@
 {
   "values": [
+    "#downtoearth:needs_steel_tool",
     "#minecraft:needs_diamond_tool",
-    "#minecraft:needs_iron_tool",
-    "#minecraft:needs_steel_tool"
+    "#minecraft:needs_iron_tool"
   ]
 }

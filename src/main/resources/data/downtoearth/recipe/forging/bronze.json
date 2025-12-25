@@ -1,0 +1,12 @@
+{
+  "type": "bobsmobgear:forging",
+  "forging_time": 200,
+  "weak_heat": true,
+  "ingredients": {
+    "tag": "downtoearth:forges/bronze_ingot"
+  },
+  "result": {
+    "fluid": "downtoearth:bronze"
+  },
+  "result_amount": 9000
+}

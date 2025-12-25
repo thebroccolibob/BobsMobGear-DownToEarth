@@ -1,5 +1,7 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
+import io.github.thebroccolibob.bobsmobgear.block.TemplateBlock;
+import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearBlocks;
 import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.block.FlintBlock;
 import io.github.thebroccolibob.downtoearth.block.HammerableItemBlock;
@@ -90,6 +92,16 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY)
                     .breakInstantly()));
 
+    public static final Block CERAMIC_HELMET_MOLD = BobsMobGearBlocks.registerTemplate(Identifier.of(DownToEarth.MOD_ID, "ceramic_helmet_mold"));
+    public static final Block CERAMIC_CHESTPLATE_MOLD = BobsMobGearBlocks.registerTemplate(Identifier.of(DownToEarth.MOD_ID, "ceramic_chestplate_mold"));
+    public static final Block CERAMIC_LEGGINGS_MOLD = BobsMobGearBlocks.registerTemplate(Identifier.of(DownToEarth.MOD_ID, "ceramic_leggings_mold"));
+    public static final Block CERAMIC_BOOTS_MOLD = BobsMobGearBlocks.registerTemplate(Identifier.of(DownToEarth.MOD_ID, "ceramic_boots_mold"));
+
+    public static final Item CERAMIC_HELMET_ITEM = registerBlockItem("ceramic_helmet_mold", CERAMIC_HELMET_MOLD);
+    public static final Item CERAMIC_CHESTPLATE_ITEM = registerBlockItem("ceramic_chestplate_mold", CERAMIC_CHESTPLATE_MOLD);
+    public static final Item CERAMIC_LEGGINGS_ITEM = registerBlockItem("ceramic_leggings_mold", CERAMIC_LEGGINGS_MOLD);
+    public static final Item CERAMIC_BOOTS_ITEM = registerBlockItem("ceramic_boots_mold", CERAMIC_BOOTS_MOLD);
+
     public static final Block HAMMERABLE_ITEM = registerBlock("hammerable_item",
             new HammerableItemBlock(AbstractBlock.Settings.create()
                     .breakInstantly()
@@ -106,8 +118,8 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(DownToEarth.MOD_ID, name), block);
     }
 
-    private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(DownToEarth.MOD_ID, name),
+    private static Item registerBlockItem(String name, Block block) {
+        return Registry.register(Registries.ITEM, Identifier.of(DownToEarth.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 

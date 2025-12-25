@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bricks"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "T": {
+      "item": "minecraft:terracotta"
+    },
+    "b": {
+      "item": "minecraft:brick"
+    }
+  },
+  "pattern": [
+    "bBb",
+    "BFB",
+    "TTT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bobsmobgear:forge"
+  }
+}

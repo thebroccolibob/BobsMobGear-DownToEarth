@@ -1,0 +1,12 @@
+{
+  "type": "bobsmobgear:forging",
+  "forging_time": 200,
+  "weak_heat": true,
+  "ingredients": {
+    "tag": "downtoearth:forges/tin_ingot"
+  },
+  "result": {
+    "fluid": "downtoearth:tin"
+  },
+  "result_amount": 9000
+}

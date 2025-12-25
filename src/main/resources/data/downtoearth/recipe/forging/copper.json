@@ -1,0 +1,12 @@
+{
+  "type": "bobsmobgear:forging",
+  "forging_time": 200,
+  "weak_heat": true,
+  "ingredients": {
+    "tag": "downtoearth:forges/copper_ingot"
+  },
+  "result": {
+    "fluid": "downtoearth:copper"
+  },
+  "result_amount": 9000
+}

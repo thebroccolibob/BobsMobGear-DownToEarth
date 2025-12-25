@@ -1,0 +1,6 @@
+{
+  "parent": "bobsmobgear:item/cutout_template",
+  "textures": {
+    "layer1": "downtoearth:block/ceramic_helmet_mold_template"
+  }
+}

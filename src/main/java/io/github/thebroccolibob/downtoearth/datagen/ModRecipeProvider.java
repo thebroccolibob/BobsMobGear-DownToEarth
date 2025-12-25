@@ -169,6 +169,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_HELMET_MOLD)
+                .pattern(" o ")
+                .pattern("ono")
+                .pattern(" o ")
+                .input('o', Items.CLAY_BALL)
+                .input('n', Items.LEATHER_HELMET)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_CHESTPLATE_MOLD)
+                .pattern(" o ")
+                .pattern("ono")
+                .pattern(" o ")
+                .input('o', Items.CLAY_BALL)
+                .input('n', Items.LEATHER_CHESTPLATE)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_LEGGINGS_MOLD)
+                .pattern(" o ")
+                .pattern("ono")
+                .pattern(" o ")
+                .input('o', Items.CLAY_BALL)
+                .input('n', Items.LEATHER_LEGGINGS)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_BOOTS_MOLD)
+                .pattern(" o ")
+                .pattern("ono")
+                .pattern(" o ")
+                .input('o', Items.CLAY_BALL)
+                .input('n', Items.LEATHER_BOOTS)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STONE_SMITHING_HAMMER)
                 .pattern(" n")
                 .pattern("| ")
@@ -217,6 +253,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STONE_SWORD_BLADE), conditionsFromItem(ModItems.STONE_SWORD_BLADE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRONZE_SWORD)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.BRONZE_SWORD_BLADE)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.BRONZE_SWORD_BLADE), conditionsFromItem(ModItems.BRONZE_SWORD_BLADE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRONZE_PICKAXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.BRONZE_PICKAXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.BRONZE_PICKAXE_HEAD), conditionsFromItem(ModItems.BRONZE_PICKAXE_HEAD))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STONE_ANVIL)
                 .pattern("nnn")
                 .pattern(" - ")
@@ -224,6 +276,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('n', Items.STONE)
                 .input('-', Items.STONE_SLAB)
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BobsMobGearItems.FORGE)
+                .pattern("bBb")
+                .pattern("BFB")
+                .pattern("TTT")
+                .input('b', Items.BRICK)
+                .input('B', Items.BRICKS)
+                .input('F', Items.FURNACE)
+                .input('T', Items.TERRACOTTA)
+                .criterion(hasItem(Items.FURNACE), conditionsFromItem(Items.FURNACE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, BobsMobGearItems.SMITHING_TONGS)
+                .pattern(" n ")
+                .pattern("n--")
+                .pattern(" - ")
+                .input('n', Items.BRICK)
+                .input('-', Items.STICK)
+                .criterion(hasItem(Items.BRICK), conditionsFromItem(Items.BRICK))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BobsMobGearItems.EMPTY_POT)
+                .pattern("n n")
+                .pattern("n n")
+                .pattern(" n ")
+                .input('n', Items.BRICK)
+                .criterion(hasItem(Items.BRICK), conditionsFromItem(Items.BRICK))
                 .offerTo(recipeExporter);
 
         List<ItemConvertible> SWORD_BLADE_SMELT = List.of(ModItems.CLAY_SWORD_BLADE_MOLD);

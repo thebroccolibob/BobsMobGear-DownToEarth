@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "downtoearth:block/ceramic_helmet_mold_template",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "downtoearth:block/ceramic_helmet_mold_template"
+    },
+    "facing=south": {
+      "model": "downtoearth:block/ceramic_helmet_mold_template",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "downtoearth:block/ceramic_helmet_mold_template",
+      "y": 270
+    }
+  }
+}

@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth.datagen;
 
+import io.github.thebroccolibob.bobsmobgear.datagen.ModelGenerator;
 import io.github.thebroccolibob.downtoearth.registry.ModBlocks;
 import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -30,6 +31,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCopperBulb(ModBlocks.TIN_BULB);
         blockStateModelGenerator.registerBuiltin(ModBlocks.HAMMERABLE_ITEM, Blocks.ANVIL).includeWithoutItem(ModBlocks.HAMMERABLE_ITEM);
 
+        ModelGenerator.registerCutoutTemplate(blockStateModelGenerator, ModBlocks.CERAMIC_HELMET_MOLD);
+        ModelGenerator.registerCutoutTemplate(blockStateModelGenerator, ModBlocks.CERAMIC_CHESTPLATE_MOLD);
+        ModelGenerator.registerCutoutTemplate(blockStateModelGenerator, ModBlocks.CERAMIC_LEGGINGS_MOLD);
+        ModelGenerator.registerCutoutTemplate(blockStateModelGenerator, ModBlocks.CERAMIC_BOOTS_MOLD);
+
         BlockStateModelGenerator.BlockTexturePool cutTinPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CUT_TIN);
         cutTinPool.slab(ModBlocks.CUT_TIN_SLAB);
         cutTinPool.stairs(ModBlocks.CUT_TIN_STAIRS);
@@ -50,6 +56,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STONE_PICKAXE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.STONE_AXE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.STONE_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_PICKAXE_HEAD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
@@ -57,6 +69,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CLAY_PICKAXE_HEAD_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_AXE_HEAD_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_HOE_HEAD_MOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLAY_HELMET_MOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLAY_CHESTPLATE_MOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLAY_LEGGINGS_MOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLAY_BOOTS_MOLD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.COAL_PIECE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_COPPER_NUGGET, Models.GENERATED);
@@ -69,9 +85,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIAMOND_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANCIENT_DEBRIS_FRAGMENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.TIN_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_MIX, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_POT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TIN_POT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_POT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_SMITHING_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_PICKAXE, Models.HANDHELD);
     }
 }

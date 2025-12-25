@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 200,
+  "fluid": {
+    "fluid": "downtoearth:bronze"
+  },
+  "fluid_amount": 18000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_bronze_sword_blade"
+  },
+  "template": "bobsmobgear:sword_template"
+}
