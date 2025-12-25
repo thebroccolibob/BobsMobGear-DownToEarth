@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth.emi;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.Items;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
@@ -26,7 +27,6 @@ public class DownToEarthEmiPlugin implements EmiPlugin {
 
         registry.addCategory(GRINDING);
         registry.addWorkstation(GRINDING, EmiStack.of(Items.GRINDSTONE));
-
         for (var recipe : registry.getRecipeManager().listAllOfType(ModRecipes.GRINDING_TYPE))
             registry.addRecipe(new GrindingEmiRecipe(
                     recipe.id(),
@@ -37,6 +37,12 @@ public class DownToEarthEmiPlugin implements EmiPlugin {
 
         registry.addCategory(HAMMERING);
         registry.addWorkstation(HAMMERING, EmiIngredient.of(BlockTags.ANVIL));
-        registry.addWorkstation(HAMMERING, EmiStack.of(BobsMobGearItems.SMITHING_HAMMER));
+        for (var recipe : registry.getRecipeManager().listAllOfType(ModRecipes.HAMMERING_TYPE))
+            //noinspection DataFlowIssue
+            registry.addRecipe(new HammeringEmiRecipe(
+                    recipe.id(),
+                    EmiIngredient.of(recipe.value().getIngredients().getFirst()),
+                    EmiStack.of(recipe.value().getResult(MinecraftClient.getInstance().world.getRegistryManager())) // sure hope we're in a world
+            ));
     }
 }
