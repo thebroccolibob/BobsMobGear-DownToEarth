@@ -24,11 +24,6 @@ public class DownToEarthEmiPlugin implements EmiPlugin {
             CarvingEmiRecipe.TOOL,
             new EmiTexture(ICONS, 0, 0, 16, 16, 16, 16, ICONS_WIDTH, ICONS_HEIGHT)
     );
-    public static EmiRecipeCategory GRINDING = new EmiRecipeCategory(
-            Identifier.of(DownToEarth.MOD_ID, "grinding"),
-            GrindingEmiRecipe.GRINDSTONE,
-            new EmiTexture(Identifier.of("emi", "textures/gui/widgets.png"), 192, 224, 16, 16)
-    );
     public static EmiRecipeCategory HAMMERING = new EmiRecipeCategory(
             Identifier.of(DownToEarth.MOD_ID, "hammering"),
             EmiStack.of(BobsMobGearItems.SMITHING_HAMMER),
@@ -47,8 +42,6 @@ public class DownToEarthEmiPlugin implements EmiPlugin {
                     EmiStack.of(recipe.value().getResult(MinecraftClient.getInstance().world.getRegistryManager()))
             ));
 
-        registry.addCategory(GRINDING);
-        registry.addWorkstation(GRINDING, GrindingEmiRecipe.GRINDSTONE);
         for (var recipe : registry.getRecipeManager().listAllOfType(ModRecipes.GRINDING_TYPE))
             registry.addRecipe(new GrindingEmiRecipe(
                     recipe.id(),
