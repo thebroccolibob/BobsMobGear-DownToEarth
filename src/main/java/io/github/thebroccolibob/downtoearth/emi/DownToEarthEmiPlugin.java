@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
+import dev.emi.emi.api.render.EmiTexture;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearItems;
@@ -14,9 +15,25 @@ import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.registry.ModRecipes;
 
 public class DownToEarthEmiPlugin implements EmiPlugin {
-    public static EmiRecipeCategory CARVING = new EmiRecipeCategory(Identifier.of(DownToEarth.MOD_ID, "carving"), CarvingEmiRecipe.TOOL);
-    public static EmiRecipeCategory GRINDING = new EmiRecipeCategory(Identifier.of(DownToEarth.MOD_ID, "grinding"), GrindingEmiRecipe.GRINDSTONE);
-    public static EmiRecipeCategory HAMMERING = new EmiRecipeCategory(Identifier.of(DownToEarth.MOD_ID, "hammering"), EmiStack.of(BobsMobGearItems.SMITHING_HAMMER));
+    private static final Identifier ICONS = Identifier.of(DownToEarth.MOD_ID, "textures/gui/emi/icons.png");
+    private static final int ICONS_WIDTH = 32;
+    private static final int ICONS_HEIGHT = 16;
+
+    public static EmiRecipeCategory CARVING = new EmiRecipeCategory(
+            Identifier.of(DownToEarth.MOD_ID, "carving"),
+            CarvingEmiRecipe.TOOL,
+            new EmiTexture(ICONS, 0, 0, 16, 16, 16, 16, ICONS_WIDTH, ICONS_HEIGHT)
+    );
+    public static EmiRecipeCategory GRINDING = new EmiRecipeCategory(
+            Identifier.of(DownToEarth.MOD_ID, "grinding"),
+            GrindingEmiRecipe.GRINDSTONE,
+            new EmiTexture(Identifier.of("emi", "textures/gui/widgets.png"), 192, 224, 16, 16)
+    );
+    public static EmiRecipeCategory HAMMERING = new EmiRecipeCategory(
+            Identifier.of(DownToEarth.MOD_ID, "hammering"),
+            EmiStack.of(BobsMobGearItems.SMITHING_HAMMER),
+            new EmiTexture(ICONS, 16, 0, 16, 16, 16, 16, ICONS_WIDTH, ICONS_HEIGHT)
+    );
 
     @Override
     public void register(EmiRegistry registry) {
