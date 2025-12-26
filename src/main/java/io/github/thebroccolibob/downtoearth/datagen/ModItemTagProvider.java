@@ -22,8 +22,20 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.BRONZE_SWORD);
+
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.BRONZE_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.BRONZE_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.BRONZE_AXE);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.BRONZE_HOE);
 
         getOrCreateTagBuilder(BobsMobGearItemTags.TONG_HOLDABLE)
                 .add(Items.COPPER_INGOT)
@@ -38,7 +50,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD)
                 .add(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD)
                 .add(ModItems.BRONZE_PICKAXE_HEAD)
-                .add(ModItems.BRONZE_PICKAXE);
+                .add(ModItems.BRONZE_PICKAXE)
+                .add(ModItems.UNFORGED_BRONZE_SHOVEL_HEAD)
+                .add(ModItems.UNSHARPENED_BRONZE_SHOVEL_HEAD)
+                .add(ModItems.BRONZE_SHOVEL_HEAD)
+                .add(ModItems.BRONZE_SHOVEL)
+                .add(ModItems.UNFORGED_BRONZE_AXE_HEAD)
+                .add(ModItems.UNSHARPENED_BRONZE_AXE_HEAD)
+                .add(ModItems.BRONZE_AXE_HEAD)
+                .add(ModItems.BRONZE_AXE)
+                .add(ModItems.UNFORGED_BRONZE_HOE_HEAD)
+                .add(ModItems.UNSHARPENED_BRONZE_HOE_HEAD)
+                .add(ModItems.BRONZE_HOE_HEAD)
+                .add(ModItems.BRONZE_HOE);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)

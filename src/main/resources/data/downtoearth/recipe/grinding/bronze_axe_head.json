@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unsharpened_bronze_axe_head"
+  },
+  "result": {
+    "id": "downtoearth:bronze_axe_head",
+    "count": 1
+  }
+}

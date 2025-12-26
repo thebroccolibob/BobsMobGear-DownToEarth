@@ -62,6 +62,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_HOE_HEAD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
@@ -95,5 +104,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STONE_SMITHING_HAMMER, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_HOE, Models.HANDHELD);
     }
 }

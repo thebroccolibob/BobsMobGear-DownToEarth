@@ -21,11 +21,11 @@ public class ModItemGroups {
                         entries.add(ModItems.FLINT_AXE);
 
                         entries.add(ModItems.CLAY_INGOT_MOLD);
-                        entries.add(ModItems.CLAY_SWORD_BLADE_MOLD);
                         entries.add(ModItems.CLAY_SHOVEL_HEAD_MOLD);
                         entries.add(ModItems.CLAY_PICKAXE_HEAD_MOLD);
                         entries.add(ModItems.CLAY_AXE_HEAD_MOLD);
                         entries.add(ModItems.CLAY_HOE_HEAD_MOLD);
+                        entries.add(ModItems.CLAY_SWORD_BLADE_MOLD);
                         entries.add(ModItems.CLAY_HELMET_MOLD);
                         entries.add(ModItems.CLAY_CHESTPLATE_MOLD);
                         entries.add(ModItems.CLAY_LEGGINGS_MOLD);
@@ -42,6 +42,27 @@ public class ModItemGroups {
                         entries.add(ModItems.STONE_AXE_HEAD);
                         entries.add(ModItems.STONE_HOE_HEAD);
                         entries.add(ModItems.STONE_SWORD_BLADE);
+                        entries.add(ModItems.UNFORGED_BRONZE_SHOVEL_HEAD);
+                        entries.add(ModItems.UNSHARPENED_BRONZE_SHOVEL_HEAD);
+                        entries.add(ModItems.BRONZE_SHOVEL_HEAD);
+                        entries.add(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD);
+                        entries.add(ModItems.BRONZE_PICKAXE_HEAD);
+                        entries.add(ModItems.UNFORGED_BRONZE_AXE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_BRONZE_AXE_HEAD);
+                        entries.add(ModItems.BRONZE_AXE_HEAD);
+                        entries.add(ModItems.UNFORGED_BRONZE_HOE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_BRONZE_HOE_HEAD);
+                        entries.add(ModItems.BRONZE_HOE_HEAD);
+                        entries.add(ModItems.UNFORGED_BRONZE_SWORD_BLADE);
+                        entries.add(ModItems.UNSHARPENED_BRONZE_SWORD_BLADE);
+                        entries.add(ModItems.BRONZE_SWORD_BLADE);
+
+                        entries.add(ModItems.BRONZE_SHOVEL);
+                        entries.add(ModItems.BRONZE_PICKAXE);
+                        entries.add(ModItems.BRONZE_AXE);
+                        entries.add(ModItems.BRONZE_HOE);
+                        entries.add(ModItems.BRONZE_SWORD);
 
                         entries.add(ModItems.STONE_SMITHING_HAMMER);
 
@@ -63,16 +84,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.TIN_INGOT);
                         entries.add(ModItems.BRONZE_INGOT);
-
-                        entries.add(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD);
-                        entries.add(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD);
-                        entries.add(ModItems.BRONZE_PICKAXE_HEAD);
-                        entries.add(ModItems.UNFORGED_BRONZE_SWORD_BLADE);
-                        entries.add(ModItems.UNSHARPENED_BRONZE_SWORD_BLADE);
-                        entries.add(ModItems.BRONZE_SWORD_BLADE);
-
-                        entries.add(ModItems.BRONZE_PICKAXE);
-                        entries.add(ModItems.BRONZE_SWORD);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

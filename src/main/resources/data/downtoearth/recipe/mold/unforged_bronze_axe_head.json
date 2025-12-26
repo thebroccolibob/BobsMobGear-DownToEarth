@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 300,
+  "fluid": {
+    "fluid": "downtoearth:bronze"
+  },
+  "fluid_amount": 27000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_bronze_axe_head"
+  },
+  "template": "bobsmobgear:axe_template"
+}

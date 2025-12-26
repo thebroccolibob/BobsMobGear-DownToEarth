@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 100,
+  "fluid": {
+    "fluid": "downtoearth:bronze"
+  },
+  "fluid_amount": 9000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_bronze_shovel_head"
+  },
+  "template": "bobsmobgear:shovel_template"
+}

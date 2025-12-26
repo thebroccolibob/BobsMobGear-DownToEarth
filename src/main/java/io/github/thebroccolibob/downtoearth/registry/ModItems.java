@@ -63,9 +63,21 @@ public class ModItems {
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new Item.Settings()));
 
+    public static final Item UNFORGED_BRONZE_SHOVEL_HEAD = registerItem("unforged_bronze_shovel_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_BRONZE_SHOVEL_HEAD = registerItem("unsharpened_bronze_shovel_head", new Item(new Item.Settings()));
+    public static final Item BRONZE_SHOVEL_HEAD = registerItem("bronze_shovel_head", new Item(new Item.Settings()));
+
     public static final Item UNFORGED_BRONZE_PICKAXE_HEAD = registerItem("unforged_bronze_pickaxe_head", new Item(new Item.Settings()));
     public static final Item UNSHARPENED_BRONZE_PICKAXE_HEAD = registerItem("unsharpened_bronze_pickaxe_head", new Item(new Item.Settings()));
     public static final Item BRONZE_PICKAXE_HEAD = registerItem("bronze_pickaxe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_BRONZE_AXE_HEAD = registerItem("unforged_bronze_axe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_BRONZE_AXE_HEAD = registerItem("unsharpened_bronze_axe_head", new Item(new Item.Settings()));
+    public static final Item BRONZE_AXE_HEAD = registerItem("bronze_axe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_BRONZE_HOE_HEAD = registerItem("unforged_bronze_hoe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_BRONZE_HOE_HEAD = registerItem("unsharpened_bronze_hoe_head", new Item(new Item.Settings()));
+    public static final Item BRONZE_HOE_HEAD = registerItem("bronze_hoe_head", new Item(new Item.Settings()));
 
     public static final Item UNFORGED_BRONZE_SWORD_BLADE = registerItem("unforged_bronze_sword_blade", new Item(new Item.Settings()));
     public static final Item UNSHARPENED_BRONZE_SWORD_BLADE = registerItem("unsharpened_bronze_sword_blade", new Item(new Item.Settings()));
@@ -89,9 +101,21 @@ public class ModItems {
     public static final Item TIN_POT = BobsMobGearItems.registerPot(ModFluids.TIN);
     public static final Item BRONZE_POT = BobsMobGearItems.registerPot(ModFluids.BRONZE);
 
+    public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel",
+            new ShovelItem(ModToolMaterials.BRONZE, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.BRONZE, 1.5F, -3.0F))));
+
     public static final Item BRONZE_PICKAXE = registerItem("bronze_pickaxe",
             new PickaxeItem(ModToolMaterials.BRONZE, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BRONZE, 1, -2.8F))));
+
+    public static final Item BRONZE_AXE = registerItem("bronze_axe",
+            new AxeItem(ModToolMaterials.BRONZE, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.BRONZE, 6, -3.2F))));
+
+    public static final Item BRONZE_HOE = registerItem("bronze_hoe",
+            new HoeItem(ModToolMaterials.BRONZE, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BRONZE, 0, -3))));
 
     public static final Item BRONZE_SWORD = registerItem("bronze_sword",
             new SwordItem(ModToolMaterials.BRONZE, new Item.Settings()

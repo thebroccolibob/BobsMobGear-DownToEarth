@@ -269,6 +269,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.BRONZE_PICKAXE_HEAD), conditionsFromItem(ModItems.BRONZE_PICKAXE_HEAD))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRONZE_SHOVEL)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.BRONZE_SHOVEL_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.BRONZE_SHOVEL_HEAD), conditionsFromItem(ModItems.BRONZE_SHOVEL_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRONZE_AXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.BRONZE_AXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.BRONZE_AXE_HEAD), conditionsFromItem(ModItems.BRONZE_AXE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BRONZE_HOE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.BRONZE_HOE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.BRONZE_HOE_HEAD), conditionsFromItem(ModItems.BRONZE_HOE_HEAD))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STONE_ANVIL)
                 .pattern("nnn")
                 .pattern(" - ")

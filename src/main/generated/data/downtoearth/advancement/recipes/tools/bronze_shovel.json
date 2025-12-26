@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bronze_shovel_head": {
+      "conditions": {
+        "items": [
+          {
+            "items": "downtoearth:bronze_shovel_head"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "downtoearth:bronze_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bronze_shovel_head"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "downtoearth:bronze_shovel"
+    ]
+  }
+}
