@@ -57,12 +57,24 @@ public class ModItemGroups {
                         entries.add(ModItems.UNFORGED_BRONZE_SWORD_BLADE);
                         entries.add(ModItems.UNSHARPENED_BRONZE_SWORD_BLADE);
                         entries.add(ModItems.BRONZE_SWORD_BLADE);
+                        entries.add(ModItems.UNFORGED_BRONZE_HELMET);
+                        entries.add(ModItems.UNPOLISHED_BRONZE_HELMET);
+                        entries.add(ModItems.UNFORGED_BRONZE_CHESTPLATE);
+                        entries.add(ModItems.UNPOLISHED_BRONZE_CHESTPLATE);
+                        entries.add(ModItems.UNFORGED_BRONZE_LEGGINGS);
+                        entries.add(ModItems.UNPOLISHED_BRONZE_LEGGINGS);
+                        entries.add(ModItems.UNFORGED_BRONZE_BOOTS);
+                        entries.add(ModItems.UNPOLISHED_BRONZE_BOOTS);
 
                         entries.add(ModItems.BRONZE_SHOVEL);
                         entries.add(ModItems.BRONZE_PICKAXE);
                         entries.add(ModItems.BRONZE_AXE);
                         entries.add(ModItems.BRONZE_HOE);
                         entries.add(ModItems.BRONZE_SWORD);
+                        entries.add(ModItems.BRONZE_HELMET);
+                        entries.add(ModItems.BRONZE_CHESTPLATE);
+                        entries.add(ModItems.BRONZE_LEGGINGS);
+                        entries.add(ModItems.BRONZE_BOOTS);
 
                         entries.add(ModItems.STONE_SMITHING_HAMMER);
 

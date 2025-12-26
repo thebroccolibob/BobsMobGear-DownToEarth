@@ -19,6 +19,14 @@
     "downtoearth:unforged_bronze_hoe_head",
     "downtoearth:unsharpened_bronze_hoe_head",
     "downtoearth:bronze_hoe_head",
-    "downtoearth:bronze_hoe"
+    "downtoearth:bronze_hoe",
+    "downtoearth:unforged_bronze_helmet",
+    "downtoearth:unpolished_bronze_helmet",
+    "downtoearth:unforged_bronze_chestplate",
+    "downtoearth:unpolished_bronze_chestplate",
+    "downtoearth:unforged_bronze_leggings",
+    "downtoearth:unpolished_bronze_leggings",
+    "downtoearth:unforged_bronze_boots",
+    "downtoearth:unpolished_bronze_boots"
   ]
 }

@@ -11,6 +11,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -71,6 +72,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HOE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_HOE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
@@ -107,5 +116,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BRONZE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_BOOTS));
     }
 }

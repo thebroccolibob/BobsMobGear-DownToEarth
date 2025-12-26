@@ -62,7 +62,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.UNFORGED_BRONZE_HOE_HEAD)
                 .add(ModItems.UNSHARPENED_BRONZE_HOE_HEAD)
                 .add(ModItems.BRONZE_HOE_HEAD)
-                .add(ModItems.BRONZE_HOE);
+                .add(ModItems.BRONZE_HOE)
+                .add(ModItems.UNFORGED_BRONZE_HELMET)
+                .add(ModItems.UNPOLISHED_BRONZE_HELMET)
+                .add(ModItems.UNFORGED_BRONZE_CHESTPLATE)
+                .add(ModItems.UNPOLISHED_BRONZE_CHESTPLATE)
+                .add(ModItems.UNFORGED_BRONZE_LEGGINGS)
+                .add(ModItems.UNPOLISHED_BRONZE_LEGGINGS)
+                .add(ModItems.UNFORGED_BRONZE_BOOTS)
+                .add(ModItems.UNPOLISHED_BRONZE_BOOTS);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)
@@ -110,6 +118,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 Items.NETHERITE_SCRAP,
                 Items.NETHERITE_BLOCK
         );
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BRONZE_HELMET)
+                .add(ModItems.BRONZE_CHESTPLATE)
+                .add(ModItems.BRONZE_LEGGINGS)
+                .add(ModItems.BRONZE_BOOTS);
+
         getOrCreateTagBuilder(BobsMobGearItemTags.SMITHING_HAMMERS).add(ModItems.STONE_SMITHING_HAMMER);
     }
 }

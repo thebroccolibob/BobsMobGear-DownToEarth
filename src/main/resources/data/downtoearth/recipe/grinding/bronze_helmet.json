@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_bronze_helmet"
+  },
+  "result": {
+    "id": "downtoearth:bronze_helmet",
+    "count": 1
+  }
+}

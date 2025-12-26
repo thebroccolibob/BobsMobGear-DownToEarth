@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_bronze_leggings"
+  },
+  "result": {
+    "id": "downtoearth:bronze_leggings",
+    "count": 1
+  }
+}

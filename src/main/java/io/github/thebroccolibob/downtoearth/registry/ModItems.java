@@ -5,6 +5,7 @@ import io.github.thebroccolibob.bobsmobgear.item.SmithingHammerItem;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearItems;
 import io.github.thebroccolibob.downtoearth.DownToEarth;
 import io.github.thebroccolibob.downtoearth.item.FlintToolItem;
+import io.github.thebroccolibob.downtoearth.item.ModArmorMaterials;
 import io.github.thebroccolibob.downtoearth.item.ModToolMaterials;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
@@ -83,6 +84,15 @@ public class ModItems {
     public static final Item UNSHARPENED_BRONZE_SWORD_BLADE = registerItem("unsharpened_bronze_sword_blade", new Item(new Item.Settings()));
     public static final Item BRONZE_SWORD_BLADE = registerItem("bronze_sword_blade", new Item(new Item.Settings()));
 
+    public static final Item UNFORGED_BRONZE_HELMET = registerItem("unforged_bronze_helmet", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_BRONZE_HELMET = registerItem("unpolished_bronze_helmet", new Item(new Item.Settings()));
+    public static final Item UNFORGED_BRONZE_CHESTPLATE = registerItem("unforged_bronze_chestplate", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_BRONZE_CHESTPLATE = registerItem("unpolished_bronze_chestplate", new Item(new Item.Settings()));
+    public static final Item UNFORGED_BRONZE_LEGGINGS = registerItem("unforged_bronze_leggings", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_BRONZE_LEGGINGS = registerItem("unpolished_bronze_leggings", new Item(new Item.Settings()));
+    public static final Item UNFORGED_BRONZE_BOOTS = registerItem("unforged_bronze_boots", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_BRONZE_BOOTS = registerItem("unpolished_bronze_boots", new Item(new Item.Settings()));
+
     public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
             new SmithingHammerItem(new Item.Settings()
                     .maxDamage(128)
@@ -120,6 +130,19 @@ public class ModItems {
     public static final Item BRONZE_SWORD = registerItem("bronze_sword",
             new SwordItem(ModToolMaterials.BRONZE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BRONZE, 3, -2.4F))));
+
+    public static final Item BRONZE_HELMET = registerItem("bronze_helmet",
+            new ArmorItem(ModArmorMaterials.BRONZE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(11))));
+    public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate",
+            new ArmorItem(ModArmorMaterials.BRONZE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(11))));
+    public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings",
+            new ArmorItem(ModArmorMaterials.BRONZE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(11))));
+    public static final Item BRONZE_BOOTS = registerItem("bronze_boots",
+            new ArmorItem(ModArmorMaterials.BRONZE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(11))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(DownToEarth.MOD_ID, name), item);
