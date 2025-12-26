@@ -1,10 +1,10 @@
-// 1.21.1	2025-12-25T19:25:54.2305462	Bob's Mob Gear: Down to Earth/Tags for minecraft:item
+// 1.21.1	2025-12-26T00:15:06.538393	Bob's Mob Gear: Down to Earth/Tags for minecraft:item
 4bdb67e2648672d708280723806dee865cbe8f66 data\minecraft\tags\item\axes.json
 a9229a22949093b7e1cbe8e41ee27825ff791132 data\minecraft\tags\item\swords.json
 f4d14128a144b4b371fbc061de733fd72b501bc5 data\bobsmobgear\tags\item\tong_holdable.json
+97bac92eb8387b423b67e445c80fd0b0a0275a9f data\c\tags\item\hidden_from_recipe_viewers.json
 3033cb2b93f4b7f2e732058132c92cfcdba1a60d data\downtoearth\tags\item\soul_flame_hammered.json
 09bd5f70bf30d01d6ef2778867105a9561e1d006 data\bobsmobgear\tags\item\smithing_hammers.json
-97bac92eb8387b423b67e445c80fd0b0a0275a9f data\c\tags\item\hidden_from_recipe_viewers.json
 93bc89c6bd13b82d9dad358cbe34445b3ba85e51 data\minecraft\tags\item\hoes.json
 89ae8ac4b90da6621de0f95cb164f70cdd5157d5 data\minecraft\tags\item\trimmable_armor.json
 ee2652ec533decd97ee4750a242de0f28cb03e3d data\minecraft\tags\item\shovels.json

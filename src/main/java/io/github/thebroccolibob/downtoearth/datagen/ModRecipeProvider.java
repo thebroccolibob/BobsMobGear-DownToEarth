@@ -313,6 +313,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.FURNACE), conditionsFromItem(Items.FURNACE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, BobsMobGearItems.FORGE_HEATER)
+                .pattern("bBb")
+                .pattern("bFb")
+                .pattern("TTT")
+                .input('b', Items.TERRACOTTA)
+                .input('B', Items.COAL_BLOCK)
+                .input('F', BobsMobGearItems.FORGE)
+                .input('T', ModItems.BRONZE_INGOT)
+                .criterion(hasItem(BobsMobGearItems.FORGE), conditionsFromItem(BobsMobGearItems.FORGE))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, BobsMobGearItems.SMITHING_TONGS)
                 .pattern(" n ")
                 .pattern("n--")

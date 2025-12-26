@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-25T19:25:54.2275451	Bob's Mob Gear: Down to Earth/Recipes
+// 1.21.1	2025-12-26T00:15:06.5353928	Bob's Mob Gear: Down to Earth/Recipes
 3a68a302151d4438d1c738cad992e093507e7ed6 data\downtoearth\recipe\chiseled_tin.json
 fa5435e7c6c28ed2ff55fc32b5ca998438c7ce5b data\downtoearth\advancement\recipes\misc\diamond.json
 0cbbdea2f00254739ae8bed24e6a2c16ffac1859 data\downtoearth\recipe\forge.json
@@ -9,6 +9,7 @@ fa5435e7c6c28ed2ff55fc32b5ca998438c7ce5b data\downtoearth\advancement\recipes\mi
 765051c2083a4cdc0dff512aac065f6979332d39 data\downtoearth\advancement\recipes\tools\stone_shovel.json
 e033907163f77239b2e475085db7cd26fb72a332 data\downtoearth\recipe\stone_hoe.json
 fc1051403142506e01b5b68ad61ba28730446c2e data\downtoearth\recipe\flint_tool.json
+78260209c0f929f38e8195dcd12011176b3a9d2e data\downtoearth\recipe\forge_heater.json
 1ac7615cc958ad1b29d56b25016d6486159e5c9e data\downtoearth\recipe\netherite_scrap.json
 2bd422e7c1871fa0f9f897281c0049380dabc857 data\downtoearth\recipe\clay_boots_mold.json
 fa75d700ad596fe5124d95d934ffd8433d430a8d data\downtoearth\advancement\recipes\misc\coal.json
@@ -32,6 +33,7 @@ e99ac6d6b19c5f1e8be23281bae910021853fc98 data\downtoearth\advancement\recipes\mi
 04213bb452480fb088b5d31fa652adc166cccb78 data\downtoearth\recipe\lapis_lazuli.json
 41017e71a97c0be46cc88b78e4b0af2deb9a46e4 data\downtoearth\recipe\stone_smithing_hammer.json
 6cb39fcbb5dc116e809814d126d37c9797e73c12 data\downtoearth\advancement\recipes\misc\pickaxe_template_from_smelting_clay_pickaxe_head_mold.json
+0a54046481776957457881a2cc652589b96e65f1 data\downtoearth\advancement\recipes\misc\forge_heater.json
 a7bfffd5e7cdf2dcc33a8bb5abf37b6deff382f6 data\downtoearth\advancement\recipes\misc\leaf_fiber.json
 04c8d5f23d3bfd6e317d7c63e8c818323cb84c04 data\downtoearth\advancement\recipes\misc\tin_ingot_from_blasting_raw_tin.json
 4092587114f17a3aada526875c475227dc8254d9 data\downtoearth\advancement\recipes\tools\flint_axe.json

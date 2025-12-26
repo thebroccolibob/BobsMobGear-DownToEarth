@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:coal_block"
+    },
+    "F": {
+      "item": "bobsmobgear:forge"
+    },
+    "T": {
+      "item": "downtoearth:bronze_ingot"
+    },
+    "b": {
+      "item": "minecraft:terracotta"
+    }
+  },
+  "pattern": [
+    "bBb",
+    "bFb",
+    "TTT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bobsmobgear:forge_heater"
+  }
+}
