@@ -14,7 +14,7 @@ public class CarvingEmiRecipe extends BasicEmiRecipe {
     private final EmiIngredient input;
     private final EmiStack output;
 
-    private static final EmiStack TOOL = EmiStack.of(ModItems.FLINT_TOOL.getDefaultStack());
+    public static final EmiStack TOOL = EmiStack.of(ModItems.FLINT_TOOL.getDefaultStack());
 
     public CarvingEmiRecipe(Identifier id, EmiIngredient input, EmiStack output) {
         super(DownToEarthEmiPlugin.CARVING, id, 76, 68);

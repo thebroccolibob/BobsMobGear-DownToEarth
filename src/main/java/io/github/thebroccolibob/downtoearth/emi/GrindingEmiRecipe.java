@@ -1,5 +1,6 @@
 package io.github.thebroccolibob.downtoearth.emi;
 
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
 import dev.emi.emi.api.recipe.BasicEmiRecipe;
@@ -11,6 +12,8 @@ public class GrindingEmiRecipe extends BasicEmiRecipe {
     private final EmiIngredient ingredient;
     private final EmiIngredient reference;
     private final EmiStack output;
+
+    public static final EmiStack GRINDSTONE = EmiStack.of(Items.GRINDSTONE.getDefaultStack());
 
     private static final Identifier BACKGROUND = Identifier.ofVanilla("textures/gui/container/grindstone.png");
 
