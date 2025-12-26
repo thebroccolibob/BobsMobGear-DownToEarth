@@ -84,6 +84,26 @@ public class ModItems {
     public static final Item UNSHARPENED_BRONZE_SWORD_BLADE = registerItem("unsharpened_bronze_sword_blade", new Item(new Item.Settings()));
     public static final Item BRONZE_SWORD_BLADE = registerItem("bronze_sword_blade", new Item(new Item.Settings()));
 
+    public static final Item UNFORGED_IRON_SHOVEL_HEAD = registerItem("unforged_iron_shovel_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_IRON_SHOVEL_HEAD = registerItem("unsharpened_iron_shovel_head", new Item(new Item.Settings()));
+    public static final Item IRON_SHOVEL_HEAD = registerItem("iron_shovel_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_IRON_PICKAXE_HEAD = registerItem("unforged_iron_pickaxe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_IRON_PICKAXE_HEAD = registerItem("unsharpened_iron_pickaxe_head", new Item(new Item.Settings()));
+    public static final Item IRON_PICKAXE_HEAD = registerItem("iron_pickaxe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_IRON_AXE_HEAD = registerItem("unforged_iron_axe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_IRON_AXE_HEAD = registerItem("unsharpened_iron_axe_head", new Item(new Item.Settings()));
+    public static final Item IRON_AXE_HEAD = registerItem("iron_axe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_IRON_HOE_HEAD = registerItem("unforged_iron_hoe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_IRON_HOE_HEAD = registerItem("unsharpened_iron_hoe_head", new Item(new Item.Settings()));
+    public static final Item IRON_HOE_HEAD = registerItem("iron_hoe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_IRON_SWORD_BLADE = registerItem("unforged_iron_sword_blade", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_IRON_SWORD_BLADE = registerItem("unsharpened_iron_sword_blade", new Item(new Item.Settings()));
+    public static final Item IRON_SWORD_BLADE = registerItem("iron_sword_blade", new Item(new Item.Settings()));
+
     public static final Item UNFORGED_BRONZE_HELMET = registerItem("unforged_bronze_helmet", new Item(new Item.Settings()));
     public static final Item UNPOLISHED_BRONZE_HELMET = registerItem("unpolished_bronze_helmet", new Item(new Item.Settings()));
     public static final Item UNFORGED_BRONZE_CHESTPLATE = registerItem("unforged_bronze_chestplate", new Item(new Item.Settings()));

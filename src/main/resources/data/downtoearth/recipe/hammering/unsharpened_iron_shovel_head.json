@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_iron_shovel_head"
+  },
+  "result": {
+    "id": "downtoearth:unsharpened_iron_shovel_head",
+    "count": 1
+  }
+}

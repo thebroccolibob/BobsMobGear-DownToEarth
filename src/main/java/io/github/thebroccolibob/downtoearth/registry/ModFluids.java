@@ -1,10 +1,12 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
 import io.github.thebroccolibob.bobsmobgear.fluid.MetalFluid;
+import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearFluids;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearParticles;
 import io.github.thebroccolibob.downtoearth.DownToEarth;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 
 public class ModFluids {
@@ -24,5 +26,9 @@ public class ModFluids {
 
     public static void registerModFluids() {
         DownToEarth.LOGGER.info("These Fluids are " + DownToEarth.MOD_ID + "!");
+
+        BobsMobGearFluids.registerAttributes(COPPER, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
+        BobsMobGearFluids.registerAttributes(TIN, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
+        BobsMobGearFluids.registerAttributes(BRONZE, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
     }
 }

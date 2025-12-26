@@ -37,6 +37,23 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.BRONZE_HOE);
 
+        getOrCreateTagBuilder(BobsMobGearItemTags.FORGES_IRON_INGOT)
+                .add(ModItems.UNFORGED_IRON_SHOVEL_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_SHOVEL_HEAD)
+                .add(ModItems.IRON_SHOVEL_HEAD)
+                .add(ModItems.UNFORGED_IRON_PICKAXE_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_PICKAXE_HEAD)
+                .add(ModItems.IRON_PICKAXE_HEAD)
+                .add(ModItems.UNFORGED_IRON_AXE_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_AXE_HEAD)
+                .add(ModItems.IRON_AXE_HEAD)
+                .add(ModItems.UNFORGED_IRON_HOE_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_HOE_HEAD)
+                .add(ModItems.IRON_HOE_HEAD)
+                .add(ModItems.UNFORGED_IRON_SWORD_BLADE)
+                .add(ModItems.UNSHARPENED_IRON_SWORD_BLADE)
+                .add(ModItems.IRON_SWORD_BLADE);
+
         getOrCreateTagBuilder(BobsMobGearItemTags.TONG_HOLDABLE)
                 .add(Items.COPPER_INGOT)
                 .add(ModItems.TIN_INGOT)
@@ -70,7 +87,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.UNFORGED_BRONZE_LEGGINGS)
                 .add(ModItems.UNPOLISHED_BRONZE_LEGGINGS)
                 .add(ModItems.UNFORGED_BRONZE_BOOTS)
-                .add(ModItems.UNPOLISHED_BRONZE_BOOTS);
+                .add(ModItems.UNPOLISHED_BRONZE_BOOTS)
+                .add(ModItems.UNFORGED_IRON_SHOVEL_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_SHOVEL_HEAD)
+                .add(ModItems.IRON_SHOVEL_HEAD)
+                .add(ModItems.UNFORGED_IRON_PICKAXE_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_PICKAXE_HEAD)
+                .add(ModItems.IRON_PICKAXE_HEAD)
+                .add(ModItems.UNFORGED_IRON_AXE_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_AXE_HEAD)
+                .add(ModItems.IRON_AXE_HEAD)
+                .add(ModItems.UNFORGED_IRON_HOE_HEAD)
+                .add(ModItems.UNSHARPENED_IRON_HOE_HEAD)
+                .add(ModItems.IRON_HOE_HEAD)
+                .add(ModItems.UNFORGED_IRON_SWORD_BLADE)
+                .add(ModItems.UNSHARPENED_IRON_SWORD_BLADE)
+                .add(ModItems.IRON_SWORD_BLADE);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)

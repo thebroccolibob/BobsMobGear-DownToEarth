@@ -65,6 +65,21 @@ public class ModItemGroups {
                         entries.add(ModItems.UNPOLISHED_BRONZE_LEGGINGS);
                         entries.add(ModItems.UNFORGED_BRONZE_BOOTS);
                         entries.add(ModItems.UNPOLISHED_BRONZE_BOOTS);
+                        entries.add(ModItems.UNFORGED_IRON_SHOVEL_HEAD);
+                        entries.add(ModItems.UNSHARPENED_IRON_SHOVEL_HEAD);
+                        entries.add(ModItems.IRON_SHOVEL_HEAD);
+                        entries.add(ModItems.UNFORGED_IRON_PICKAXE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_IRON_PICKAXE_HEAD);
+                        entries.add(ModItems.IRON_PICKAXE_HEAD);
+                        entries.add(ModItems.UNFORGED_IRON_AXE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_IRON_AXE_HEAD);
+                        entries.add(ModItems.IRON_AXE_HEAD);
+                        entries.add(ModItems.UNFORGED_IRON_HOE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_IRON_HOE_HEAD);
+                        entries.add(ModItems.IRON_HOE_HEAD);
+                        entries.add(ModItems.UNFORGED_IRON_SWORD_BLADE);
+                        entries.add(ModItems.UNSHARPENED_IRON_SWORD_BLADE);
+                        entries.add(ModItems.IRON_SWORD_BLADE);
 
                         entries.add(ModItems.BRONZE_SHOVEL);
                         entries.add(ModItems.BRONZE_PICKAXE);

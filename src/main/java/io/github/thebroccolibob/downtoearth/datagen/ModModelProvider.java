@@ -80,6 +80,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_BOOTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_IRON_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_IRON_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_IRON_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_IRON_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_IRON_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_SWORD_BLADE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
