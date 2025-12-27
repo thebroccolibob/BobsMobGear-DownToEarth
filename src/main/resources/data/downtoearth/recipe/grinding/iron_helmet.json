@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_iron_helmet"
+  },
+  "result": {
+    "id": "minecraft:iron_helmet",
+    "count": 1
+  }
+}

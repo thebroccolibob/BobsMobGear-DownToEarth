@@ -52,7 +52,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.IRON_HOE_HEAD)
                 .add(ModItems.UNFORGED_IRON_SWORD_BLADE)
                 .add(ModItems.UNSHARPENED_IRON_SWORD_BLADE)
-                .add(ModItems.IRON_SWORD_BLADE);
+                .add(ModItems.IRON_SWORD_BLADE)
+                .add(ModItems.UNFORGED_IRON_HELMET)
+                .add(ModItems.UNPOLISHED_IRON_HELMET)
+                .add(ModItems.UNFORGED_IRON_CHESTPLATE)
+                .add(ModItems.UNPOLISHED_IRON_CHESTPLATE)
+                .add(ModItems.UNFORGED_IRON_LEGGINGS)
+                .add(ModItems.UNPOLISHED_IRON_LEGGINGS)
+                .add(ModItems.UNFORGED_IRON_BOOTS)
+                .add(ModItems.UNPOLISHED_IRON_BOOTS);
 
         getOrCreateTagBuilder(BobsMobGearItemTags.TONG_HOLDABLE)
                 .add(Items.COPPER_INGOT)
@@ -102,7 +110,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.IRON_HOE_HEAD)
                 .add(ModItems.UNFORGED_IRON_SWORD_BLADE)
                 .add(ModItems.UNSHARPENED_IRON_SWORD_BLADE)
-                .add(ModItems.IRON_SWORD_BLADE);
+                .add(ModItems.IRON_SWORD_BLADE)
+                .add(ModItems.UNFORGED_IRON_HELMET)
+                .add(ModItems.UNPOLISHED_IRON_HELMET)
+                .add(ModItems.UNFORGED_IRON_CHESTPLATE)
+                .add(ModItems.UNPOLISHED_IRON_CHESTPLATE)
+                .add(ModItems.UNFORGED_IRON_LEGGINGS)
+                .add(ModItems.UNPOLISHED_IRON_LEGGINGS)
+                .add(ModItems.UNFORGED_IRON_BOOTS)
+                .add(ModItems.UNPOLISHED_IRON_BOOTS);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)

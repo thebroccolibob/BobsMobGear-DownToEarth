@@ -80,6 +80,14 @@ public class ModItemGroups {
                         entries.add(ModItems.UNFORGED_IRON_SWORD_BLADE);
                         entries.add(ModItems.UNSHARPENED_IRON_SWORD_BLADE);
                         entries.add(ModItems.IRON_SWORD_BLADE);
+                        entries.add(ModItems.UNFORGED_IRON_HELMET);
+                        entries.add(ModItems.UNPOLISHED_IRON_HELMET);
+                        entries.add(ModItems.UNFORGED_IRON_CHESTPLATE);
+                        entries.add(ModItems.UNPOLISHED_IRON_CHESTPLATE);
+                        entries.add(ModItems.UNFORGED_IRON_LEGGINGS);
+                        entries.add(ModItems.UNPOLISHED_IRON_LEGGINGS);
+                        entries.add(ModItems.UNFORGED_IRON_BOOTS);
+                        entries.add(ModItems.UNPOLISHED_IRON_BOOTS);
 
                         entries.add(ModItems.BRONZE_SHOVEL);
                         entries.add(ModItems.BRONZE_PICKAXE);

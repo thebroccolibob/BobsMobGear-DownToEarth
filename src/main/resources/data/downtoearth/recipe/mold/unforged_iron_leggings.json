@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 700,
+  "fluid": {
+    "fluid": "bobsmobgear:iron"
+  },
+  "fluid_amount": 63000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_iron_leggings"
+  },
+  "template": "downtoearth:ceramic_leggings_mold_template"
+}

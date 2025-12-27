@@ -113,6 +113,15 @@ public class ModItems {
     public static final Item UNFORGED_BRONZE_BOOTS = registerItem("unforged_bronze_boots", new Item(new Item.Settings()));
     public static final Item UNPOLISHED_BRONZE_BOOTS = registerItem("unpolished_bronze_boots", new Item(new Item.Settings()));
 
+    public static final Item UNFORGED_IRON_HELMET = registerItem("unforged_iron_helmet", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_IRON_HELMET = registerItem("unpolished_iron_helmet", new Item(new Item.Settings()));
+    public static final Item UNFORGED_IRON_CHESTPLATE = registerItem("unforged_iron_chestplate", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_IRON_CHESTPLATE = registerItem("unpolished_iron_chestplate", new Item(new Item.Settings()));
+    public static final Item UNFORGED_IRON_LEGGINGS = registerItem("unforged_iron_leggings", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_IRON_LEGGINGS = registerItem("unpolished_iron_leggings", new Item(new Item.Settings()));
+    public static final Item UNFORGED_IRON_BOOTS = registerItem("unforged_iron_boots", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_IRON_BOOTS = registerItem("unpolished_iron_boots", new Item(new Item.Settings()));
+
     public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
             new SmithingHammerItem(new Item.Settings()
                     .maxDamage(128)

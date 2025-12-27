@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 400,
+  "fluid": {
+    "fluid": "bobsmobgear:iron"
+  },
+  "fluid_amount": 36000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_iron_boots"
+  },
+  "template": "downtoearth:ceramic_boots_mold_template"
+}

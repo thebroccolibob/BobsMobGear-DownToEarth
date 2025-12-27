@@ -72,14 +72,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HOE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNSHARPENED_BRONZE_HOE_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_HOE_HEAD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_BOOTS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_BOOTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNFORGED_IRON_SHOVEL_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNSHARPENED_IRON_SHOVEL_HEAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_SHOVEL_HEAD, Models.GENERATED);
@@ -95,6 +87,24 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_IRON_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNSHARPENED_IRON_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_SWORD_BLADE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_BRONZE_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_IRON_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_IRON_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_IRON_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_IRON_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_IRON_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
