@@ -13,6 +13,7 @@ public class ModFluids {
     public static final BobsMobGearParticles.Drips COPPER_DRIPS = BobsMobGearParticles.registerDrips(Identifier.of(DownToEarth.MOD_ID, "copper"));
     public static final BobsMobGearParticles.Drips TIN_DRIPS = BobsMobGearParticles.registerDrips(Identifier.of(DownToEarth.MOD_ID, "tin"));
     public static final BobsMobGearParticles.Drips BRONZE_DRIPS = BobsMobGearParticles.registerDrips(Identifier.of(DownToEarth.MOD_ID, "bronze"));
+    public static final BobsMobGearParticles.Drips STEEL_DRIPS = BobsMobGearParticles.registerDrips(Identifier.of(DownToEarth.MOD_ID, "steel"));
     public static final BobsMobGearParticles.Drips GOLD_DRIPS = BobsMobGearParticles.registerDrips(Identifier.of(DownToEarth.MOD_ID, "gold"));
 
     public static final MetalFluid COPPER = Registry.register(Registries.FLUID, Identifier.of(DownToEarth.MOD_ID, "copper"
@@ -24,11 +25,15 @@ public class ModFluids {
     public static final MetalFluid BRONZE = Registry.register(Registries.FLUID, Identifier.of(DownToEarth.MOD_ID, "bronze"
     ), new MetalFluid(0xC2751F, BRONZE_DRIPS.getDripping()));
 
+    public static final MetalFluid STEEL = Registry.register(Registries.FLUID, Identifier.of(DownToEarth.MOD_ID, "steel"
+    ), new MetalFluid(0x7C7C7C, STEEL_DRIPS.getDripping()));
+
     public static void registerModFluids() {
         DownToEarth.LOGGER.info("These Fluids are " + DownToEarth.MOD_ID + "!");
 
         BobsMobGearFluids.registerAttributes(COPPER, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
         BobsMobGearFluids.registerAttributes(TIN, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
         BobsMobGearFluids.registerAttributes(BRONZE, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
+        BobsMobGearFluids.registerAttributes(STEEL, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
     }
 }

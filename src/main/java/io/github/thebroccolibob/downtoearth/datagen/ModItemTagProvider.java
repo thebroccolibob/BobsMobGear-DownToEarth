@@ -65,7 +65,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(BobsMobGearItemTags.TONG_HOLDABLE)
                 .add(Items.COPPER_INGOT)
                 .add(ModItems.TIN_INGOT)
-                .add(ModItems.BRONZE_INGOT);
+                .add(ModItems.BRONZE_INGOT)
+                .add(ModItems.STEEL_INGOT);
 
         getOrCreateTagBuilder(BobsMobGearItemTags.TONG_HOLDABLE_WEAPONS)
                 .add(ModItems.UNFORGED_BRONZE_SWORD_BLADE)

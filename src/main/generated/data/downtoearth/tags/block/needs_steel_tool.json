@@ -12,6 +12,7 @@
     "minecraft:deepslate_iron_ore",
     "minecraft:deepslate_copper_ore",
     "minecraft:deepslate_lapis_ore",
-    "minecraft:deepslate"
+    "minecraft:deepslate",
+    "downtoearth:deepslate_coking_coal_ore"
   ]
 }

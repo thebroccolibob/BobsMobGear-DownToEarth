@@ -19,13 +19,23 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> FLINT_PLACED_KEY = registerKey("flint_placed");
     public static final RegistryKey<PlacedFeature> TIN_ORE_PLACED_KEY = registerKey("tin_ore_placed");
+    public static final RegistryKey<PlacedFeature> COKING_COAL_ORE_PLACED_KEY = registerKey("coking_coal_ore_placed");
+    public static final RegistryKey<PlacedFeature> COKING_COAL_ORE_BURIED_PLACED_KEY = registerKey("coking_coal_ore_buried_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
+        // TIN
         register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TIN_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(16, HeightRangePlacementModifier.trapezoid(YOffset.fixed(-16), YOffset.fixed(112))));
 
+        // COKING COAL
+        register(context, COKING_COAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.COKING_COAL_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(30, HeightRangePlacementModifier.uniform(YOffset.fixed(136), YOffset.getTop())));
+        register(context, COKING_COAL_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.COKING_COAL_ORE_BURIED_KEY),
+                ModOrePlacement.modifiersWithCount(20, HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(192))));
+
+        // FLINT ROCKS
         var rockTag = TagKey.of(RegistryKeys.BLOCK, Identifier.of(DownToEarth.MOD_ID, "rock_feature_blocks"));
 
         var predicate =

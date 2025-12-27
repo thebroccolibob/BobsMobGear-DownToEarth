@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 100,
+  "fluid": {
+    "fluid": "downtoearth:steel"
+  },
+  "fluid_amount": 9000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:steel_ingot"
+  },
+  "template": "bobsmobgear:empty_template"
+}

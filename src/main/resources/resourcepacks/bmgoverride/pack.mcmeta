@@ -106,7 +106,11 @@
         "path": "(recipe|advancement/recipes/.+)/gold_nugget_from_smelting\\.json"
       },
       {
-        "namespace": "minecraft|paladins|rogues|archers|farmersdelight",
+        "namespace": "minecraft",
+        "path": "(recipe|advancement/recipes/.+)/flint_and_steel\\.json"
+      },
+      {
+        "namespace": "minecraft",
         "path": "(recipe|advancement/recipes/combat|advancement/recipes/tools)/(stone|golden|iron|diamond|netherite)_(sword|pickaxe|axe|shovel|hoe|great_hammer|kite_shield|mace|claymore|dagger|glaive|sickle|double_axe|spear|knife)(_smithing)?\\.json"
       },
       {

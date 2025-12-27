@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "downtoearth:block/deepslate_coking_coal_ore"
+  }
+}

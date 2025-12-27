@@ -1,0 +1,17 @@
+{
+  "type": "bobsmobgear:forging",
+  "forging_time": 200,
+  "weak_heat": false,
+  "ingredients": [
+    {
+      "item": "downtoearth:coking_coal"
+    },
+    {
+      "tag": "downtoearth:forges/steel_ingot_from_iron"
+    }
+  ],
+  "result": {
+    "fluid": "downtoearth:steel"
+  },
+  "result_amount": 2250
+}

@@ -50,9 +50,15 @@ public class DownToEarthClient implements ClientModInitializer {
                 BobsMobGearClient.INSTANCE.getLIQUID_METAL_TEXTURE(),
                 ModFluids.BRONZE.getTint()
         ));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STEEL, new SimpleFluidRenderHandler(
+                BobsMobGearClient.INSTANCE.getLIQUID_METAL_TEXTURE(),
+                BobsMobGearClient.INSTANCE.getLIQUID_METAL_TEXTURE(),
+                ModFluids.STEEL.getTint()
+        ));
 
         BobsMobGearParticleFactoryKt.registerDrips(ModFluids.COPPER_DRIPS, ModFluids.COPPER);
         BobsMobGearParticleFactoryKt.registerDrips(ModFluids.TIN_DRIPS, ModFluids.TIN);
         BobsMobGearParticleFactoryKt.registerDrips(ModFluids.BRONZE_DRIPS, ModFluids.BRONZE);
+        BobsMobGearParticleFactoryKt.registerDrips(ModFluids.STEEL_DRIPS, ModFluids.STEEL);
     }
 }

@@ -2,6 +2,7 @@
   "item.downtoearth.leaf_fiber": "Leaf Fiber",
 
   "item.downtoearth.coal_piece": "Coal Piece",
+  "item.downtoearth.coking_coal_piece": "Coking Coal Piece",
   "item.downtoearth.raw_copper_nugget": "Raw Copper Nugget",
   "item.downtoearth.raw_tin_nugget": "Raw Tin Nugget",
   "item.downtoearth.raw_tin": "Raw Tin",
@@ -14,11 +15,14 @@
 
   "item.downtoearth.tin_ingot": "Tin Ingot",
   "item.downtoearth.bronze_ingot": "Bronze Ingot",
+  "item.downtoearth.steel_ingot": "Steel Ingot",
 
   "item.downtoearth.bronze_mix": "Bronze Mix",
+  "item.downtoearth.coking_coal": "Coking Coal",
   "item.downtoearth.copper_pot": "Crucible of Molten Copper",
   "item.downtoearth.tin_pot": "Crucible of Molten Tin",
   "item.downtoearth.bronze_pot": "Crucible of Molten Bronze",
+  "item.downtoearth.steel_pot": "Crucible of Molten Steel",
 
   "item.downtoearth.clay_ingot_mold": "Clay Ingot Mold",
   "item.downtoearth.clay_sword_blade_mold": "Clay Sword Blade Mold",
@@ -109,6 +113,8 @@
   "block.downtoearth.flint": "Flint Rock",
   "block.downtoearth.tin_ore": "Tin Ore",
   "block.downtoearth.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.downtoearth.coking_coal_ore": "Coking Coal Ore",
+  "block.downtoearth.deepslate_coking_coal_ore": "Deepslate Coking Coal Ore",
   "block.downtoearth.tin_block": "Block of Tin",
   "block.downtoearth.cut_tin": "Cut Tin",
   "block.downtoearth.cut_tin_slab": "Cut Tin Slab",

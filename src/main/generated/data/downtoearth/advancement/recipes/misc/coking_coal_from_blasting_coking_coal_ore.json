@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coking_coal_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "downtoearth:coking_coal_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "downtoearth:coking_coal_from_blasting_coking_coal_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coking_coal_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "downtoearth:coking_coal_from_blasting_coking_coal_ore"
+    ]
+  }
+}

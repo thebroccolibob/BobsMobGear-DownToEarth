@@ -31,6 +31,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.TIN_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TIN_BLOCK);
 
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.COAL, ModItems.COAL_PIECE);
+        offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, ModItems.COKING_COAL, ModItems.COKING_COAL_PIECE);
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.LAPIS_LAZULI, ModItems.LAPIS_LAZULI_PIECE);
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.EMERALD, ModItems.EMERALD_SHARD);
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, Items.DIAMOND, ModItems.DIAMOND_SHARD);
@@ -83,6 +84,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.RAW_COPPER)
                 .input(Items.RAW_COPPER)
                 .criterion(hasItem(ModItems.RAW_TIN), conditionsFromItem(ModItems.RAW_TIN))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.FLINT_AND_STEEL)
+                .input(ModItems.STEEL_INGOT)
+                .input(Items.FLINT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN, 4)
@@ -398,6 +405,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         List<ItemConvertible> TIN_SMELT = List.of(ModItems.RAW_TIN, ModBlocks.TIN_ORE, ModBlocks.DEEPSLATE_TIN_ORE);
         offerBlasting(recipeExporter, TIN_SMELT, RecipeCategory.MISC, ModItems.TIN_INGOT, 0.7f, 100, "tin_ingot");
+
+        List<ItemConvertible> COKE_SMELT = List.of(Items.COAL_BLOCK, ModBlocks.COKING_COAL_ORE, ModBlocks.DEEPSLATE_COKING_COAL_ORE);
+        offerBlasting(recipeExporter, COKE_SMELT, RecipeCategory.MISC, ModItems.COKING_COAL, 0.15f, 100, "coking_coal");
     }
 
 }

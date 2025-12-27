@@ -22,6 +22,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block LEAF_FIBER_BALE = registerBlockWithItem("leaf_fiber_bale",
@@ -59,6 +60,23 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.BLOCK)));
     public static final Block DEEPSLATE_TIN_ORE = registerBlockWithItem("deepslate_tin_ore",
             new ExperienceDroppingBlock(ConstantIntProvider.create(0), AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DEEPSLATE_GRAY)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(4.5F, 3.0F)
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .pistonBehavior(PistonBehavior.BLOCK)));
+
+    public static final Block COKING_COAL_ORE = registerBlockWithItem("coking_coal_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(0, 2), AbstractBlock.Settings.create()
+                    .mapColor(MapColor.STONE_GRAY)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(3.0F, 3.0F)
+                    .sounds(BlockSoundGroup.STONE)
+                    .pistonBehavior(PistonBehavior.BLOCK)));
+    public static final Block DEEPSLATE_COKING_COAL_ORE = registerBlockWithItem("deepslate_coking_coal_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(0, 2), AbstractBlock.Settings.create()
                     .mapColor(MapColor.DEEPSLATE_GRAY)
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()

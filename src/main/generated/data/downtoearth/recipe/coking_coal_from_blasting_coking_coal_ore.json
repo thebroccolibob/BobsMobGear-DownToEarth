@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.15,
+  "group": "coking_coal",
+  "ingredient": {
+    "item": "downtoearth:coking_coal_ore"
+  },
+  "result": {
+    "id": "downtoearth:coking_coal"
+  }
+}

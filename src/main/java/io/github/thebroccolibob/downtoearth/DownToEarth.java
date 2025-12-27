@@ -44,6 +44,8 @@ public class DownToEarth implements ModInitializer {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.LEAF_FIBER, 0.3f);
 
         FuelRegistry.INSTANCE.add(ModItems.COAL_PIECE, 400);
+        FuelRegistry.INSTANCE.add(ModItems.COKING_COAL, 800);
+        FuelRegistry.INSTANCE.add(ModItems.COKING_COAL_PIECE, 200);
 
         ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "bmgoverride"),
                 FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),

@@ -12,6 +12,8 @@
     "downtoearth:tin_door",
     "downtoearth:tin_trapdoor",
     "downtoearth:tin_bulb",
-    "downtoearth:raw_tin_block"
+    "downtoearth:raw_tin_block",
+    "downtoearth:coking_coal_ore",
+    "downtoearth:deepslate_coking_coal_ore"
   ]
 }

@@ -25,11 +25,14 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> FLINT_BLOCK_KEY = registryKey("flint_block");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FLINT_KEY = registryKey("flint");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TIN_ORE_KEY = registryKey("tin_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COKING_COAL_ORE_KEY = registryKey("coking_coal_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COKING_COAL_ORE_BURIED_KEY = registryKey("coking_coal_ore_buried");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
+        // TIN
         List<OreFeatureConfig.Target> overworldTinOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.TIN_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_TIN_ORE.getDefaultState()),
@@ -37,6 +40,20 @@ public class ModConfiguredFeatures {
 
         register(context, TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTinOres, 10));
 
+        // COKING COAL
+        List<OreFeatureConfig.Target> overworldCokeOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.COKING_COAL_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_COKING_COAL_ORE.getDefaultState()));
+
+        register(context, COKING_COAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCokeOres, 17));
+
+        List<OreFeatureConfig.Target> buriedCokeOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.COKING_COAL_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_COKING_COAL_ORE.getDefaultState()));
+
+        register(context, COKING_COAL_ORE_BURIED_KEY, Feature.ORE, new OreFeatureConfig(buriedCokeOres, 17, 0.5F));
+
+        // FLINT ROCKS
         DataPool.Builder<BlockState> flint_pool = DataPool.builder();
         flint_pool.add(ModBlocks.FLINT.getDefaultState()
                 .with(FlintBlock.FACING, Direction.EAST)

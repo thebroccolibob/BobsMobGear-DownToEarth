@@ -23,6 +23,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(ModBlocks.LEAF_FIBER_BALE, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TIN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TIN_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COKING_COAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_COKING_COAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TIN_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_TIN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TIN_GRATE);
@@ -118,6 +120,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CLAY_BOOTS_MOLD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.COAL_PIECE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COKING_COAL_PIECE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_TIN_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_TIN, Models.GENERATED);
@@ -129,10 +132,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ANCIENT_DEBRIS_FRAGMENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.TIN_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_MIX, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COKING_COAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_POT, Models.GENERATED);
         itemModelGenerator.register(ModItems.TIN_POT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_POT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_POT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_SMITHING_HAMMER, Models.HANDHELD);

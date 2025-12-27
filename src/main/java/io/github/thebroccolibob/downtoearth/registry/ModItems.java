@@ -49,6 +49,7 @@ public class ModItems {
     public static final Item CLAY_BOOTS_MOLD = registerItem("clay_boots_mold", new Item(new Item.Settings()));
 
     public static final Item COAL_PIECE = registerItem("coal_piece", new Item(new Item.Settings()));
+    public static final Item COKING_COAL_PIECE = registerItem("coking_coal_piece", new Item(new Item.Settings()));
     public static final Item RAW_COPPER_NUGGET = registerItem("raw_copper_nugget", new Item(new Item.Settings()));
     public static final Item RAW_TIN_NUGGET = registerItem("raw_tin_nugget", new Item(new Item.Settings()));
     public static final Item RAW_TIN = registerItem("raw_tin", new Item(new Item.Settings()));
@@ -60,9 +61,11 @@ public class ModItems {
     public static final Item ANCIENT_DEBRIS_FRAGMENT = registerItem("ancient_debris_fragment", new Item(new Item.Settings()));
 
     public static final Item BRONZE_MIX = registerItem("bronze_mix", new Item(new Item.Settings()));
+    public static final Item COKING_COAL = registerItem("coking_coal", new Item(new Item.Settings()));
 
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new Item.Settings()));
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
 
     public static final Item UNFORGED_BRONZE_SHOVEL_HEAD = registerItem("unforged_bronze_shovel_head", new Item(new Item.Settings()));
     public static final Item UNSHARPENED_BRONZE_SHOVEL_HEAD = registerItem("unsharpened_bronze_shovel_head", new Item(new Item.Settings()));
@@ -139,6 +142,7 @@ public class ModItems {
     public static final Item COPPER_POT = BobsMobGearItems.registerPot(ModFluids.COPPER);
     public static final Item TIN_POT = BobsMobGearItems.registerPot(ModFluids.TIN);
     public static final Item BRONZE_POT = BobsMobGearItems.registerPot(ModFluids.BRONZE);
+    public static final Item STEEL_POT = BobsMobGearItems.registerPot(ModFluids.STEEL);
 
     public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel",
             new ShovelItem(ModToolMaterials.BRONZE, new Item.Settings()
@@ -220,5 +224,13 @@ public class ModItems {
 
         FluidStorage.combinedItemApiProvider(BobsMobGearItems.EMPTY_POT).register(containerItemContext ->
                 new EmptyItemFluidStorage(containerItemContext, BRONZE_POT, ModFluids.BRONZE, FluidConstants.INGOT));
+
+        // STEEL
+        FluidStorage.ITEM.registerForItems((itemStack, containerItemContext) ->
+                new FullItemFluidStorage(containerItemContext, BobsMobGearItems.EMPTY_POT,
+                        FluidVariant.of(((FluidPotItem) itemStack.getItem()).getFluid()), FluidConstants.INGOT), STEEL_POT);
+
+        FluidStorage.combinedItemApiProvider(BobsMobGearItems.EMPTY_POT).register(containerItemContext ->
+                new EmptyItemFluidStorage(containerItemContext, STEEL_POT, ModFluids.STEEL, FluidConstants.INGOT));
     }
 }

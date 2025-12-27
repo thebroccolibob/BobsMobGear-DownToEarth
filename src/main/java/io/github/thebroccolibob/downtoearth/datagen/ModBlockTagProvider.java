@@ -31,7 +31,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TIN_DOOR)
                 .add(ModBlocks.TIN_TRAPDOOR)
                 .add(ModBlocks.TIN_BULB)
-                .add(ModBlocks.RAW_TIN_BLOCK);
+                .add(ModBlocks.RAW_TIN_BLOCK)
+                .add(ModBlocks.COKING_COAL_ORE)
+                .add(ModBlocks.DEEPSLATE_COKING_COAL_ORE);
 
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_BRONZE_TOOL)
@@ -66,7 +68,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.DEEPSLATE_IRON_ORE)
                 .add(Blocks.DEEPSLATE_COPPER_ORE)
                 .add(Blocks.DEEPSLATE_LAPIS_ORE)
-                .add(Blocks.DEEPSLATE);
+                .add(Blocks.DEEPSLATE)
+                .add(ModBlocks.DEEPSLATE_COKING_COAL_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .setReplace(true)

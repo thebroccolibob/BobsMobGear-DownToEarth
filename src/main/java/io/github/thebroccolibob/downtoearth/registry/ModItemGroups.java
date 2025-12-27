@@ -102,6 +102,7 @@ public class ModItemGroups {
                         entries.add(ModItems.STONE_SMITHING_HAMMER);
 
                         entries.add(ModItems.COAL_PIECE);
+                        entries.add(ModItems.COKING_COAL_PIECE);
                         entries.add(ModItems.RAW_COPPER_NUGGET);
                         entries.add(ModItems.RAW_TIN_NUGGET);
                         entries.add(ModItems.RAW_TIN);
@@ -113,12 +114,16 @@ public class ModItemGroups {
                         entries.add(ModItems.ANCIENT_DEBRIS_FRAGMENT);
 
                         entries.add(ModItems.BRONZE_MIX);
+                        entries.add(ModItems.COKING_COAL);
+
                         entries.add(ModItems.COPPER_POT);
                         entries.add(ModItems.TIN_POT);
                         entries.add(ModItems.BRONZE_POT);
+                        entries.add(ModItems.STEEL_POT);
 
                         entries.add(ModItems.TIN_INGOT);
                         entries.add(ModItems.BRONZE_INGOT);
+                        entries.add(ModItems.STEEL_INGOT);
                     })).build());
 
     public static final ItemGroup BOBS_MOB_GEAR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -135,6 +140,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CERAMIC_BOOTS_MOLD);
                         entries.add(ModBlocks.TIN_ORE);
                         entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
+                        entries.add(ModBlocks.COKING_COAL_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_COKING_COAL_ORE);
                         entries.add(ModBlocks.RAW_TIN_BLOCK);
                         entries.add(ModBlocks.TIN_BLOCK);
                         entries.add(ModBlocks.CHISELED_TIN);

@@ -1,14 +1,14 @@
-// 1.21.1	2025-12-26T17:12:18.4637789	Bob's Mob Gear: Down to Earth/Tags for minecraft:block
+// 1.21.1	2025-12-26T23:17:44.6291154	Bob's Mob Gear: Down to Earth/Tags for minecraft:block
 7a707676e5f5a24198cc37cef62f2f81e5b8f2a9 data\minecraft\tags\block\mineable\hoe.json
-66b63bb300b05de088ba385fbfd3213e15910919 data\downtoearth\tags\block\needs_steel_tool.json
+bb1702dbd718b0669701fa07fa0c0e78fe91fac9 data\downtoearth\tags\block\needs_steel_tool.json
 7ac5b27f95c72da3dea3972e701dd88fd3b534b3 data\minecraft\tags\block\incorrect_for_wooden_tool.json
 83df287cfa130ddc616686327a7f9a004e19d8d9 data\minecraft\tags\block\anvil.json
 4ae88a3f4a620b074472a4545862821520806557 data\minecraft\tags\block\needs_iron_tool.json
 7ac5b27f95c72da3dea3972e701dd88fd3b534b3 data\minecraft\tags\block\incorrect_for_gold_tool.json
-929d15bd4a8d8fea9a1ea2398b7c2a521dc2115e data\minecraft\tags\block\incorrect_for_iron_tool.json
 29388cdbfe9719e36381f0d76955c4c49c3b78eb data\downtoearth\tags\block\needs_bronze_tool.json
+929d15bd4a8d8fea9a1ea2398b7c2a521dc2115e data\minecraft\tags\block\incorrect_for_iron_tool.json
 7ac5b27f95c72da3dea3972e701dd88fd3b534b3 data\minecraft\tags\block\incorrect_for_stone_tool.json
-cc8cead43ae97186efc0ac7fa3be82559b03825e data\minecraft\tags\block\mineable\pickaxe.json
+7a66b81463f4f324c07538c8030eec9f76804373 data\minecraft\tags\block\mineable\pickaxe.json
 7a707676e5f5a24198cc37cef62f2f81e5b8f2a9 data\minecraft\tags\block\occludes_vibration_signals.json
 7cec8c0d21650f9714634138a33e7b3d28d8019b data\minecraft\tags\block\needs_stone_tool.json
 7a707676e5f5a24198cc37cef62f2f81e5b8f2a9 data\minecraft\tags\block\dampens_vibrations.json

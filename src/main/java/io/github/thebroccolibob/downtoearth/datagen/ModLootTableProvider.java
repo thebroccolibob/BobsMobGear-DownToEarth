@@ -43,6 +43,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.TIN_ORE, multiOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_TIN_NUGGET,1f, 8f));
         addDrop(ModBlocks.DEEPSLATE_TIN_ORE, multiOreDrop(ModBlocks.DEEPSLATE_TIN_ORE, ModItems.RAW_TIN,2f, 3f));
+
+        addDrop(ModBlocks.COKING_COAL_ORE, multiOreDrop(ModBlocks.COKING_COAL_ORE, ModItems.COKING_COAL_PIECE,1f, 4f));
+        addDrop(ModBlocks.DEEPSLATE_COKING_COAL_ORE, multiOreDrop(ModBlocks.DEEPSLATE_COKING_COAL_ORE, ModItems.COKING_COAL,1f, 2f));
     }
 
     public LootTable.Builder multiOreDrop(Block drop, Item item, float minDrops, float maxDrops) {

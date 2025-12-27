@@ -1,6 +1,10 @@
-// 1.21.1	2025-12-26T17:12:18.4627716	Bob's Mob Gear: Down to Earth/
+// 1.21.1	2025-12-26T23:17:44.6281149	Bob's Mob Gear: Down to Earth/
+1727dc33e747e9e8f0f16d445bb30ff5e1b040c5 data\downtoearth\worldgen\configured_feature\coking_coal_ore_buried.json
 9f1870b2b9ee80d946252037070e50a6fe1a587e data\downtoearth\worldgen\placed_feature\flint_placed.json
 997aa9364669138a636ae2d6b1016853ec5e13a2 data\downtoearth\worldgen\configured_feature\flint_block.json
 7fa77f7a0d862895bf162f1a993814a202cebcf4 data\downtoearth\worldgen\placed_feature\tin_ore_placed.json
 8e99d3cc58c81ac9cef3f207a3d8047318604e55 data\downtoearth\worldgen\configured_feature\tin_ore.json
+af27b5a5427bc620d166c87ba4dab18fbeb6ab40 data\downtoearth\worldgen\placed_feature\coking_coal_ore_placed.json
+bb8166618216c62a2beee678fb83e9afde6af8b3 data\downtoearth\worldgen\configured_feature\coking_coal_ore.json
 97c339b97e6ba5b113297f0f6737ed407469b338 data\downtoearth\worldgen\configured_feature\flint.json
+78eaf4df7e34c3bcc05fcf8db79ddb056f9f6274 data\downtoearth\worldgen\placed_feature\coking_coal_ore_buried_placed.json
