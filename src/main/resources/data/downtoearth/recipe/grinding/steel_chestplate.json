@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_steel_chestplate"
+  },
+  "result": {
+    "id": "downtoearth:steel_chestplate",
+    "count": 1
+  }
+}

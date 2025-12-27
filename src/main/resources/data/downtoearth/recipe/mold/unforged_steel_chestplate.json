@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 800,
+  "fluid": {
+    "fluid": "downtoearth:steel"
+  },
+  "fluid_amount": 72000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_steel_chestplate"
+  },
+  "template": "downtoearth:ceramic_chestplate_mold_template"
+}

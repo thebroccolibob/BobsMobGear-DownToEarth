@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_steel_helmet"
+  },
+  "result": {
+    "id": "downtoearth:unpolished_steel_helmet",
+    "count": 1
+  }
+}

@@ -103,6 +103,14 @@ public class ModItemGroups {
                         entries.add(ModItems.UNPOLISHED_IRON_LEGGINGS);
                         entries.add(ModItems.UNFORGED_IRON_BOOTS);
                         entries.add(ModItems.UNPOLISHED_IRON_BOOTS);
+                        entries.add(ModItems.UNFORGED_STEEL_HELMET);
+                        entries.add(ModItems.UNPOLISHED_STEEL_HELMET);
+                        entries.add(ModItems.UNFORGED_STEEL_CHESTPLATE);
+                        entries.add(ModItems.UNPOLISHED_STEEL_CHESTPLATE);
+                        entries.add(ModItems.UNFORGED_STEEL_LEGGINGS);
+                        entries.add(ModItems.UNPOLISHED_STEEL_LEGGINGS);
+                        entries.add(ModItems.UNFORGED_STEEL_BOOTS);
+                        entries.add(ModItems.UNPOLISHED_STEEL_BOOTS);
 
                         entries.add(ModItems.BRONZE_SHOVEL);
                         entries.add(ModItems.BRONZE_PICKAXE);
@@ -113,6 +121,16 @@ public class ModItemGroups {
                         entries.add(ModItems.BRONZE_CHESTPLATE);
                         entries.add(ModItems.BRONZE_LEGGINGS);
                         entries.add(ModItems.BRONZE_BOOTS);
+
+                        entries.add(ModItems.STEEL_SHOVEL);
+                        entries.add(ModItems.STEEL_PICKAXE);
+                        entries.add(ModItems.STEEL_AXE);
+                        entries.add(ModItems.STEEL_HOE);
+                        entries.add(ModItems.STEEL_SWORD);
+                        entries.add(ModItems.STEEL_HELMET);
+                        entries.add(ModItems.STEEL_CHESTPLATE);
+                        entries.add(ModItems.STEEL_LEGGINGS);
+                        entries.add(ModItems.STEEL_BOOTS);
 
                         entries.add(ModItems.STONE_SMITHING_HAMMER);
 

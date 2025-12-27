@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_steel_boots"
+  },
+  "result": {
+    "id": "downtoearth:steel_boots",
+    "count": 1
+  }
+}

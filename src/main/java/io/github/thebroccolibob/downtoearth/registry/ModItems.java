@@ -145,6 +145,15 @@ public class ModItems {
     public static final Item UNFORGED_IRON_BOOTS = registerItem("unforged_iron_boots", new Item(new Item.Settings()));
     public static final Item UNPOLISHED_IRON_BOOTS = registerItem("unpolished_iron_boots", new Item(new Item.Settings()));
 
+    public static final Item UNFORGED_STEEL_HELMET = registerItem("unforged_steel_helmet", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_STEEL_HELMET = registerItem("unpolished_steel_helmet", new Item(new Item.Settings()));
+    public static final Item UNFORGED_STEEL_CHESTPLATE = registerItem("unforged_steel_chestplate", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_STEEL_CHESTPLATE = registerItem("unpolished_steel_chestplate", new Item(new Item.Settings()));
+    public static final Item UNFORGED_STEEL_LEGGINGS = registerItem("unforged_steel_leggings", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_STEEL_LEGGINGS = registerItem("unpolished_steel_leggings", new Item(new Item.Settings()));
+    public static final Item UNFORGED_STEEL_BOOTS = registerItem("unforged_steel_boots", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_STEEL_BOOTS = registerItem("unpolished_steel_boots", new Item(new Item.Settings()));
+
     public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
             new SmithingHammerItem(new Item.Settings()
                     .maxDamage(128)
@@ -216,6 +225,19 @@ public class ModItems {
     public static final Item BRONZE_BOOTS = registerItem("bronze_boots",
             new ArmorItem(ModArmorMaterials.BRONZE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(11))));
+
+    public static final Item STEEL_HELMET = registerItem("steel_helmet",
+            new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(24))));
+    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate",
+            new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(24))));
+    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings",
+            new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(24))));
+    public static final Item STEEL_BOOTS = registerItem("steel_boots",
+            new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(24))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(DownToEarth.MOD_ID, name), item);

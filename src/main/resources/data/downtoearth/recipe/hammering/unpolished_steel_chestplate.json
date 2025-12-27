@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_steel_chestplate"
+  },
+  "result": {
+    "id": "downtoearth:unpolished_steel_chestplate",
+    "count": 1
+  }
+}

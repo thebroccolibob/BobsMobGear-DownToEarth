@@ -60,6 +60,18 @@
     "downtoearth:steel_hoe_head",
     "downtoearth:unforged_steel_sword_blade",
     "downtoearth:unsharpened_steel_sword_blade",
-    "downtoearth:steel_sword_blade"
+    "downtoearth:steel_sword_blade",
+    "downtoearth:steel_helmet",
+    "downtoearth:steel_chestplate",
+    "downtoearth:steel_leggings",
+    "downtoearth:steel_boots",
+    "downtoearth:unforged_steel_helmet",
+    "downtoearth:unpolished_steel_helmet",
+    "downtoearth:unforged_steel_chestplate",
+    "downtoearth:unpolished_steel_chestplate",
+    "downtoearth:unforged_steel_leggings",
+    "downtoearth:unpolished_steel_leggings",
+    "downtoearth:unforged_steel_boots",
+    "downtoearth:unpolished_steel_boots"
   ]
 }

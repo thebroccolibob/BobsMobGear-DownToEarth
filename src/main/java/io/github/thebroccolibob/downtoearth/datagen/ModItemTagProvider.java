@@ -134,7 +134,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STEEL_HOE_HEAD)
                 .add(ModItems.UNFORGED_STEEL_SWORD_BLADE)
                 .add(ModItems.UNSHARPENED_STEEL_SWORD_BLADE)
-                .add(ModItems.STEEL_SWORD_BLADE);
+                .add(ModItems.STEEL_SWORD_BLADE)
+                .add(ModItems.STEEL_HELMET)
+                .add(ModItems.STEEL_CHESTPLATE)
+                .add(ModItems.STEEL_LEGGINGS)
+                .add(ModItems.STEEL_BOOTS)
+                .add(ModItems.UNFORGED_STEEL_HELMET)
+                .add(ModItems.UNPOLISHED_STEEL_HELMET)
+                .add(ModItems.UNFORGED_STEEL_CHESTPLATE)
+                .add(ModItems.UNPOLISHED_STEEL_CHESTPLATE)
+                .add(ModItems.UNFORGED_STEEL_LEGGINGS)
+                .add(ModItems.UNPOLISHED_STEEL_LEGGINGS)
+                .add(ModItems.UNFORGED_STEEL_BOOTS)
+                .add(ModItems.UNPOLISHED_STEEL_BOOTS);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)
@@ -187,7 +199,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BRONZE_HELMET)
                 .add(ModItems.BRONZE_CHESTPLATE)
                 .add(ModItems.BRONZE_LEGGINGS)
-                .add(ModItems.BRONZE_BOOTS);
+                .add(ModItems.BRONZE_BOOTS)
+                .add(ModItems.STEEL_HELMET)
+                .add(ModItems.STEEL_CHESTPLATE)
+                .add(ModItems.STEEL_LEGGINGS)
+                .add(ModItems.STEEL_BOOTS);
 
         getOrCreateTagBuilder(BobsMobGearItemTags.SMITHING_HAMMERS).add(ModItems.STONE_SMITHING_HAMMER);
     }

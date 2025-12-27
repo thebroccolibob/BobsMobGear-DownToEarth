@@ -123,6 +123,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_IRON_BOOTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNPOLISHED_IRON_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_STEEL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_STEEL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_STEEL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_STEEL_BOOTS, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SHOVEL_HEAD_MOLD, Models.GENERATED);
@@ -172,5 +181,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STEEL_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STEEL_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STEEL_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STEEL_BOOTS));
     }
 }

@@ -27,6 +27,16 @@ public class ModArmorMaterials {
             }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(ModItems.BRONZE_INGOT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(DownToEarth.MOD_ID, "bronze"))), 0, 0));
 
+    public static final RegistryEntry<ArmorMaterial> STEEL_ARMOR_MATERIAL = registerArmorMaterial("steel",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 7);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 11);
+            }), 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(ModItems.STEEL_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(DownToEarth.MOD_ID, "steel"))), 1, 0));
+
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(DownToEarth.MOD_ID, name), material.get());
     }
