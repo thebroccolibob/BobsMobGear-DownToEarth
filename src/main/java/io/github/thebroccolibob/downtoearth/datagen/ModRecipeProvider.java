@@ -340,6 +340,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IRON_SWORD_BLADE), conditionsFromItem(ModItems.IRON_SWORD_BLADE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_SHOVEL)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STEEL_SHOVEL_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STEEL_SHOVEL_HEAD), conditionsFromItem(ModItems.STEEL_SHOVEL_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_PICKAXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STEEL_PICKAXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STEEL_PICKAXE_HEAD), conditionsFromItem(ModItems.STEEL_PICKAXE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_AXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STEEL_AXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STEEL_AXE_HEAD), conditionsFromItem(ModItems.STEEL_AXE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_HOE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STEEL_HOE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STEEL_HOE_HEAD), conditionsFromItem(ModItems.STEEL_HOE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_SWORD)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.STEEL_SWORD_BLADE)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.STEEL_SWORD_BLADE), conditionsFromItem(ModItems.STEEL_SWORD_BLADE))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STONE_ANVIL)
                 .pattern("nnn")
                 .pattern(" - ")

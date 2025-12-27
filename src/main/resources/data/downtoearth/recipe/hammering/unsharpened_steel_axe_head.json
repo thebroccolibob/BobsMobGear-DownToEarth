@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_steel_axe_head"
+  },
+  "result": {
+    "id": "downtoearth:unsharpened_steel_axe_head",
+    "count": 1
+  }
+}

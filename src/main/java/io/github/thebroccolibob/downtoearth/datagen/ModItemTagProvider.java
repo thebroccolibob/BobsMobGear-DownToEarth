@@ -23,19 +23,24 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.BRONZE_SWORD);
+                .add(ModItems.BRONZE_SWORD)
+                .add(ModItems.STEEL_SWORD);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.BRONZE_PICKAXE);
+                .add(ModItems.BRONZE_PICKAXE)
+                .add(ModItems.STEEL_PICKAXE);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.BRONZE_SHOVEL);
+                .add(ModItems.BRONZE_SHOVEL)
+                .add(ModItems.STEEL_SHOVEL);
 
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.BRONZE_AXE);
+                .add(ModItems.BRONZE_AXE)
+                .add(ModItems.STEEL_AXE);
 
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.BRONZE_HOE);
+                .add(ModItems.BRONZE_HOE)
+                .add(ModItems.STEEL_HOE);
 
         getOrCreateTagBuilder(BobsMobGearItemTags.FORGES_IRON_INGOT)
                 .add(ModItems.UNFORGED_IRON_SHOVEL_HEAD)
@@ -72,23 +77,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.UNFORGED_BRONZE_SWORD_BLADE)
                 .add(ModItems.UNSHARPENED_BRONZE_SWORD_BLADE)
                 .add(ModItems.BRONZE_SWORD_BLADE)
-                .add(ModItems.BRONZE_SWORD)
                 .add(ModItems.UNFORGED_BRONZE_PICKAXE_HEAD)
                 .add(ModItems.UNSHARPENED_BRONZE_PICKAXE_HEAD)
                 .add(ModItems.BRONZE_PICKAXE_HEAD)
-                .add(ModItems.BRONZE_PICKAXE)
                 .add(ModItems.UNFORGED_BRONZE_SHOVEL_HEAD)
                 .add(ModItems.UNSHARPENED_BRONZE_SHOVEL_HEAD)
                 .add(ModItems.BRONZE_SHOVEL_HEAD)
-                .add(ModItems.BRONZE_SHOVEL)
                 .add(ModItems.UNFORGED_BRONZE_AXE_HEAD)
                 .add(ModItems.UNSHARPENED_BRONZE_AXE_HEAD)
                 .add(ModItems.BRONZE_AXE_HEAD)
-                .add(ModItems.BRONZE_AXE)
                 .add(ModItems.UNFORGED_BRONZE_HOE_HEAD)
                 .add(ModItems.UNSHARPENED_BRONZE_HOE_HEAD)
                 .add(ModItems.BRONZE_HOE_HEAD)
-                .add(ModItems.BRONZE_HOE)
                 .add(ModItems.UNFORGED_BRONZE_HELMET)
                 .add(ModItems.UNPOLISHED_BRONZE_HELMET)
                 .add(ModItems.UNFORGED_BRONZE_CHESTPLATE)
@@ -119,7 +119,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.UNFORGED_IRON_LEGGINGS)
                 .add(ModItems.UNPOLISHED_IRON_LEGGINGS)
                 .add(ModItems.UNFORGED_IRON_BOOTS)
-                .add(ModItems.UNPOLISHED_IRON_BOOTS);
+                .add(ModItems.UNPOLISHED_IRON_BOOTS)
+                .add(ModItems.UNFORGED_STEEL_SHOVEL_HEAD)
+                .add(ModItems.UNSHARPENED_STEEL_SHOVEL_HEAD)
+                .add(ModItems.STEEL_SHOVEL_HEAD)
+                .add(ModItems.UNFORGED_STEEL_PICKAXE_HEAD)
+                .add(ModItems.UNSHARPENED_STEEL_PICKAXE_HEAD)
+                .add(ModItems.STEEL_PICKAXE_HEAD)
+                .add(ModItems.UNFORGED_STEEL_AXE_HEAD)
+                .add(ModItems.UNSHARPENED_STEEL_AXE_HEAD)
+                .add(ModItems.STEEL_AXE_HEAD)
+                .add(ModItems.UNFORGED_STEEL_HOE_HEAD)
+                .add(ModItems.UNSHARPENED_STEEL_HOE_HEAD)
+                .add(ModItems.STEEL_HOE_HEAD)
+                .add(ModItems.UNFORGED_STEEL_SWORD_BLADE)
+                .add(ModItems.UNSHARPENED_STEEL_SWORD_BLADE)
+                .add(ModItems.STEEL_SWORD_BLADE);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)

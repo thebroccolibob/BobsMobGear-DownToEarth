@@ -107,6 +107,26 @@ public class ModItems {
     public static final Item UNSHARPENED_IRON_SWORD_BLADE = registerItem("unsharpened_iron_sword_blade", new Item(new Item.Settings()));
     public static final Item IRON_SWORD_BLADE = registerItem("iron_sword_blade", new Item(new Item.Settings()));
 
+    public static final Item UNFORGED_STEEL_SHOVEL_HEAD = registerItem("unforged_steel_shovel_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_STEEL_SHOVEL_HEAD = registerItem("unsharpened_steel_shovel_head", new Item(new Item.Settings()));
+    public static final Item STEEL_SHOVEL_HEAD = registerItem("steel_shovel_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_STEEL_PICKAXE_HEAD = registerItem("unforged_steel_pickaxe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_STEEL_PICKAXE_HEAD = registerItem("unsharpened_steel_pickaxe_head", new Item(new Item.Settings()));
+    public static final Item STEEL_PICKAXE_HEAD = registerItem("steel_pickaxe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_STEEL_AXE_HEAD = registerItem("unforged_steel_axe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_STEEL_AXE_HEAD = registerItem("unsharpened_steel_axe_head", new Item(new Item.Settings()));
+    public static final Item STEEL_AXE_HEAD = registerItem("steel_axe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_STEEL_HOE_HEAD = registerItem("unforged_steel_hoe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_STEEL_HOE_HEAD = registerItem("unsharpened_steel_hoe_head", new Item(new Item.Settings()));
+    public static final Item STEEL_HOE_HEAD = registerItem("steel_hoe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_STEEL_SWORD_BLADE = registerItem("unforged_steel_sword_blade", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_STEEL_SWORD_BLADE = registerItem("unsharpened_steel_sword_blade", new Item(new Item.Settings()));
+    public static final Item STEEL_SWORD_BLADE = registerItem("steel_sword_blade", new Item(new Item.Settings()));
+
     public static final Item UNFORGED_BRONZE_HELMET = registerItem("unforged_bronze_helmet", new Item(new Item.Settings()));
     public static final Item UNPOLISHED_BRONZE_HELMET = registerItem("unpolished_bronze_helmet", new Item(new Item.Settings()));
     public static final Item UNFORGED_BRONZE_CHESTPLATE = registerItem("unforged_bronze_chestplate", new Item(new Item.Settings()));
@@ -163,6 +183,26 @@ public class ModItems {
     public static final Item BRONZE_SWORD = registerItem("bronze_sword",
             new SwordItem(ModToolMaterials.BRONZE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BRONZE, 3, -2.4F))));
+
+    public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
+            new ShovelItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.STEEL, 1.5F, -3.0F))));
+
+    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
+            new PickaxeItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STEEL, 1, -2.8F))));
+
+    public static final Item STEEL_AXE = registerItem("steel_axe",
+            new AxeItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STEEL, 5, -3.0F))));
+
+    public static final Item STEEL_HOE = registerItem("steel_hoe",
+            new HoeItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.STEEL, -3, 0))));
+
+    public static final Item STEEL_SWORD = registerItem("steel_sword",
+            new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 3, -2.4F))));
 
     public static final Item BRONZE_HELMET = registerItem("bronze_helmet",
             new ArmorItem(ModArmorMaterials.BRONZE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()

@@ -89,6 +89,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_IRON_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNSHARPENED_IRON_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_STEEL_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_STEEL_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_STEEL_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_STEEL_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_STEEL_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_STEEL_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_SWORD_BLADE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_HELMET, Models.GENERATED);
@@ -147,6 +162,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BRONZE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_HOE, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.BRONZE_CHESTPLATE));

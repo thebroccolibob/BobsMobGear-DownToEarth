@@ -1,5 +1,25 @@
 {
   "values": [
-    "downtoearth:steel_ingot"
+    "downtoearth:steel_ingot",
+    "downtoearth:unforged_steel_sword_blade",
+    "downtoearth:unsharpened_steel_sword_blade",
+    "downtoearth:steel_sword_blade",
+    "downtoearth:steel_sword",
+    "downtoearth:unforged_steel_pickaxe_head",
+    "downtoearth:unsharpened_steel_pickaxe_head",
+    "downtoearth:steel_pickaxe_head",
+    "downtoearth:steel_pickaxe",
+    "downtoearth:unforged_steel_shovel_head",
+    "downtoearth:unsharpened_steel_shovel_head",
+    "downtoearth:steel_shovel_head",
+    "downtoearth:steel_shovel",
+    "downtoearth:unforged_steel_axe_head",
+    "downtoearth:unsharpened_steel_axe_head",
+    "downtoearth:steel_axe_head",
+    "downtoearth:steel_axe",
+    "downtoearth:unforged_steel_hoe_head",
+    "downtoearth:unsharpened_steel_hoe_head",
+    "downtoearth:steel_hoe_head",
+    "downtoearth:steel_hoe"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "downtoearth:item/unforged_steel_sword_blade"
+  }
+}
