@@ -163,6 +163,11 @@
   "block.downtoearth.ceramic_leggings_mold_template": "Ceramic Leggings Mold",
   "block.downtoearth.ceramic_boots_mold_template": "Ceramic Boots Mold",
 
+  "fluid.downtoearth.copper": "Molten Copper",
+  "fluid.downtoearth.tin": "Molten Tin",
+  "fluid.downtoearth.bronze": "Molten Bronze",
+  "fluid.downtoearth.steel": "Molten Steel",
+
   "itemgroup.downtoearth.bobs_mob_gear_items": "BMG: Down to Earth Items",
   "itemgroup.downtoearth.bobs_mob_gear_blocks": "BMG: Down to Earth Blocks",
 

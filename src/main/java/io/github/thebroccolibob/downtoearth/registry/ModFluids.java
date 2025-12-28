@@ -1,5 +1,7 @@
 package io.github.thebroccolibob.downtoearth.registry;
 
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributes;
+
 import io.github.thebroccolibob.bobsmobgear.fluid.MetalFluid;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearFluids;
 import io.github.thebroccolibob.bobsmobgear.registry.BobsMobGearParticles;
@@ -31,9 +33,9 @@ public class ModFluids {
     public static void registerModFluids() {
         DownToEarth.LOGGER.info("These Fluids are " + DownToEarth.MOD_ID + "!");
 
-        BobsMobGearFluids.registerAttributes(COPPER, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
-        BobsMobGearFluids.registerAttributes(TIN, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
-        BobsMobGearFluids.registerAttributes(BRONZE, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
-        BobsMobGearFluids.registerAttributes(STEEL, SoundEvents.ITEM_BUCKET_EMPTY_LAVA);
+        FluidVariantAttributes.register(COPPER, BobsMobGearFluids.METAL_FLUID_ATTRIBUTES);
+        FluidVariantAttributes.register(TIN, BobsMobGearFluids.METAL_FLUID_ATTRIBUTES);
+        FluidVariantAttributes.register(BRONZE, BobsMobGearFluids.METAL_FLUID_ATTRIBUTES);
+        FluidVariantAttributes.register(STEEL, BobsMobGearFluids.METAL_FLUID_ATTRIBUTES);
     }
 }
