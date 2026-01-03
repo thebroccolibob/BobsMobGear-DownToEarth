@@ -43,6 +43,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STEEL_HOE);
 
         getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.BRONZE_HELMET)
+                .add(ModItems.BRONZE_CHESTPLATE)
+                .add(ModItems.BRONZE_LEGGINGS)
+                .add(ModItems.BRONZE_BOOTS)
                 .add(ModItems.STEEL_HELMET)
                 .add(ModItems.STEEL_CHESTPLATE)
                 .add(ModItems.STEEL_LEGGINGS)
@@ -190,7 +194,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NETHERITE_HOE_HEAD)
                 .add(ModItems.UNFORGED_NETHERITE_SWORD_BLADE)
                 .add(ModItems.UNSHARPENED_NETHERITE_SWORD_BLADE)
-                .add(ModItems.NETHERITE_SWORD_BLADE);
+                .add(ModItems.NETHERITE_SWORD_BLADE)
+                .add(ModItems.UNFORGED_NETHERITE_HELMET)
+                .add(ModItems.UNPOLISHED_NETHERITE_HELMET)
+                .add(ModItems.UNFORGED_NETHERITE_CHESTPLATE)
+                .add(ModItems.UNPOLISHED_NETHERITE_CHESTPLATE)
+                .add(ModItems.UNFORGED_NETHERITE_LEGGINGS)
+                .add(ModItems.UNPOLISHED_NETHERITE_LEGGINGS)
+                .add(ModItems.UNFORGED_NETHERITE_BOOTS)
+                .add(ModItems.UNPOLISHED_NETHERITE_BOOTS);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)
@@ -247,7 +259,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModItems.NETHERITE_HOE_HEAD,
                 ModItems.UNFORGED_NETHERITE_SWORD_BLADE,
                 ModItems.UNSHARPENED_NETHERITE_SWORD_BLADE,
-                ModItems.NETHERITE_SWORD_BLADE
+                ModItems.NETHERITE_SWORD_BLADE,
+                ModItems.UNFORGED_NETHERITE_HELMET,
+                ModItems.UNPOLISHED_NETHERITE_HELMET,
+                ModItems.UNFORGED_NETHERITE_CHESTPLATE,
+                ModItems.UNPOLISHED_NETHERITE_CHESTPLATE,
+                ModItems.UNFORGED_NETHERITE_LEGGINGS,
+                ModItems.UNPOLISHED_NETHERITE_LEGGINGS,
+                ModItems.UNFORGED_NETHERITE_BOOTS,
+                ModItems.UNPOLISHED_NETHERITE_BOOTS
         );
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)

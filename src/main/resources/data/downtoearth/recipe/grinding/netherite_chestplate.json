@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_netherite_chestplate"
+  },
+  "result": {
+    "id": "minecraft:netherite_chestplate",
+    "count": 1
+  }
+}

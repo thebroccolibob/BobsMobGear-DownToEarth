@@ -1,0 +1,18 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 100,
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "fluid": {
+    "fluid": "bobsmobgear:netherite"
+  },
+  "fluid_amount": 9000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_netherite_helmet"
+  },
+  "template": "downtoearth:ceramic_helmet_mold_template"
+}

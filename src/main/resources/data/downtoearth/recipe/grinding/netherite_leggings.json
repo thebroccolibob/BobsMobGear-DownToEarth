@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_netherite_leggings"
+  },
+  "result": {
+    "id": "minecraft:netherite_leggings",
+    "count": 1
+  }
+}

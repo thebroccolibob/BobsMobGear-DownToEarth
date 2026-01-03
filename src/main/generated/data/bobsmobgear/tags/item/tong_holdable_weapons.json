@@ -110,6 +110,14 @@
     "downtoearth:netherite_hoe_head",
     "downtoearth:unforged_netherite_sword_blade",
     "downtoearth:unsharpened_netherite_sword_blade",
-    "downtoearth:netherite_sword_blade"
+    "downtoearth:netherite_sword_blade",
+    "downtoearth:unforged_netherite_helmet",
+    "downtoearth:unpolished_netherite_helmet",
+    "downtoearth:unforged_netherite_chestplate",
+    "downtoearth:unpolished_netherite_chestplate",
+    "downtoearth:unforged_netherite_leggings",
+    "downtoearth:unpolished_netherite_leggings",
+    "downtoearth:unforged_netherite_boots",
+    "downtoearth:unpolished_netherite_boots"
   ]
 }

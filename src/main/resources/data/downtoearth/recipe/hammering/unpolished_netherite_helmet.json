@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_netherite_helmet"
+  },
+  "result": {
+    "id": "downtoearth:unpolished_netherite_helmet",
+    "count": 1
+  }
+}

@@ -206,6 +206,15 @@ public class ModItems {
     public static final Item UNFORGED_DIAMOND_BOOTS = registerItem("unforged_diamond_boots", new Item(new Item.Settings()));
     public static final Item UNPOLISHED_DIAMOND_BOOTS = registerItem("unpolished_diamond_boots", new Item(new Item.Settings()));
 
+    public static final Item UNFORGED_NETHERITE_HELMET = registerItem("unforged_netherite_helmet", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_NETHERITE_HELMET = registerItem("unpolished_netherite_helmet", new Item(new Item.Settings()));
+    public static final Item UNFORGED_NETHERITE_CHESTPLATE = registerItem("unforged_netherite_chestplate", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_NETHERITE_CHESTPLATE = registerItem("unpolished_netherite_chestplate", new Item(new Item.Settings()));
+    public static final Item UNFORGED_NETHERITE_LEGGINGS = registerItem("unforged_netherite_leggings", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_NETHERITE_LEGGINGS = registerItem("unpolished_netherite_leggings", new Item(new Item.Settings()));
+    public static final Item UNFORGED_NETHERITE_BOOTS = registerItem("unforged_netherite_boots", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_NETHERITE_BOOTS = registerItem("unpolished_netherite_boots", new Item(new Item.Settings()));
+
     public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
             new SmithingHammerItem(new Item.Settings()
                     .maxDamage(128)

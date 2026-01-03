@@ -1,0 +1,18 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 100,
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "fluid": {
+    "fluid": "bobsmobgear:netherite"
+  },
+  "fluid_amount": 9000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_netherite_chestplate"
+  },
+  "template": "downtoearth:ceramic_chestplate_mold_template"
+}

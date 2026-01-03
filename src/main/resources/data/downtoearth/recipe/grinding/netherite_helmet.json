@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_netherite_helmet"
+  },
+  "result": {
+    "id": "minecraft:netherite_helmet",
+    "count": 1
+  }
+}

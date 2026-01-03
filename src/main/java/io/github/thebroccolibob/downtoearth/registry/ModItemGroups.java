@@ -149,6 +149,14 @@ public class ModItemGroups {
                         entries.add(ModItems.UNPOLISHED_DIAMOND_LEGGINGS);
                         entries.add(ModItems.UNFORGED_DIAMOND_BOOTS);
                         entries.add(ModItems.UNPOLISHED_DIAMOND_BOOTS);
+                        entries.add(ModItems.UNFORGED_NETHERITE_HELMET);
+                        entries.add(ModItems.UNPOLISHED_NETHERITE_HELMET);
+                        entries.add(ModItems.UNFORGED_NETHERITE_CHESTPLATE);
+                        entries.add(ModItems.UNPOLISHED_NETHERITE_CHESTPLATE);
+                        entries.add(ModItems.UNFORGED_NETHERITE_LEGGINGS);
+                        entries.add(ModItems.UNPOLISHED_NETHERITE_LEGGINGS);
+                        entries.add(ModItems.UNFORGED_NETHERITE_BOOTS);
+                        entries.add(ModItems.UNPOLISHED_NETHERITE_BOOTS);
 
                         entries.add(ModItems.BRONZE_SHOVEL);
                         entries.add(ModItems.BRONZE_PICKAXE);

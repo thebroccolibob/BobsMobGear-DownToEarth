@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_netherite_leggings"
+  },
+  "result": {
+    "id": "downtoearth:unpolished_netherite_leggings",
+    "count": 1
+  }
+}

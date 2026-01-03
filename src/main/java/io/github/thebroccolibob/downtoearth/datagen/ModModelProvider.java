@@ -174,6 +174,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_BOOTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNPOLISHED_DIAMOND_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_NETHERITE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_NETHERITE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_NETHERITE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_NETHERITE_BOOTS, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SHOVEL_HEAD_MOLD, Models.GENERATED);
