@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_diamond_pickaxe_head"
+  },
+  "result": {
+    "id": "downtoearth:unsharpened_diamond_pickaxe_head",
+    "count": 1
+  }
+}

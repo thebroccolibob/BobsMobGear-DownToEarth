@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "leggings_mold",
+  "ingredient": {
+    "item": "downtoearth:clay_leggings_mold"
+  },
+  "result": {
+    "id": "downtoearth:ceramic_leggings_mold"
+  }
+}

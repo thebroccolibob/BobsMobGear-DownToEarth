@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "helmet_mold",
+  "ingredient": {
+    "item": "downtoearth:clay_helmet_mold"
+  },
+  "result": {
+    "id": "downtoearth:ceramic_helmet_mold"
+  }
+}

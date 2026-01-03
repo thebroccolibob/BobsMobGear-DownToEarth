@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unsharpened_diamond_sword_blade"
+  },
+  "result": {
+    "id": "downtoearth:diamond_sword_blade",
+    "count": 1
+  }
+}

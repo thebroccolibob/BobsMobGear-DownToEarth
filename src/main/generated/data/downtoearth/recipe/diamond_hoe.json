@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "n": {
+      "item": "downtoearth:diamond_hoe_head"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " n",
+    "| "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_hoe"
+  }
+}

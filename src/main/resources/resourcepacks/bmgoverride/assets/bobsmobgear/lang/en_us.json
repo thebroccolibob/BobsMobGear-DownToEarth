@@ -6,6 +6,7 @@
   "block.bobsmobgear.axe_template": "Ceramic Axe Head Mold",
   "block.bobsmobgear.hoe_template": "Ceramic Hoe Head Mold",
   "item.bobsmobgear.empty_pot": "Empty Crucible",
-  "item.bobsmobgear.iron_pot": "Crucible of Molten Iron"
+  "item.bobsmobgear.iron_pot": "Crucible of Molten Iron",
+  "item.bobsmobgear.diamond_pot": "Crucible of Molten Diamond"
 
 }

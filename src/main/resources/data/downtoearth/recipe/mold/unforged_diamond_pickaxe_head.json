@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 300,
+  "fluid": {
+    "fluid": "bobsmobgear:diamond"
+  },
+  "fluid_amount": 27000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_diamond_pickaxe_head"
+  },
+  "template": "bobsmobgear:pickaxe_template"
+}

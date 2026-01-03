@@ -5,28 +5,16 @@ import io.github.thebroccolibob.downtoearth.condition.IsFlintToolCondition;
 import io.github.thebroccolibob.downtoearth.condition.NoSilkOrShearsCondition;
 import io.github.thebroccolibob.downtoearth.registry.ModItems;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
-import net.minecraft.loot.condition.MatchToolLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.predicate.NumberRange;
-import net.minecraft.predicate.item.EnchantmentPredicate;
-import net.minecraft.predicate.item.EnchantmentsPredicate;
-import net.minecraft.predicate.item.ItemPredicate;
-import net.minecraft.predicate.item.ItemSubPredicateTypes;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
-
-import java.util.List;
 
 public class ModLootTableModifiers {
     private static final Identifier ACACIA_LEAVES_ID
@@ -70,6 +58,15 @@ public class ModLootTableModifiers {
             = Identifier.of("minecraft", "blocks/ancient_debris");
     private static final Identifier DEEPSLATE_REDSTONE_ORE_ID
             = Identifier.of("minecraft", "blocks/deepslate_redstone_ore");
+
+    private static final Identifier VILLAGE_WEAPONSMITH_CHEST_ID
+            = Identifier.of("minecraft", "chests/village/village_weaponsmith");
+    private static final Identifier VILLAGE_TOOLSMITH_CHEST_ID
+            = Identifier.of("minecraft", "chests/village/village_toolsmith");
+    private static final Identifier VILLAGE_ARMORER_CHEST_ID
+            = Identifier.of("minecraft", "chests/village/village_armorer");
+    private static final Identifier ANCIENT_CITY_ID
+            = Identifier.of("minecraft", "chests/ancient_city");
 
     private static void addNuggetDrop(Identifier id, Item nugget, float minDrop, float maxDrop, Item self) {
         LootTableEvents.REPLACE.register((key, tableBuilder, source, registry) -> {
@@ -128,6 +125,19 @@ public class ModLootTableModifiers {
         });
     }
 
+    private static void addDiamondUpgradeLoot(Identifier id) {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registry) -> {
+            if(id.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(UniformLootNumberProvider.create(0f, 1f))
+                        .with(ItemEntry.builder(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE))
+                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+        });
+    }
+
     public static void modifyLootTables() {
         addLeafFiberLoot(ACACIA_LEAVES_ID);
         addLeafFiberLoot(AZALEA_LEAVES_ID);
@@ -150,5 +160,10 @@ public class ModLootTableModifiers {
         addNuggetDrop(DEEPSLATE_DIAMOND_ORE_ID, ModItems.DIAMOND_SHARD, 1f, 4f, Items.DEEPSLATE_DIAMOND_ORE);
         addNuggetDrop(ANCIENT_DEBRIS_ID, ModItems.ANCIENT_DEBRIS_FRAGMENT, 1f, 1f, Items.ANCIENT_DEBRIS);
         addNuggetDrop(DEEPSLATE_REDSTONE_ORE_ID, Items.REDSTONE, 8f, 9f, Items.DEEPSLATE_REDSTONE_ORE);
+
+        addDiamondUpgradeLoot(VILLAGE_WEAPONSMITH_CHEST_ID);
+        addDiamondUpgradeLoot(VILLAGE_TOOLSMITH_CHEST_ID);
+        addDiamondUpgradeLoot(VILLAGE_ARMORER_CHEST_ID);
+        addDiamondUpgradeLoot(ANCIENT_CITY_ID);
     }
 }

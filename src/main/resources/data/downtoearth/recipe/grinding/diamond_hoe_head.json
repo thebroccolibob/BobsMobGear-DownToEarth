@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unsharpened_diamond_hoe_head"
+  },
+  "result": {
+    "id": "downtoearth:diamond_hoe_head",
+    "count": 1
+  }
+}

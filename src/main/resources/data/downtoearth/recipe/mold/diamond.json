@@ -1,0 +1,15 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 100,
+  "fluid": {
+    "fluid": "bobsmobgear:diamond"
+  },
+  "fluid_amount": 9000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "minecraft:diamond"
+  },
+  "template": "bobsmobgear:empty_template"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "downtoearth:item/unsharpened_diamond_pickaxe_head"
+  }
+}

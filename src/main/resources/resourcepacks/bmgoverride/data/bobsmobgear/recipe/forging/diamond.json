@@ -1,0 +1,16 @@
+{
+  "type": "bobsmobgear:forging",
+  "forging_time": 200,
+  "ingredients": [
+    {
+      "tag": "bobsmobgear:forges/diamond"
+    },
+    {
+      "item": "downtoearth:diamond_upgrade_smithing_template"
+    }
+  ],
+  "result": {
+    "fluid": "bobsmobgear:diamond"
+  },
+  "result_amount": 9000
+}

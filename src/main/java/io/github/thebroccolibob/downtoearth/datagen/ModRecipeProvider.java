@@ -11,6 +11,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.StonecuttingRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -57,6 +58,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.CUT_TIN_STAIRS, Ingredient.ofItems(ModBlocks.CUT_TIN))
                 .criterion(hasItem(ModBlocks.CUT_TIN), conditionsFromItem(ModBlocks.CUT_TIN))
                 .offerTo(recipeExporter);
+
+        offerCustomSmithingTemplateCopyingRecipe(recipeExporter, ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE, Items.COBBLED_DEEPSLATE, ModItems.STEEL_INGOT);
 
         StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.TIN_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_TIN)
                 .criterion(hasItem(ModBlocks.TIN_BLOCK), conditionsFromItem(ModBlocks.TIN_BLOCK))
@@ -380,6 +383,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STEEL_SWORD_BLADE), conditionsFromItem(ModItems.STEEL_SWORD_BLADE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_SWORD)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.DIAMOND_SWORD_BLADE)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.DIAMOND_SWORD_BLADE), conditionsFromItem(ModItems.DIAMOND_SWORD_BLADE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_HOE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.DIAMOND_HOE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.DIAMOND_HOE_HEAD), conditionsFromItem(ModItems.DIAMOND_HOE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_AXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.DIAMOND_AXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.DIAMOND_AXE_HEAD), conditionsFromItem(ModItems.DIAMOND_AXE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_PICKAXE)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.DIAMOND_PICKAXE_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.DIAMOND_PICKAXE_HEAD), conditionsFromItem(ModItems.DIAMOND_PICKAXE_HEAD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_SHOVEL)
+                .pattern(" n")
+                .pattern("| ")
+                .input('n', ModItems.DIAMOND_SHOVEL_HEAD)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.DIAMOND_SHOVEL_HEAD), conditionsFromItem(ModItems.DIAMOND_SHOVEL_HEAD))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STONE_ANVIL)
                 .pattern("nnn")
                 .pattern(" - ")
@@ -448,6 +491,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         List<ItemConvertible> COKE_SMELT = List.of(Items.COAL_BLOCK, ModBlocks.COKING_COAL_ORE, ModBlocks.DEEPSLATE_COKING_COAL_ORE);
         offerBlasting(recipeExporter, COKE_SMELT, RecipeCategory.MISC, ModItems.COKING_COAL, 0.15f, 100, "coking_coal");
+
+        List<ItemConvertible> HELMET_MOLD_SMELT = List.of(ModItems.CLAY_HELMET_MOLD);
+        offerSmelting(recipeExporter, HELMET_MOLD_SMELT, RecipeCategory.MISC, ModBlocks.CERAMIC_HELMET_MOLD, 0f, 200, "helmet_mold");
+
+        List<ItemConvertible> CHESTPLATE_MOLD_SMELT = List.of(ModItems.CLAY_CHESTPLATE_MOLD);
+        offerSmelting(recipeExporter, CHESTPLATE_MOLD_SMELT, RecipeCategory.MISC, ModBlocks.CERAMIC_CHESTPLATE_MOLD, 0f, 200, "chestplate_mold");
+
+        List<ItemConvertible> LEGGINGS_MOLD_SMELT = List.of(ModItems.CLAY_LEGGINGS_MOLD);
+        offerSmelting(recipeExporter, LEGGINGS_MOLD_SMELT, RecipeCategory.MISC, ModBlocks.CERAMIC_LEGGINGS_MOLD, 0f, 200, "leggings_mold");
+
+        List<ItemConvertible> BOOTS_MOLD_SMELT = List.of(ModItems.CLAY_BOOTS_MOLD);
+        offerSmelting(recipeExporter, BOOTS_MOLD_SMELT, RecipeCategory.MISC, ModBlocks.CERAMIC_BOOTS_MOLD, 0f, 200, "boots_mold");
     }
 
+    public static void offerCustomSmithingTemplateCopyingRecipe(RecipeExporter exporter, ItemConvertible template, Item resource, Item outlineResource) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, template, 2).input('#', outlineResource).input('C', resource).input('S', template).pattern("#S#").pattern("#C#").pattern("###").criterion(hasItem(template), conditionsFromItem(template)).offerTo(exporter);
+    }
 }

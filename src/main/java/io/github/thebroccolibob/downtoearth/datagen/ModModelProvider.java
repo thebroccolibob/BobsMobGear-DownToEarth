@@ -105,6 +105,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNSHARPENED_STEEL_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_SWORD_BLADE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_DIAMOND_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_DIAMOND_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_DIAMOND_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_DIAMOND_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_DIAMOND_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_SWORD_BLADE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_CHESTPLATE, Models.GENERATED);
@@ -131,6 +147,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNPOLISHED_STEEL_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNFORGED_STEEL_BOOTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNPOLISHED_STEEL_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_DIAMOND_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_DIAMOND_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_DIAMOND_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNPOLISHED_DIAMOND_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CLAY_INGOT_MOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_SWORD_BLADE_MOLD, Models.GENERATED);
@@ -163,6 +188,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TIN_POT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_POT, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_POT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STONE_SMITHING_HAMMER, Models.HANDHELD);

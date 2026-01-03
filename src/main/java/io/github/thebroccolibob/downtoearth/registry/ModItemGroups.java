@@ -95,6 +95,21 @@ public class ModItemGroups {
                         entries.add(ModItems.UNFORGED_STEEL_SWORD_BLADE);
                         entries.add(ModItems.UNSHARPENED_STEEL_SWORD_BLADE);
                         entries.add(ModItems.STEEL_SWORD_BLADE);
+                        entries.add(ModItems.UNFORGED_DIAMOND_SHOVEL_HEAD);
+                        entries.add(ModItems.UNSHARPENED_DIAMOND_SHOVEL_HEAD);
+                        entries.add(ModItems.DIAMOND_SHOVEL_HEAD);
+                        entries.add(ModItems.UNFORGED_DIAMOND_PICKAXE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_DIAMOND_PICKAXE_HEAD);
+                        entries.add(ModItems.DIAMOND_PICKAXE_HEAD);
+                        entries.add(ModItems.UNFORGED_DIAMOND_AXE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_DIAMOND_AXE_HEAD);
+                        entries.add(ModItems.DIAMOND_AXE_HEAD);
+                        entries.add(ModItems.UNFORGED_DIAMOND_HOE_HEAD);
+                        entries.add(ModItems.UNSHARPENED_DIAMOND_HOE_HEAD);
+                        entries.add(ModItems.DIAMOND_HOE_HEAD);
+                        entries.add(ModItems.UNFORGED_DIAMOND_SWORD_BLADE);
+                        entries.add(ModItems.UNSHARPENED_DIAMOND_SWORD_BLADE);
+                        entries.add(ModItems.DIAMOND_SWORD_BLADE);
                         entries.add(ModItems.UNFORGED_IRON_HELMET);
                         entries.add(ModItems.UNPOLISHED_IRON_HELMET);
                         entries.add(ModItems.UNFORGED_IRON_CHESTPLATE);
@@ -148,6 +163,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.BRONZE_MIX);
                         entries.add(ModItems.COKING_COAL);
+                        entries.add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.COPPER_POT);
                         entries.add(ModItems.TIN_POT);
