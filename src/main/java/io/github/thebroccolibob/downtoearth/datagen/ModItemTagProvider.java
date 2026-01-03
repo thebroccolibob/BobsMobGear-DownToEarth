@@ -42,6 +42,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BRONZE_HOE)
                 .add(ModItems.STEEL_HOE);
 
+        getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.STEEL_HELMET)
+                .add(ModItems.STEEL_CHESTPLATE)
+                .add(ModItems.STEEL_LEGGINGS)
+                .add(ModItems.STEEL_BOOTS);
+
         getOrCreateTagBuilder(BobsMobGearItemTags.FORGES_IRON_INGOT)
                 .add(ModItems.UNFORGED_IRON_SHOVEL_HEAD)
                 .add(ModItems.UNSHARPENED_IRON_SHOVEL_HEAD)
@@ -169,7 +175,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.UNFORGED_DIAMOND_LEGGINGS)
                 .add(ModItems.UNPOLISHED_DIAMOND_LEGGINGS)
                 .add(ModItems.UNFORGED_DIAMOND_BOOTS)
-                .add(ModItems.UNPOLISHED_DIAMOND_BOOTS);
+                .add(ModItems.UNPOLISHED_DIAMOND_BOOTS)
+                .add(ModItems.UNFORGED_NETHERITE_SHOVEL_HEAD)
+                .add(ModItems.UNSHARPENED_NETHERITE_SHOVEL_HEAD)
+                .add(ModItems.NETHERITE_SHOVEL_HEAD)
+                .add(ModItems.UNFORGED_NETHERITE_PICKAXE_HEAD)
+                .add(ModItems.UNSHARPENED_NETHERITE_PICKAXE_HEAD)
+                .add(ModItems.NETHERITE_PICKAXE_HEAD)
+                .add(ModItems.UNFORGED_NETHERITE_AXE_HEAD)
+                .add(ModItems.UNSHARPENED_NETHERITE_AXE_HEAD)
+                .add(ModItems.NETHERITE_AXE_HEAD)
+                .add(ModItems.UNFORGED_NETHERITE_HOE_HEAD)
+                .add(ModItems.UNSHARPENED_NETHERITE_HOE_HEAD)
+                .add(ModItems.NETHERITE_HOE_HEAD)
+                .add(ModItems.UNFORGED_NETHERITE_SWORD_BLADE)
+                .add(ModItems.UNSHARPENED_NETHERITE_SWORD_BLADE)
+                .add(ModItems.NETHERITE_SWORD_BLADE);
 
         getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(BobsMobGearItems.BLACK_STEEL_POT)
@@ -211,7 +232,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 Items.NETHERITE_LEGGINGS,
                 Items.NETHERITE_INGOT,
                 Items.NETHERITE_SCRAP,
-                Items.NETHERITE_BLOCK
+                Items.NETHERITE_BLOCK,
+                ModItems.UNFORGED_NETHERITE_SHOVEL_HEAD,
+                ModItems.UNSHARPENED_NETHERITE_SHOVEL_HEAD,
+                ModItems.NETHERITE_SHOVEL_HEAD,
+                ModItems.UNFORGED_NETHERITE_PICKAXE_HEAD,
+                ModItems.UNSHARPENED_NETHERITE_PICKAXE_HEAD,
+                ModItems.NETHERITE_PICKAXE_HEAD,
+                ModItems.UNFORGED_NETHERITE_AXE_HEAD,
+                ModItems.UNSHARPENED_NETHERITE_AXE_HEAD,
+                ModItems.NETHERITE_AXE_HEAD,
+                ModItems.UNFORGED_NETHERITE_HOE_HEAD,
+                ModItems.UNSHARPENED_NETHERITE_HOE_HEAD,
+                ModItems.NETHERITE_HOE_HEAD,
+                ModItems.UNFORGED_NETHERITE_SWORD_BLADE,
+                ModItems.UNSHARPENED_NETHERITE_SWORD_BLADE,
+                ModItems.NETHERITE_SWORD_BLADE
         );
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)

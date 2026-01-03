@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unsharpened_netherite_sword_blade"
+  },
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "count": 1
+  }
+}

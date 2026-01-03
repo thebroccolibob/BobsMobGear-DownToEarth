@@ -1,0 +1,18 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 700,
+  "base": {
+    "item": "downtoearth:steel_leggings"
+  },
+  "fluid": {
+    "fluid": "bobsmobgear:diamond"
+  },
+  "fluid_amount": 63000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_diamond_leggings"
+  },
+  "template": "downtoearth:ceramic_leggings_mold_template"
+}

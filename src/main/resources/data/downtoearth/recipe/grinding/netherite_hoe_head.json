@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unsharpened_netherite_hoe_head"
+  },
+  "result": {
+    "id": "minecraft:netherite_hoe",
+    "count": 1
+  }
+}

@@ -1,6 +1,9 @@
 {
   "type": "bobsmobgear:template",
   "delay": 100,
+  "base": {
+    "item": "downtoearth:steel_shovel"
+  },
   "fluid": {
     "fluid": "bobsmobgear:diamond"
   },

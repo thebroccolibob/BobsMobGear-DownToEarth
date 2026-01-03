@@ -11,6 +11,21 @@
     "minecraft:netherite_leggings",
     "minecraft:netherite_ingot",
     "minecraft:netherite_scrap",
-    "minecraft:netherite_block"
+    "minecraft:netherite_block",
+    "downtoearth:unforged_netherite_shovel_head",
+    "downtoearth:unsharpened_netherite_shovel_head",
+    "downtoearth:netherite_shovel_head",
+    "downtoearth:unforged_netherite_pickaxe_head",
+    "downtoearth:unsharpened_netherite_pickaxe_head",
+    "downtoearth:netherite_pickaxe_head",
+    "downtoearth:unforged_netherite_axe_head",
+    "downtoearth:unsharpened_netherite_axe_head",
+    "downtoearth:netherite_axe_head",
+    "downtoearth:unforged_netherite_hoe_head",
+    "downtoearth:unsharpened_netherite_hoe_head",
+    "downtoearth:netherite_hoe_head",
+    "downtoearth:unforged_netherite_sword_blade",
+    "downtoearth:unsharpened_netherite_sword_blade",
+    "downtoearth:netherite_sword_blade"
   ]
 }

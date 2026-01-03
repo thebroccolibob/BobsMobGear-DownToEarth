@@ -1,0 +1,18 @@
+{
+  "type": "bobsmobgear:template",
+  "delay": 500,
+  "base": {
+    "item": "downtoearth:steel_helmet"
+  },
+  "fluid": {
+    "fluid": "bobsmobgear:diamond"
+  },
+  "fluid_amount": 45000,
+  "result": {
+    "components": {
+      "bobsmobgear:heated": {}
+    },
+    "id": "downtoearth:unforged_diamond_helmet"
+  },
+  "template": "downtoearth:ceramic_helmet_mold_template"
+}

@@ -1,9 +1,10 @@
-// 1.21.1	2026-01-02T16:39:13.1164638	Bob's Mob Gear: Down to Earth/Tags for minecraft:item
+// 1.21.1	2026-01-02T22:48:29.8076091	Bob's Mob Gear: Down to Earth/Tags for minecraft:item
 7ffd971cb2ceba1f0fe3e70c45b74f4f7bfa93d1 data\bobsmobgear\tags\item\tong_holdable.json
-3033cb2b93f4b7f2e732058132c92cfcdba1a60d data\downtoearth\tags\item\soul_flame_hammered.json
 09bd5f70bf30d01d6ef2778867105a9561e1d006 data\bobsmobgear\tags\item\smithing_hammers.json
+da9063d6a505a003774e9805cdd1f5fc0dc5eed2 data\downtoearth\tags\item\soul_flame_hammered.json
 e4a5df6ba29ae006c0ce4a28a8e9cee56c17ceb9 data\minecraft\tags\item\hoes.json
-25c5cc0870e2c77cfc7136dee5d3b0634fa30d3b data\bobsmobgear\tags\item\tong_holdable_weapons.json
+0ace00452ef85b32c45197ee6b8abf387fb02cff data\minecraft\tags\item\enchantable\armor.json
+80ef81249f77df66c1c8b78ceefc1e1e43e92178 data\bobsmobgear\tags\item\tong_holdable_weapons.json
 d14cee7ab8fc4423d74b1dbc3b7ca6c36c5c8ae3 data\minecraft\tags\item\pickaxes.json
 db1c92138e512af4127626906c58b124ccdc7721 data\bobsmobgear\tags\item\forges\iron_ingot.json
 ca653ea1b374563309d9db6b987e50dd33546f51 data\minecraft\tags\item\axes.json

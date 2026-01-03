@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_netherite_sword_blade"
+  },
+  "result": {
+    "id": "downtoearth:unsharpened_netherite_sword_blade",
+    "count": 1
+  }
+}

@@ -62,6 +62,7 @@ public class ModItems {
 
     public static final Item BRONZE_MIX = registerItem("bronze_mix", new Item(new Item.Settings()));
     public static final Item COKING_COAL = registerItem("coking_coal", new Item(new Item.Settings()));
+    public static final Item NETHERITE_MIX = registerItem("netherite_mix", new Item(new Item.Settings()));
 
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new Item.Settings()));
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new Item.Settings()));
@@ -149,14 +150,25 @@ public class ModItems {
     public static final Item UNSHARPENED_DIAMOND_SWORD_BLADE = registerItem("unsharpened_diamond_sword_blade", new Item(new Item.Settings()));
     public static final Item DIAMOND_SWORD_BLADE = registerItem("diamond_sword_blade", new Item(new Item.Settings()));
 
-    public static final Item UNFORGED_DIAMOND_HELMET = registerItem("unforged_diamond_helmet", new Item(new Item.Settings()));
-    public static final Item UNPOLISHED_DIAMOND_HELMET = registerItem("unpolished_diamond_helmet", new Item(new Item.Settings()));
-    public static final Item UNFORGED_DIAMOND_CHESTPLATE = registerItem("unforged_diamond_chestplate", new Item(new Item.Settings()));
-    public static final Item UNPOLISHED_DIAMOND_CHESTPLATE = registerItem("unpolished_diamond_chestplate", new Item(new Item.Settings()));
-    public static final Item UNFORGED_DIAMOND_LEGGINGS = registerItem("unforged_diamond_leggings", new Item(new Item.Settings()));
-    public static final Item UNPOLISHED_DIAMOND_LEGGINGS = registerItem("unpolished_diamond_leggings", new Item(new Item.Settings()));
-    public static final Item UNFORGED_DIAMOND_BOOTS = registerItem("unforged_diamond_boots", new Item(new Item.Settings()));
-    public static final Item UNPOLISHED_DIAMOND_BOOTS = registerItem("unpolished_diamond_boots", new Item(new Item.Settings()));
+    public static final Item UNFORGED_NETHERITE_SHOVEL_HEAD = registerItem("unforged_netherite_shovel_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_NETHERITE_SHOVEL_HEAD = registerItem("unsharpened_netherite_shovel_head", new Item(new Item.Settings()));
+    public static final Item NETHERITE_SHOVEL_HEAD = registerItem("netherite_shovel_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_NETHERITE_PICKAXE_HEAD = registerItem("unforged_netherite_pickaxe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_NETHERITE_PICKAXE_HEAD = registerItem("unsharpened_netherite_pickaxe_head", new Item(new Item.Settings()));
+    public static final Item NETHERITE_PICKAXE_HEAD = registerItem("netherite_pickaxe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_NETHERITE_AXE_HEAD = registerItem("unforged_netherite_axe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_NETHERITE_AXE_HEAD = registerItem("unsharpened_netherite_axe_head", new Item(new Item.Settings()));
+    public static final Item NETHERITE_AXE_HEAD = registerItem("netherite_axe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_NETHERITE_HOE_HEAD = registerItem("unforged_netherite_hoe_head", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_NETHERITE_HOE_HEAD = registerItem("unsharpened_netherite_hoe_head", new Item(new Item.Settings()));
+    public static final Item NETHERITE_HOE_HEAD = registerItem("netherite_hoe_head", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_NETHERITE_SWORD_BLADE = registerItem("unforged_netherite_sword_blade", new Item(new Item.Settings()));
+    public static final Item UNSHARPENED_NETHERITE_SWORD_BLADE = registerItem("unsharpened_netherite_sword_blade", new Item(new Item.Settings()));
+    public static final Item NETHERITE_SWORD_BLADE = registerItem("netherite_sword_blade", new Item(new Item.Settings()));
 
     public static final Item UNFORGED_BRONZE_HELMET = registerItem("unforged_bronze_helmet", new Item(new Item.Settings()));
     public static final Item UNPOLISHED_BRONZE_HELMET = registerItem("unpolished_bronze_helmet", new Item(new Item.Settings()));
@@ -184,6 +196,15 @@ public class ModItems {
     public static final Item UNPOLISHED_STEEL_LEGGINGS = registerItem("unpolished_steel_leggings", new Item(new Item.Settings()));
     public static final Item UNFORGED_STEEL_BOOTS = registerItem("unforged_steel_boots", new Item(new Item.Settings()));
     public static final Item UNPOLISHED_STEEL_BOOTS = registerItem("unpolished_steel_boots", new Item(new Item.Settings()));
+
+    public static final Item UNFORGED_DIAMOND_HELMET = registerItem("unforged_diamond_helmet", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_DIAMOND_HELMET = registerItem("unpolished_diamond_helmet", new Item(new Item.Settings()));
+    public static final Item UNFORGED_DIAMOND_CHESTPLATE = registerItem("unforged_diamond_chestplate", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_DIAMOND_CHESTPLATE = registerItem("unpolished_diamond_chestplate", new Item(new Item.Settings()));
+    public static final Item UNFORGED_DIAMOND_LEGGINGS = registerItem("unforged_diamond_leggings", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_DIAMOND_LEGGINGS = registerItem("unpolished_diamond_leggings", new Item(new Item.Settings()));
+    public static final Item UNFORGED_DIAMOND_BOOTS = registerItem("unforged_diamond_boots", new Item(new Item.Settings()));
+    public static final Item UNPOLISHED_DIAMOND_BOOTS = registerItem("unpolished_diamond_boots", new Item(new Item.Settings()));
 
     public static final Item STONE_SMITHING_HAMMER = registerItem("stone_smithing_hammer",
             new SmithingHammerItem(new Item.Settings()

@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_diamond_helmet"
+  },
+  "result": {
+    "id": "minecraft:diamond_helmet",
+    "count": 1
+  }
+}

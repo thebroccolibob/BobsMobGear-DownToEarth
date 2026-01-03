@@ -1,6 +1,9 @@
 {
   "type": "bobsmobgear:template",
   "delay": 200,
+  "base": {
+    "item": "downtoearth:steel_hoe"
+  },
   "fluid": {
     "fluid": "bobsmobgear:diamond"
   },

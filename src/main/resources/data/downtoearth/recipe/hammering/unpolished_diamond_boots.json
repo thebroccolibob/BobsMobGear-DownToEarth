@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:hammering",
+  "ingredient": {
+    "item": "downtoearth:unforged_diamond_boots"
+  },
+  "result": {
+    "id": "downtoearth:unpolished_diamond_boots",
+    "count": 1
+  }
+}

@@ -1,6 +1,9 @@
 {
   "type": "bobsmobgear:template",
   "delay": 200,
+  "base": {
+    "item": "downtoearth:steel_sword"
+  },
   "fluid": {
     "fluid": "bobsmobgear:diamond"
   },

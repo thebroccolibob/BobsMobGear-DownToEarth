@@ -1,0 +1,17 @@
+{
+  "type": "bobsmobgear:forging",
+  "forging_time": 200,
+  "ingredients": [
+    {
+      "item": "downtoearth:netherite_mix"
+    },
+    {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+  ],
+  "result": {
+    "fluid": "bobsmobgear:netherite"
+  },
+  "result_amount": 9000,
+  "weak_heat": false
+}

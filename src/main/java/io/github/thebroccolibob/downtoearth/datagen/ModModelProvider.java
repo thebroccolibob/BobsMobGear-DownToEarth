@@ -47,6 +47,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.LEAF_FIBER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_MIX, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WOODEN_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.WOODEN_SHOVEL_HEAD, Models.GENERATED);
@@ -120,6 +121,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.UNFORGED_DIAMOND_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNSHARPENED_DIAMOND_SWORD_BLADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_SWORD_BLADE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_NETHERITE_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_SHOVEL_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_NETHERITE_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_PICKAXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_NETHERITE_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_AXE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_NETHERITE_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_HOE_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNFORGED_NETHERITE_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNSHARPENED_NETHERITE_SWORD_BLADE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_SWORD_BLADE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.UNFORGED_BRONZE_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNPOLISHED_BRONZE_HELMET, Models.GENERATED);

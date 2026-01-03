@@ -89,6 +89,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RAW_TIN), conditionsFromItem(ModItems.RAW_TIN))
                 .offerTo(recipeExporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NETHERITE_MIX)
+                .input(Items.ANCIENT_DEBRIS)
+                .input(Items.ANCIENT_DEBRIS)
+                .input(Items.ANCIENT_DEBRIS)
+                .input(Items.ANCIENT_DEBRIS)
+                .input(Items.RAW_GOLD)
+                .input(Items.RAW_GOLD)
+                .input(Items.RAW_GOLD)
+                .input(Items.RAW_GOLD)
+                .criterion(hasItem(ModItems.RAW_TIN), conditionsFromItem(ModItems.RAW_TIN))
+                .offerTo(recipeExporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.FLINT_AND_STEEL)
                 .input(ModItems.STEEL_INGOT)
                 .input(Items.FLINT)
@@ -381,46 +393,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('n', ModItems.STEEL_SWORD_BLADE)
                 .input('|', Items.STICK)
                 .criterion(hasItem(ModItems.STEEL_SWORD_BLADE), conditionsFromItem(ModItems.STEEL_SWORD_BLADE))
-                .offerTo(recipeExporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_SWORD)
-                .pattern(" n")
-                .pattern("| ")
-                .input('n', ModItems.DIAMOND_SWORD_BLADE)
-                .input('|', Items.STICK)
-                .criterion(hasItem(ModItems.DIAMOND_SWORD_BLADE), conditionsFromItem(ModItems.DIAMOND_SWORD_BLADE))
-                .offerTo(recipeExporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_HOE)
-                .pattern(" n")
-                .pattern("| ")
-                .input('n', ModItems.DIAMOND_HOE_HEAD)
-                .input('|', Items.STICK)
-                .criterion(hasItem(ModItems.DIAMOND_HOE_HEAD), conditionsFromItem(ModItems.DIAMOND_HOE_HEAD))
-                .offerTo(recipeExporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_AXE)
-                .pattern(" n")
-                .pattern("| ")
-                .input('n', ModItems.DIAMOND_AXE_HEAD)
-                .input('|', Items.STICK)
-                .criterion(hasItem(ModItems.DIAMOND_AXE_HEAD), conditionsFromItem(ModItems.DIAMOND_AXE_HEAD))
-                .offerTo(recipeExporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_PICKAXE)
-                .pattern(" n")
-                .pattern("| ")
-                .input('n', ModItems.DIAMOND_PICKAXE_HEAD)
-                .input('|', Items.STICK)
-                .criterion(hasItem(ModItems.DIAMOND_PICKAXE_HEAD), conditionsFromItem(ModItems.DIAMOND_PICKAXE_HEAD))
-                .offerTo(recipeExporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_SHOVEL)
-                .pattern(" n")
-                .pattern("| ")
-                .input('n', ModItems.DIAMOND_SHOVEL_HEAD)
-                .input('|', Items.STICK)
-                .criterion(hasItem(ModItems.DIAMOND_SHOVEL_HEAD), conditionsFromItem(ModItems.DIAMOND_SHOVEL_HEAD))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STONE_ANVIL)

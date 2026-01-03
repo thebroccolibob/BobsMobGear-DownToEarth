@@ -1,0 +1,10 @@
+{
+  "type": "downtoearth:grinding",
+  "ingredient": {
+    "item": "downtoearth:unpolished_diamond_chestplate"
+  },
+  "result": {
+    "id": "minecraft:diamond_chestplate",
+    "count": 1
+  }
+}
